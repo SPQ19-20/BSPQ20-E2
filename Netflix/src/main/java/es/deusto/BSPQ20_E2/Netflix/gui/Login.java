@@ -1,4 +1,4 @@
-package BSPQ20_E2.Netflix.gui;
+package es.deusto.BSPQ20_E2.Netflix.gui;
 
 import java.awt.GridLayout;
 
