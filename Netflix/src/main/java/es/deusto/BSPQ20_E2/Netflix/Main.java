@@ -4,7 +4,7 @@ import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
-import es.deusto.BSPQ20_E2.Netflix.gui.Login;
+import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
 
 import java.io.IOException;
 import java.net.URI;

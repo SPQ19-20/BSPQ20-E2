@@ -1,4 +1,4 @@
-package es.deusto.BSPQ20_E2.Netflix.client;
+package es.deusto.BSPQ20_E2.Netflix.client.gui;
 
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 
@@ -30,7 +30,7 @@ import java.util.List;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 
-public class ClientApp extends JFrame {
+public class RegWindow extends JFrame {
 
     /**
      *
@@ -39,7 +39,7 @@ public class ClientApp extends JFrame {
 
     private Client client;
 
-    public ClientApp() {
+    public RegWindow() {
         client = ClientBuilder.newClient();
 
         final WebTarget appTarget = client.target("http://localhost:8080/myapp");
@@ -75,7 +75,7 @@ public class ClientApp extends JFrame {
                         userListModel.addElement(user);
                     }
                 } catch (ProcessingException ex) {
-                    JOptionPane.showMessageDialog(ClientApp.this, "Error connecting with server", "Error message", ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(RegWindow.this, "Error connecting with server", "Error message", ERROR_MESSAGE);
                 }
             }
             
@@ -113,9 +113,9 @@ public class ClientApp extends JFrame {
                 WebTarget deleteTarget = usersTarget.path(codeTextField.getText());
                 Response response = deleteTarget.request().delete();
                 if (response.getStatus() == Status.OK.getStatusCode()) {
-                    JOptionPane.showMessageDialog(ClientApp.this, "User correctly deleted", "Message", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(RegWindow.this, "User correctly deleted", "Message", JOptionPane.INFORMATION_MESSAGE);
                 } else {
-                    JOptionPane.showMessageDialog(ClientApp.this, "Could not delete user", "Message", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(RegWindow.this, "Could not delete user", "Message", JOptionPane.ERROR_MESSAGE);
                 }
             }
 
@@ -129,7 +129,7 @@ public class ClientApp extends JFrame {
         
             @Override
             public void run() {
-                new ClientApp();
+                new RegWindow();
             }
         });
     }
