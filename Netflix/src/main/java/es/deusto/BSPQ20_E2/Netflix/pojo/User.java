@@ -6,8 +6,8 @@ public class User {
     private String code;
     private String name;
     private String surname;
-private String password;
-private double salary;
+    private String password;
+    private double salary;
     //Default public constructor required for serialization
     public User() {
 
