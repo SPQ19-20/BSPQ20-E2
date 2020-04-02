@@ -12,7 +12,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.core.StatusType;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
@@ -24,7 +23,7 @@ public class Users {
     @Produces(MediaType.APPLICATION_JSON)
     public List<User> getUsers() {
         List<User> users = new ArrayList<User>();
-        users.add(new User(0, "John", "Smith"));
+        users.add(new User("jorge", "Jorge", "El Busto", "password123", 90));
         return users;    
     }
 

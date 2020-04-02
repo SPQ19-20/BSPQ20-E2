@@ -10,6 +10,7 @@ import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JList;
@@ -86,9 +87,11 @@ public class ClientApp extends JFrame {
         JButton addUserButton = new JButton("Add user");
         rightPanel.add(addUserButton);
 
-        final JTextField codeTextField = new JTextField("", 2);
+        final JTextField codeTextField = new JTextField("", 10);
         final JTextField nameTextField = new JTextField("", 10);
         final JTextField surnameTextField = new JTextField("", 10);
+        final JTextField pwField = new JPasswordField("", 10);
+        final JTextField salaryField = new JTextField("", 10);
 
         rightPanel.add(codeTextField);
         rightPanel.add(nameTextField);
@@ -98,7 +101,7 @@ public class ClientApp extends JFrame {
             
             @Override
             public void actionPerformed(ActionEvent e) {
-                User newUser = new User(Integer.parseInt(codeTextField.getText()), nameTextField.getText(), surnameTextField.getText());
+                User newUser = new User(codeTextField.getText(), nameTextField.getText(), surnameTextField.getText(), pwField.getText(),Double.parseDouble(salaryField.getText()));
                 usersTarget.request(MediaType.APPLICATION_JSON).post(Entity.entity(newUser, MediaType.APPLICATION_JSON));
             }
         });
