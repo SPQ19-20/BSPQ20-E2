@@ -1,0 +1,9 @@
+
+DROP SCHEMA IF EXISTS Netflix;
+
+DROP USER IF EXISTS 'spq'@'%';
+
+CREATE SCHEMA Netflix;
+
+CREATE USER IF NOT EXISTS 'spq'@'%' IDENTIFIED BY 'spq';
+GRANT ALL ON Netflix.* TO 'spq'@'%';
