@@ -33,6 +33,9 @@ import javax.ws.rs.core.Response.Status;
 import java.util.List;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.UIManager;
 
 public class Login extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -52,45 +55,66 @@ public class Login extends JFrame {
 		getContentPane().setLayout(null);
 
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 126, 434, 83);
+		panel.setBackground(Color.BLACK);
+		panel.setBounds(0, 0, 453, 219);
 		getContentPane().add(panel);
 		panel.setLayout(null);
-
-		JLabel lblUser = new JLabel("User:");
-		lblUser.setBounds(10, 0, 119, 36);
-		panel.add(lblUser);
+		
+		JLabel lblNetflix = new JLabel("Netflix");
+		lblNetflix.setFont(new Font("Tahoma", Font.BOLD, 50));
+		lblNetflix.setForeground(Color.RED);
+		lblNetflix.setBounds(145, 36, 188, 68);
+		panel.add(lblNetflix);
 
 		tfUser = new JTextField();
-		tfUser.setBounds(129, 0, 129, 36);
+		tfUser.setBackground(Color.DARK_GRAY);
+		tfUser.setBounds(121, 139, 123, 20);
 		panel.add(tfUser);
 		tfUser.setColumns(10);
 
 		JLabel lblPasswd = new JLabel("Password:");
-		lblPasswd.setBounds(10, 42, 119, 30);
+		lblPasswd.setForeground(Color.RED);
+		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblPasswd.setBounds(37, 178, 88, 25);
 		panel.add(lblPasswd);
 
 		tfPasswd = new JTextField();
-		tfPasswd.setBounds(129, 42, 129, 30);
+		tfPasswd.setBackground(Color.DARK_GRAY);
+		tfPasswd.setBounds(121, 183, 123, 20);
 		panel.add(tfPasswd);
 		tfPasswd.setColumns(10);
+		
+				JLabel lblUser = new JLabel("User:");
+				lblUser.setForeground(Color.RED);
+				lblUser.setFont(new Font("Tahoma", Font.BOLD, 14));
+				lblUser.setBounds(68, 131, 57, 36);
+				panel.add(lblUser);
+				
+						JButton btnLogin = new JButton("Login");
+						btnLogin.setForeground(Color.RED);
+						btnLogin.setBackground(Color.BLACK);
+						btnLogin.setBounds(259, 178, 88, 30);
+						panel.add(btnLogin);
+						btnLogin.setFont(new Font("Tahoma", Font.BOLD, 14));
+						
+								JButton btnRegister = new JButton("Register");
+								btnRegister.setIcon(null);
+								btnRegister.setBackground(UIManager.getColor("Button.focus"));
+								btnRegister.setForeground(Color.RED);
+								btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
+								btnRegister.setBounds(357, 178, 81, 30);
+								panel.add(btnRegister);
+								btnRegister.addActionListener(new ActionListener() {
+									public void actionPerformed(ActionEvent arg0) {
+										RegWindow w = new RegWindow();
+										setVisible(false);
+										dispose();
 
-		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(258, 0, 176, 72);
-		panel.add(panel_1);
-		panel_1.setLayout(new GridLayout(0, 2, 0, 0));
-
-		JButton btnLogin = new JButton("Login");
-		panel_1.add(btnLogin);
-
-		JButton btnRegister = new JButton("Register");
-		btnRegister.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				RegWindow w = new RegWindow();
-				setVisible(false);
-				dispose();
-
-			}
-		});
-		panel_1.add(btnRegister);
+									}
+								});
+						btnLogin.addActionListener(new ActionListener() {
+							public void actionPerformed(ActionEvent arg0) {
+							}
+						});
 	}
 }

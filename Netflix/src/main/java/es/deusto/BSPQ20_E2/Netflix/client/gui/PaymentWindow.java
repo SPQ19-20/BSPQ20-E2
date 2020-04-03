@@ -7,6 +7,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import java.awt.Color;
+import java.awt.Font;
 
 public class PaymentWindow extends JFrame {
 	private JTextField tfUser;
@@ -18,34 +20,46 @@ public class PaymentWindow extends JFrame {
 		getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 126, 434, 83);
+		panel.setBackground(Color.BLACK);
+		panel.setBounds(0, 0, 344, 209);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		
+		JLabel lblNetflix = new JLabel("Netflix");
+		lblNetflix.setFont(new Font("Tahoma", Font.BOLD, 43));
+		lblNetflix.setForeground(Color.RED);
+		lblNetflix.setBounds(100, 31, 171, 70);
+		panel.add(lblNetflix);
+		
 		JLabel lblUser = new JLabel("User:");
-		lblUser.setBounds(10, 0, 119, 36);
+		lblUser.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblUser.setForeground(Color.RED);
+		lblUser.setBounds(43, 132, 64, 36);
 		panel.add(lblUser);
 		
 		tfUser = new JTextField();
-		tfUser.setBounds(129, 0, 129, 36);
+		tfUser.setBackground(Color.DARK_GRAY);
+		tfUser.setBounds(90, 141, 124, 20);
 		panel.add(tfUser);
 		tfUser.setColumns(10);
 		
 		JLabel lblPasswd = new JLabel("Password:");
-		lblPasswd.setBounds(10, 42, 119, 30);
+		lblPasswd.setForeground(Color.RED);
+		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblPasswd.setBounds(10, 168, 77, 30);
 		panel.add(lblPasswd);
 		
 		tfPasswd = new JTextField();
-		tfPasswd.setBounds(129, 42, 129, 30);
+		tfPasswd.setBackground(Color.DARK_GRAY);
+		tfPasswd.setBounds(90, 172, 124, 20);
 		panel.add(tfPasswd);
 		tfPasswd.setColumns(10);
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(258, 0, 166, 72);
-		panel.add(panel_1);
-		panel_1.setLayout(new GridLayout(0, 2, 0, 0));
-		
 		JButton btnLogin = new JButton("Login");
-		panel_1.add(btnLogin);
+		btnLogin.setBackground(Color.BLACK);
+		btnLogin.setForeground(Color.RED);
+		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnLogin.setBounds(224, 174, 110, 20);
+		panel.add(btnLogin);
 	}
 }
