@@ -1,5 +1,11 @@
 package es.deusto.BSPQ20_E2.Netflix.pojo;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
 
+
+@PersistenceCapable
+@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
 
 public class User {
 
@@ -8,10 +14,6 @@ public class User {
     private String surname;
     private String password;
     private double salary;
-    //Default public constructor required for serialization
-    public User() {
-
-    }
 
     public User(String code, String name, String surname, String password, double salary) {
         this.code = code;
