@@ -23,14 +23,13 @@
 		</dependencies>
 	</dependencyManagement>
 
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<jersey.version>2.30.1</jersey.version>
 		<server.hostname>127.0.0.1</server.hostname>
-		<server.port>8080</server.port>
+		<server.port>10072</server.port>
 	</properties>
 
 	<dependencies>
