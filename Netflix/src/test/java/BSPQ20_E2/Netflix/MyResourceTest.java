@@ -12,7 +12,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.deusto.BSPQ20_E2.Netflix.Main;
+import es.deusto.BSPQ20_E2.Netflix.server.Main;
 
 import static org.junit.Assert.assertEquals;
 

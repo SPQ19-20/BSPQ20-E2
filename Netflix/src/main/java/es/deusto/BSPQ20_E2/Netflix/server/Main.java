@@ -1,4 +1,4 @@
-package es.deusto.BSPQ20_E2.Netflix;
+package es.deusto.BSPQ20_E2.Netflix.server;
 
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;

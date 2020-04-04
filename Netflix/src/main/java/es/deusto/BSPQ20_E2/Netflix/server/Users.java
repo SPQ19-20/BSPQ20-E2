@@ -1,4 +1,4 @@
-package es.deusto.BSPQ20_E2.Netflix;
+package es.deusto.BSPQ20_E2.Netflix.server;
 
 import java.util.ArrayList;
 import java.util.List;
