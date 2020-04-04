@@ -130,6 +130,13 @@
 						<groupId>BSPQ20-E2</groupId>
 						<artifactId>exec-maven-plugin</artifactId>
 						<version>1.2.1</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>java</goal>
+								</goals>
+							</execution>
+						</executions>
 						<configuration>
 							<mainClass>es.deusto.BSPQ20-E2.Netflix.client.Client</mainClass>
 							<arguments>
@@ -149,6 +156,13 @@
 						<groupId>BSPQ20-E2</groupId>
 						<artifactId>exec-maven-plugin</artifactId>
 						<version>1.2.1</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>java</goal>
+								</goals>
+							</execution>
+						</executions>
 						<configuration>
 							<mainClass>es.deusto.BSPQ20-E2.Netflix.server.Main</mainClass>
 							<arguments>
