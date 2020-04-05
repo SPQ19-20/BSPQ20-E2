@@ -101,8 +101,7 @@ public class dLogin extends JFrame {
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 14));
 
 		JButton btnRegister = new JButton("Register");
-		btnRegister.setIcon(null);
-		btnRegister.setBackground(UIManager.getColor("Button.focus"));
+		btnRegister.setBackground(Color.BLACK);
 		btnRegister.setForeground(Color.RED);
 		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnRegister.setBounds(357, 178, 81, 30);

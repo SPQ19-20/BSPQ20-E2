@@ -29,15 +29,15 @@ public class dPaymentWindow extends JFrame {
 		getContentPane().setLayout(null);
 
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(173, 216, 230));
+		panel.setBackground(Color.WHITE);
 		panel.setBounds(0, 0, 344, 209);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 
-		JLabel lblNetflix = new JLabel("PayPal");
+		JLabel lblNetflix = new JLabel("Pay");
 		lblNetflix.setFont(new Font("Tahoma", Font.BOLD, 43));
 		lblNetflix.setForeground(new Color(0, 0, 255));
-		lblNetflix.setBounds(100, 31, 171, 70);
+		lblNetflix.setBounds(100, 31, 86, 70);
 		panel.add(lblNetflix);
 
 		JLabel lblUser = new JLabel("User:");
@@ -82,6 +82,12 @@ public class dPaymentWindow extends JFrame {
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnLogin.setBounds(224, 174, 110, 20);
 		panel.add(btnLogin);
+		
+		JLabel lblPal = new JLabel("Pal");
+		lblPal.setForeground(new Color(30, 144, 255));
+		lblPal.setFont(new Font("Tahoma", Font.BOLD, 43));
+		lblPal.setBounds(179, 45, 96, 42);
+		panel.add(lblPal);
 		setVisible(true);
 	}
 }
