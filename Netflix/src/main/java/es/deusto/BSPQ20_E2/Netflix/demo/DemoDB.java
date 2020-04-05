@@ -5,7 +5,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
+import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 
 public class DemoDB {
@@ -33,11 +35,28 @@ public class DemoDB {
 						String.valueOf(rs.getString("SURNAME")), String.valueOf(rs.getString("PASSWORD")),
 						rs.getInt("SALARY"));
 			}
-			System.out.println(sql);
 			
 			con.close();
 
 			return u;
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+			return null;
+		}
+
+	}
+	
+	public static ArrayList<Film> retrieveFilms(Connection con) {
+		String sql = "SELECT * FROM FILM;";
+		ArrayList<Film> films = new ArrayList<>();
+		try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
+			while (rs.next()) {
+				films.add(new Film(String.valueOf(rs.getString("ID")), String.valueOf(rs.getString("TITLE")),
+						String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
+						rs.getInt("YEAR"), rs.getFloat("PRICE")));
+			}
+			con.close();
+			return films;
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
 			return null;
