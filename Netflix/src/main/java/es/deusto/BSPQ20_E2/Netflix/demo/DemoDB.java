@@ -65,8 +65,7 @@ public class DemoDB {
 	}
 
 	public static void buyFilm(Film f, User u) {
-		String sql = "UPDATE USER SET SALARY = SALARY - " + f.getPrice() + "WHERE ID='" + u.getCode() + "';";
-		System.out.println(sql);
+		String sql = "UPDATE USER SET SALARY = SALARY - " + f.getPrice() + " WHERE ID='" + u.getCode() + "';";
 		try {
 			Connection con = connect();
 			Statement stmt = con.createStatement();
