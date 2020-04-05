@@ -64,6 +64,39 @@ public class DemoDB {
 
 	}
 
+	public static ArrayList<Film> searchFilms(Connection con, String condition) {
+		try {
+			String sql;
+			try {
+				int cond = Integer.parseInt(condition);
+				sql = "SELECT * FROM FILM WHERE YEAR=" + cond + " OR PRICE=" + cond + ";";
+
+			} catch (Exception e) {
+				sql = "SELECT * FROM FILM WHERE ID LIKE '%" + condition + "%' OR TITLE LIKE '%" + condition
+						+ "%' OR GENRE LIKE '%" + condition + "%' OR DIRECTOR LIKE '%" + condition + "%';";
+			}
+
+			System.out.println(sql);
+			ArrayList<Film> films = new ArrayList<>();
+			try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
+				while (rs.next()) {
+					films.add(new Film(String.valueOf(rs.getString("ID")), String.valueOf(rs.getString("TITLE")),
+							String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
+							rs.getInt("YEAR"), rs.getFloat("PRICE")));
+				}
+				con.close();
+				return films;
+			} catch (SQLException e) {
+				System.out.println(e.getMessage());
+				return null;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+
+	}
+
 	public static void buyFilm(Film f, User u) {
 		String sql = "UPDATE USER SET SALARY = SALARY - " + f.getPrice() + " WHERE ID='" + u.getCode() + "';";
 		try {

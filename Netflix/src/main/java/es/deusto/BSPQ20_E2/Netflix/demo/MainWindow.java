@@ -20,17 +20,24 @@ import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import java.awt.Color;
 import javax.swing.JButton;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.JTextField;
 
 public class MainWindow extends JFrame {
 	private int rowCount;
 	private JTable table;
 	private Connection con;
 	private ArrayList<Film> films;
+	private ArrayList<Film> queryResults;
+
 	private JLabel lblName = new JLabel("");
 	private JLabel lblPrice1 = new JLabel("");
 	private JButton btnBuy = new JButton("Buy");
+	private JTextField tfSearch;
 
 	public MainWindow(User u) {
 		getContentPane().setBackground(Color.BLACK);
@@ -38,7 +45,7 @@ public class MainWindow extends JFrame {
 		setResizable(false);
 		getContentPane().setLayout(null);
 
-		JLabel lblHello = new JLabel("Welcome, <dynamic>");
+		JLabel lblHello = new JLabel("Welcome, " + u.getName());
 		lblHello.setForeground(Color.RED);
 		lblHello.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblHello.setFont(new Font("Tahoma", Font.BOLD, 23));
@@ -83,19 +90,17 @@ public class MainWindow extends JFrame {
 		table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
-				
-			int seleccion = table.getSelectedRow();
-			lblName.setText(String.valueOf(table.getValueAt(seleccion, 0)));
-			lblPrice1.setText(String.valueOf(table.getValueAt(seleccion,4)));
-			
-			btnBuy.addMouseListener(new MouseAdapter() {
-				@Override
-				public void mouseClicked(MouseEvent arg0) {
-					dPaymentWindow dp = new dPaymentWindow(u, films.get(table.getSelectedRow()));				
-					dispose();
-				}
-			});
-				
+				int seleccion = table.getSelectedRow();
+				lblName.setText(String.valueOf(table.getValueAt(seleccion, 0)));
+				lblPrice1.setText(String.valueOf(table.getValueAt(seleccion, 4)));
+			}
+		});
+		btnBuy.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				dPaymentWindow dp = new dPaymentWindow(u, films.get(table.getSelectedRow()));
+				dispose();
 			}
 		});
 		scrollPane.setViewportView(table);
@@ -103,32 +108,82 @@ public class MainWindow extends JFrame {
 		lblName.setBounds(527, 59, 117, 27);
 		panel.add(lblName);
 		lblName.setForeground(Color.WHITE);
-		
+
 		JLabel lblSelectedFilm = new JLabel("Selected Film: ");
 		lblSelectedFilm.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblSelectedFilm.setBounds(423, 59, 94, 27);
 		panel.add(lblSelectedFilm);
 		lblSelectedFilm.setForeground(Color.RED);
-		
+
 		JLabel lblPrice = new JLabel("Price: ");
 		lblPrice.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblPrice.setForeground(Color.RED);
 		lblPrice.setBounds(471, 104, 46, 14);
 		panel.add(lblPrice);
-		
-		
+
 		lblPrice1.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblPrice1.setForeground(Color.WHITE);
 		lblPrice1.setBounds(527, 104, 101, 27);
 		panel.add(lblPrice1);
-		
-		
-		
+
 		btnBuy.setForeground(Color.RED);
 		btnBuy.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnBuy.setBackground(Color.BLACK);
 		btnBuy.setBounds(585, 379, 89, 23);
 		panel.add(btnBuy);
+
+		tfSearch = new JTextField();
+		tfSearch.setBackground(Color.LIGHT_GRAY);
+		tfSearch.setBounds(423, 233, 152, 50);
+		panel.add(tfSearch);
+		tfSearch.setColumns(10);
+
+		JButton btnSearch = new JButton("Search");
+		btnSearch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					queryResults = DemoDB.searchFilms(DemoDB.connect(), tfSearch.getText());
+					DefaultTableModel mdlSearch = new DefaultTableModel(colNames, 0);
+
+					for (int i = 0; i < queryResults.size(); i++) {
+						if (queryResults.get(i) != null) {
+							Object[] fila = new Object[5];
+							fila[0] = queryResults.get(i).getTitle();
+							fila[1] = queryResults.get(i).getGenre();
+							fila[2] = queryResults.get(i).getDirector();
+							fila[3] = queryResults.get(i).getYear();
+							fila[4] = queryResults.get(i).getPrice();
+
+							mdlSearch.addRow(fila);
+						}
+
+					}
+					System.out.println(queryResults.size());
+					System.out.println(mdlSearch.getRowCount());
+					table.setModel(mdlSearch);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnSearch.setForeground(Color.RED);
+		btnSearch.setBackground(Color.BLACK);
+		btnSearch.setBounds(585, 232, 89, 23);
+		panel.add(btnSearch);
+		
+		JButton btnReset = new JButton("Reset query");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tfSearch.setText("");
+				table.setModel(model);
+
+			}
+		});
+		btnReset.setFont(new Font("Tahoma", Font.PLAIN, 10));
+		btnReset.setForeground(Color.RED);
+		btnReset.setBackground(Color.BLACK);
+		btnReset.setBounds(585, 260, 89, 23);
+		panel.add(btnReset);
 		setVisible(true);
 	}
 }
