@@ -68,6 +68,7 @@ public class dLogin extends JFrame {
 		panel.add(lblNetflix);
 
 		tfUser = new JTextField();
+		tfUser.setForeground(new Color(255, 255, 255));
 		tfUser.setBackground(Color.DARK_GRAY);
 		tfUser.setBounds(121, 139, 123, 20);
 		panel.add(tfUser);
@@ -80,6 +81,7 @@ public class dLogin extends JFrame {
 		panel.add(lblPasswd);
 
 		tfPasswd = new JPasswordField();
+		tfPasswd.setForeground(new Color(255, 255, 255));
 		tfPasswd.setBackground(Color.DARK_GRAY);
 		tfPasswd.setBounds(121, 183, 123, 20);
 		panel.add(tfPasswd);
@@ -121,7 +123,7 @@ public class dLogin extends JFrame {
 					User u = DemoDB.logged(con, tfUser.getText(), tfPasswd.getText());
 					if (u != null) {
 						MainWindow mw = new MainWindow(u);
-
+						dispose();
 					}
 				} catch (Exception e) {
 					// TODO Auto-generated catch block

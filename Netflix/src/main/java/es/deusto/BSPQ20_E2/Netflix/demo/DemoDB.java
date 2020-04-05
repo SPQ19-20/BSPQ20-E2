@@ -26,7 +26,7 @@ public class DemoDB {
 
 	public static User logged(Connection con, String user, String pass) {
 		String sql = "SELECT * FROM USER WHERE ID='" + user + "' AND PASSWORD='" + pass + "';";
-		
+
 		User u = new User("", "", "", "", 0);
 		try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
 
@@ -35,7 +35,7 @@ public class DemoDB {
 						String.valueOf(rs.getString("SURNAME")), String.valueOf(rs.getString("PASSWORD")),
 						rs.getInt("SALARY"));
 			}
-			
+
 			con.close();
 
 			return u;
@@ -45,7 +45,7 @@ public class DemoDB {
 		}
 
 	}
-	
+
 	public static ArrayList<Film> retrieveFilms(Connection con) {
 		String sql = "SELECT * FROM FILM;";
 		ArrayList<Film> films = new ArrayList<>();
@@ -62,6 +62,19 @@ public class DemoDB {
 			return null;
 		}
 
+	}
+
+	public static void buyFilm(Film f, User u) {
+		String sql = "UPDATE USER SET SALARY = SALARY - " + f.getPrice() + "WHERE ID='" + u.getCode() + "';";
+		System.out.println(sql);
+		try {
+			Connection con = connect();
+			Statement stmt = con.createStatement();
+			stmt.executeUpdate(sql);
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }
