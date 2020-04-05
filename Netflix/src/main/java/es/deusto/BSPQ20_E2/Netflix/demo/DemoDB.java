@@ -75,8 +75,6 @@ public class DemoDB {
 				sql = "SELECT * FROM FILM WHERE ID LIKE '%" + condition + "%' OR TITLE LIKE '%" + condition
 						+ "%' OR GENRE LIKE '%" + condition + "%' OR DIRECTOR LIKE '%" + condition + "%';";
 			}
-
-			System.out.println(sql);
 			ArrayList<Film> films = new ArrayList<>();
 			try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
 				while (rs.next()) {

@@ -99,7 +99,12 @@ public class MainWindow extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				dPaymentWindow dp = new dPaymentWindow(u, films.get(table.getSelectedRow()));
+				dPaymentWindow dp;
+				if (table.getModel() == model)
+					dp = new dPaymentWindow(u, films.get(table.getSelectedRow()));
+				else
+					dp = new dPaymentWindow(u, queryResults.get(table.getSelectedRow()));
+
 				dispose();
 			}
 		});
@@ -158,8 +163,7 @@ public class MainWindow extends JFrame {
 						}
 
 					}
-					System.out.println(queryResults.size());
-					System.out.println(mdlSearch.getRowCount());
+
 					table.setModel(mdlSearch);
 				} catch (Exception e1) {
 					e1.printStackTrace();
@@ -170,7 +174,7 @@ public class MainWindow extends JFrame {
 		btnSearch.setBackground(Color.BLACK);
 		btnSearch.setBounds(585, 232, 89, 23);
 		panel.add(btnSearch);
-		
+
 		JButton btnReset = new JButton("Reset query");
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
