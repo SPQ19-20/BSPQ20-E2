@@ -1,5 +1,8 @@
 package es.deusto.BSPQ20_E2.Netflix.demo;
-
+/**
+ * Window used for the last step of the transaction of buying a film
+ * @author Jorge El Busto
+ */
 import java.awt.GridLayout;
 
 import javax.swing.JButton;

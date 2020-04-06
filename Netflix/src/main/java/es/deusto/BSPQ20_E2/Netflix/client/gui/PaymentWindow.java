@@ -9,7 +9,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.Color;
 import java.awt.Font;
-
+/**
+ * Window used for the last step of the transaction of buying a film
+ * @author Jorge El Busto
+ */
 public class PaymentWindow extends JFrame {
 	private JTextField tfUser;
 	private JTextField tfPasswd;

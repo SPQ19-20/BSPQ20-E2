@@ -26,7 +26,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JTextField;
-
+/**
+ * Main window with
+ * @author Jorge
+ *
+ */
 public class MainWindow extends JFrame {
 	private int rowCount;
 	private JTable table;

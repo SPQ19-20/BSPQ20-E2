@@ -33,7 +33,8 @@ import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 public class RegWindow extends JFrame {
 
     /**
-     *
+     *Window to register user taken from the Maven example
+     *@author Jorge El Busto
      */
     private static final long serialVersionUID = 1L;
 

@@ -10,7 +10,19 @@ import java.util.ArrayList;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 
+/**
+ * Class with the DB methods define for the demo to work with SQLITE3
+ * 
+ * @author Jorge El Busto
+ *
+ */
 public class DemoDB {
+	/**
+	 * Method to connect to the database
+	 * 
+	 * @return connection to the database
+	 * @throws Exception
+	 */
 	public static Connection connect() throws Exception {
 		// SQLite connection string
 		Class.forName("org.sqlite.JDBC");
@@ -24,6 +36,14 @@ public class DemoDB {
 		return conn;
 	}
 
+	/**
+	 * Method to check in the DB if the user credentials are valid
+	 * 
+	 * @param con  Connection with the DB
+	 * @param user String with the username passed by the TextField
+	 * @param pass String with the password passed by the JPasswordField
+	 * @return
+	 */
 	public static User logged(Connection con, String user, String pass) {
 		String sql = "SELECT * FROM USER WHERE ID='" + user + "' AND PASSWORD='" + pass + "';";
 
@@ -46,6 +66,11 @@ public class DemoDB {
 
 	}
 
+	/**
+	 * Method to retrieve every single film in the DB
+	 * @param con Connection to the DB
+	 * @return an array with every film in the FILM table
+	 */
 	public static ArrayList<Film> retrieveFilms(Connection con) {
 		String sql = "SELECT * FROM FILM;";
 		ArrayList<Film> films = new ArrayList<>();
@@ -64,6 +89,13 @@ public class DemoDB {
 
 	}
 
+	
+	/**
+	 * Method to search films
+	 * @param con Connection to the DB
+	 * @param condition String to be searched retrieved from the main window
+	 * @return Every film whose director, name, genre, year, title, or price contains the indicated string
+	 */
 	public static ArrayList<Film> searchFilms(Connection con, String condition) {
 		try {
 			String sql;
@@ -95,6 +127,11 @@ public class DemoDB {
 
 	}
 
+	/**
+	 * Method to process the information in the DB so that the price of the bought film is taken away from the credit of the user who buys it.
+	 * @param f Film whose price is going to be taken
+	 * @param u User who is interested in buying the film
+	 */
 	public static void buyFilm(Film f, User u) {
 		String sql = "UPDATE USER SET SALARY = SALARY - " + f.getPrice() + " WHERE ID='" + u.getCode() + "';";
 		try {

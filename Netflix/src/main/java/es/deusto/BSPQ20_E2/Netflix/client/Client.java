@@ -1,5 +1,7 @@
 package es.deusto.BSPQ20_E2.Netflix.client;
-
+/**
+ * @author Annette
+ */
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;

@@ -3,7 +3,11 @@ package es.deusto.BSPQ20_E2.Netflix.pojo;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Inheritance;
 import javax.jdo.annotations.InheritanceStrategy;
-
+/**
+ * Film class
+ * @author Jorge El Busto
+ *
+ */
 @PersistenceCapable
 @Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 

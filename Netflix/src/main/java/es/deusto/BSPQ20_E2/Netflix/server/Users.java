@@ -15,7 +15,11 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
-
+/**
+ * 
+ * @author Jorge
+ *
+ */
 @Path("/users")
 public class Users {
 

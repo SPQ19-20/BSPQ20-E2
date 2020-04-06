@@ -3,7 +3,11 @@ package es.deusto.BSPQ20_E2.Netflix.server;
 import java.io.IOException;
 
 import es.deusto.BSPQ20_E2.Netflix.client.Client;
-
+/**
+ * 
+ * @author Annette
+ *
+ */
 public class Test {
 	
 	public static void main(String[] args) {

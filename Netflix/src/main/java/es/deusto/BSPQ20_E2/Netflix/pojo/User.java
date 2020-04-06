@@ -3,7 +3,11 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Inheritance;
 import javax.jdo.annotations.InheritanceStrategy;
 
-
+/**
+ * User class
+ * @author Jorge El Busto, Inigo Orue
+ *
+ */
 @PersistenceCapable
 @Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
 

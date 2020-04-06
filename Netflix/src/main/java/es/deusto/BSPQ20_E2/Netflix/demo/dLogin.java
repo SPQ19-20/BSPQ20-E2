@@ -37,7 +37,11 @@ import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import java.awt.Font;
 import java.awt.Color;
 import javax.swing.UIManager;
-
+/**
+ * Window for the login process
+ * @author Jorge El Busto
+ *
+ */
 public class dLogin extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private Client client;
