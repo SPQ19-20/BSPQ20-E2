@@ -84,7 +84,7 @@
 
 		<resources>
 			<resource>
-				<directory>${config.files.dir}</directory>
+				<directory>src/resources/</directory>
 				<includes>
 					<include>**/*.jdo</include>
 					<include>**/*.orm</include>
@@ -127,9 +127,9 @@
 				<artifactId>datanucleus-maven-plugin</artifactId>
 				<version>5.0.2</version>
 				<configuration>
-					<log4jConfiguration>${config.files.dir}/log4j.properties</log4jConfiguration>
+					<log4jConfiguration>src/resources/log4j.properties</log4jConfiguration>
 					<verbose>true</verbose>
-					<props>${config.files.dir}/datanucleus.properties</props>
+					<props>src/resources/datanucleus.properties</props>
 				</configuration>
 				<executions>
 					<execution>
