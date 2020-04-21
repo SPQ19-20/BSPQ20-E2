@@ -8,6 +8,7 @@ import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
 
 import java.io.IOException;
 import java.net.URI;
+import java.util.logging.Logger;
 
 /**
  * Main class.
@@ -15,6 +16,8 @@ import java.net.URI;
  */
 public class Main {
     // Base URI the Grizzly HTTP server will listen on
+	private static final Logger logger = Logger.getLogger("Main");
+    @SuppressWarnings("unchecked")
     public static final String BASE_URI = "http://localhost:10072/myapp/";
 
     /**
@@ -40,7 +43,7 @@ public class Main {
         final HttpServer server = startServer();
         Login l = new Login();
   		l.setVisible(true);
-        System.out.println(String.format("Jersey app started with WADL available at "
+        logger.log(null, String.format("Jersey app started with WADL available at "
                 + "%sapplication.wadl\nHit enter to stop it...", BASE_URI));
         System.in.read();
         

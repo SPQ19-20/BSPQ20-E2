@@ -13,13 +13,21 @@ import javax.jdo.annotations.InheritanceStrategy;
 
 public class User {
 
-    private String code;
-    private String name;
-    private String surname;
-    private String password;
-    private double salary;
+    protected String code = null;
+    protected String name = null;
+    protected String surname = null;
+    protected String password = null;
+    protected double salary = 0;
 
     public User(String code, String name, String surname, String password, double salary) {
+        this.code = code;
+        this.name = name;
+        this.surname = surname;
+        this.password = password;
+        this.salary = salary;
+    }
+    
+    public User(String name, String surname, String password, double salary) {
         this.code = code;
         this.name = name;
         this.surname = surname;

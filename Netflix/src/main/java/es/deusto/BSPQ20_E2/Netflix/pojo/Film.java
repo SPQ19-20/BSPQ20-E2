@@ -3,8 +3,10 @@ package es.deusto.BSPQ20_E2.Netflix.pojo;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Inheritance;
 import javax.jdo.annotations.InheritanceStrategy;
+
 /**
  * Film class
+ * 
  * @author Jorge El Busto
  *
  */
@@ -12,12 +14,15 @@ import javax.jdo.annotations.InheritanceStrategy;
 @Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 
 public class Film {
-	private String id;
-	private String title;
-	private String genre;
-	private String director;
-	private int year;
-	private float price;
+	protected String id = null;
+	protected String title = null;
+	protected String genre = null;
+	protected String director = null;
+	protected int year = 0;
+	protected float price = 0;
+
+	protected Film() {
+	}
 
 	public String getTitle() {
 		return title;
@@ -68,7 +73,6 @@ public class Film {
 	}
 
 	public Film(String id, String title, String genre, String director, int year, float price) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.genre = genre;
@@ -77,4 +81,8 @@ public class Film {
 		this.price = price;
 	}
 
+	public String toString() {
+		return "Film : " + title + " [ Genre:" + genre + " Director: " + director + "Year: " + year + "Price: " + price
+				+ "]";
+	}
 }
