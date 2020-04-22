@@ -82,7 +82,7 @@ public class Film {
 	}
 
 	public String toString() {
-		return "Film : " + title + " [ Genre:" + genre + " Director: " + director + "Year: " + year + "Price: " + price
+		return "Film : " + title + " [ Genre:" + genre + " Director: " + director + " Year: " + year + " Price: " + price
 				+ "]";
 	}
 }

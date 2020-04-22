@@ -26,14 +26,6 @@ public class User {
         this.password = password;
         this.salary = salary;
     }
-    
-    public User(String name, String surname, String password, double salary) {
-        this.code = code;
-        this.name = name;
-        this.surname = surname;
-        this.password = password;
-        this.salary = salary;
-    }
 
     public void setCode(String code) { this.code = code; }
     public String getCode() { return code;  }

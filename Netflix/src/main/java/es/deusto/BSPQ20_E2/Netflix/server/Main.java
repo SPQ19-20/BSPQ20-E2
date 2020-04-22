@@ -8,6 +8,7 @@ import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
 
 import java.io.IOException;
 import java.net.URI;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -43,7 +44,7 @@ public class Main {
         final HttpServer server = startServer();
         Login l = new Login();
   		l.setVisible(true);
-        LOGGER.log(null, String.format("Jersey app started with WADL available at "
+        LOGGER.log(Level.INFO, String.format("Jersey app started with WADL available at "
                 + "%sapplication.wadl\nHit enter to stop it...", BASE_URI));
         System.in.read();
         
