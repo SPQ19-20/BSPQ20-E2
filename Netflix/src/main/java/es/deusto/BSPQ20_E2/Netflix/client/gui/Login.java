@@ -70,14 +70,14 @@ public class Login extends JFrame {
 
 		final WebTarget appTarget = client.target("http://localhost:8080/myapp");
 		final WebTarget usersTarget = appTarget.path("users");
-		setSize(459, 248);
+		setSize(479, 264);
 		setTitle("Netflix - Login");
 		setResizable(false);
 		getContentPane().setLayout(null);
 
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
-		panel.setBounds(0, 0, 453, 219);
+		panel.setBounds(0, 0, 473, 235);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 
@@ -124,23 +124,23 @@ public class Login extends JFrame {
 		btnRegister.setBackground(Color.BLACK);
 		btnRegister.setForeground(Color.RED);
 		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnRegister.setBounds(357, 178, 81, 30);
+		btnRegister.setBounds(357, 178, 106, 30);
 		panel.add(btnRegister);
-//		btnRegister.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent arg0) {
-//				RegWindow w = new RegWindow();
-//				setVisible(false);
-//				dispose();
-//
-//			}
-//		});
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				RegWindow w = new RegWindow();
+				dispose();
+
+			}
+		});
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Connection con;
 				try {
 					User u = DB.logged(tfUser.getText(), tfPasswd.getText());
 					if (u.getSalary() > 0) {
-						MainWindow mw = new MainWindow(u);
+						LOGGER.log(Level.INFO, "Logged in with " + u.toString());
+						MainWindow mw = new MainWindow(u); 
 						dispose();
 					} else JOptionPane.showMessageDialog(null, "Wrong password or username.");
 				} catch (Exception e) {

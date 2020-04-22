@@ -20,6 +20,7 @@ public class Film {
 	protected String director = null;
 	protected int year = 0;
 	protected float price = 0;
+	protected String url = null;
 
 	protected Film() {
 	}
@@ -31,6 +32,15 @@ public class Film {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
 
 	public String getGenre() {
 		return genre;
@@ -72,7 +82,17 @@ public class Film {
 		this.id = id;
 	}
 
-	public Film(String id, String title, String genre, String director, int year, float price) {
+	public Film(String id, String title, String genre, String director, int year, float price, String url) {
+		this.id = id;
+		this.title = title;
+		this.genre = genre;
+		this.director = director;
+		this.year = year;
+		this.price = price;
+		this.url = url;
+	}
+
+	public Film(String id, String title, String genre, String director, int year, float price) { //VALID FOR DEMO ONLY
 		this.id = id;
 		this.title = title;
 		this.genre = genre;

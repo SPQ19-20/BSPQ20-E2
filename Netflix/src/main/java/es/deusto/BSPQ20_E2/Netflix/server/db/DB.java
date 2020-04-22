@@ -54,7 +54,7 @@ public class DB {
 				}
 
 				con.close();
-
+				
 				return u;
 			} catch (SQLException e) {
 				System.out.println(e.getMessage());
@@ -81,7 +81,7 @@ public class DB {
 				while (rs.next()) {
 					Film film = new Film(String.valueOf(rs.getInt("FILM_ID")), String.valueOf(rs.getString("TITLE")),
 							String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
-							rs.getInt("YEAR"), rs.getFloat("PRICE"));
+							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL")));
 					films.add(film);
 					LOGGER.log(Level.INFO, "Film retrieved: " + film.toString());
 				}
@@ -109,18 +109,20 @@ public class DB {
 			String sql;
 			try {
 				int cond = Integer.parseInt(condition);
-				sql = "SELECT * FROM FILM WHERE FILM_ID=" + cond + " OR YEAR=" + cond + " OR PRICE=" + cond + ";";
-
+				sql = "SELECT * FROM FILM WHERE YEAR=" + cond + " OR PRICE=" + cond + ";";
+				System.out.println(sql);
 			} catch (Exception e) {
 				sql = "SELECT * FROM FILM WHERE TITLE LIKE '%" + condition
 						+ "%' OR GENRE LIKE '%" + condition + "%' OR DIRECTOR LIKE '%" + condition + "%';";
+				System.out.println(sql);
+
 			}
 			ArrayList<Film> films = new ArrayList<>();
 			try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
 				while (rs.next()) {
 					films.add(new Film(String.valueOf(rs.getString("ID")), String.valueOf(rs.getString("TITLE")),
 							String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
-							rs.getInt("YEAR"), rs.getFloat("PRICE")));
+							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL"))));
 				}
 				con.close();
 				return films;
@@ -141,12 +143,32 @@ public class DB {
 	 * @param u User who is interested in buying the film
 	 */
 	public static void buyFilm(Film f, User u) {
-		String sql = "UPDATE USER SET SALARY = SALARY - " + f.getPrice() + " WHERE ID='" + u.getCode() + "';";
+		String sql = "UPDATE USER SET SALARY = SALARY - " + f.getPrice() + " WHERE CODE='" + u.getCode() + "';";
 		try {
 			Connection con = connect();
 			Statement stmt = con.createStatement();
 			stmt.executeUpdate(sql);
 			con.close();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	/**
+	 * Method to register users into the SQL Database
+	 * @param code Username
+	 * @param name Name of the user
+	 * @param surname Surname of the user
+	 * @param password Password of the account
+	 * @param salary Salary of the account
+	 */
+	public static void register(String code, String name, String surname, String password, double salary) {
+		String sql = "INSERT INTO USER (CODE, NAME, SURNAME, PASSWORD, SALARY) VALUES ('" + code + "', '" + name + "', '" +surname + "', '" +password + "', " + String.valueOf(salary)+");";
+		try {
+			Connection con = connect();
+			Statement stmt = con.createStatement();
+			stmt.executeUpdate(sql);
+			con.close();
+			LOGGER.log(Level.INFO, "New user registered: " + code);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
