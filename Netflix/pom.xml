@@ -127,6 +127,7 @@
 				<artifactId>datanucleus-maven-plugin</artifactId>
 				<version>5.0.2</version>
 				<configuration>
+					<fork>false</fork>
 					<log4jConfiguration>src/resources/log4j.properties</log4jConfiguration>
 					<verbose>true</verbose>
 					<props>src/resources/datanucleus.properties</props>
