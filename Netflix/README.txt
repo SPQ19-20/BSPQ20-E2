@@ -5,4 +5,5 @@ Instructions to follow during the execution of the program:
 4. run mvn datanucleus:schema-create
 5. Execute the add-items.sql script
 6. run mvn exec:java
---USER: root PASS:root
+7. user: jorge pass:pass
+--USER: root PASS:root in mysql
