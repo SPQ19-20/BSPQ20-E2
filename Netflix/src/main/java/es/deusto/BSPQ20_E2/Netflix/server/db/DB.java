@@ -24,7 +24,7 @@ public class DB {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = null;
 		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Netflix", "root", "root");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "root");
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
 		}
