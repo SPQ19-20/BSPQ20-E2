@@ -61,7 +61,7 @@ import javax.swing.JComboBox;
  *
  */
 public class Login extends JFrame {
-	String[] Idiomas = { "es", "en" };
+	String[] Idiomas = { "en", "es" };
 	private final static Logger LOGGER = Logger.getLogger(Login.class.getName());
 	private ResourceBundle resourceBundle;
 	private static final long serialVersionUID = 1L;
@@ -69,6 +69,7 @@ public class Login extends JFrame {
 	private JTextField tfUser;
 	private JTextField tfPasswd;
 	private Font f;
+	private URLClassLoader loader;
 
 	public Login() {
 		try {
@@ -89,16 +90,13 @@ public class Login extends JFrame {
 		try {
 			File file = new File("src/main/resources/");
 			URL[] urls = { file.toURI().toURL() };
-			URLClassLoader loader = new URLClassLoader(urls);
-			//ResourceBundle resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
+			loader = new URLClassLoader(urls);
+			Locale.setDefault(Locale.forLanguageTag("en"));
 			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
-			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"), loader);
+			LOGGER.log(Level.INFO, "Language: " + resourceBundle.getLocale().toString());
 		} catch (Exception o) {
 			LOGGER.log(Level.WARNING, o.getMessage());
 		}
-		
-		
-
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
 		panel.setBounds(0, 0, 473, 235);
@@ -120,9 +118,10 @@ public class Login extends JFrame {
 		tfUser.setColumns(10);
 
 		JLabel lblPasswd = new JLabel(resourceBundle.getString("lblPasswd"));
+		lblPasswd.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblPasswd.setForeground(Color.RED);
 		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblPasswd.setBounds(37, 178, 88, 25);
+		lblPasswd.setBounds(28, 178, 88, 25);
 		panel.add(lblPasswd);
 
 		tfPasswd = new JPasswordField();
@@ -133,9 +132,10 @@ public class Login extends JFrame {
 		tfPasswd.setColumns(10);
 
 		JLabel lblUser = new JLabel(resourceBundle.getString("lblUser"));
+		lblUser.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblUser.setForeground(Color.RED);
 		lblUser.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblUser.setBounds(68, 131, 57, 36);
+		lblUser.setBounds(28, 131, 88, 36);
 		panel.add(lblUser);
 
 		JButton btnLogin = new JButton(resourceBundle.getString("btnLogin"));
@@ -143,7 +143,7 @@ public class Login extends JFrame {
 		btnLogin.setBackground(Color.BLACK);
 		btnLogin.setBounds(259, 178, 88, 30);
 		panel.add(btnLogin);
-		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 11));
 
 		JButton btnRegister = new JButton(resourceBundle.getString("btnRegister"));
 		btnRegister.setBackground(Color.BLACK);
@@ -153,6 +153,29 @@ public class Login extends JFrame {
 		panel.add(btnRegister);
 
 		JComboBox comboBox = new JComboBox(Idiomas);
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (comboBox.getSelectedItem().toString().equals("es")) {
+					resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"), loader);
+					LOGGER.log(Level.INFO, "Language set to: " + resourceBundle.getLocale().toString());
+					lblUser.setText(resourceBundle.getString("lblUser"));
+					lblPasswd.setText(resourceBundle.getString("lblPasswd"));
+					btnRegister.setText(resourceBundle.getString("btnRegister"));
+					btnLogin.setText(resourceBundle.getString("btnLogin"));
+					revalidate();
+				}
+				if (comboBox.getSelectedItem().toString().equals("en")) {
+					resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("en"), loader);
+					LOGGER.log(Level.INFO, "Language set to: " + resourceBundle.getLocale().toString());
+					lblUser.setText(resourceBundle.getString("lblUser"));
+					lblPasswd.setText(resourceBundle.getString("lblPasswd"));
+					btnRegister.setText(resourceBundle.getString("btnRegister"));
+					btnLogin.setText(resourceBundle.getString("btnLogin"));
+					revalidate();
+				}
+
+			}
+		});
 		comboBox.setBounds(415, 6, 52, 27);
 		panel.add(comboBox);
 

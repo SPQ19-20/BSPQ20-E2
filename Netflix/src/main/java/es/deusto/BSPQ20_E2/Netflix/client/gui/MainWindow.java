@@ -50,7 +50,7 @@ public class MainWindow extends JFrame {
 
 	public MainWindow(User u) {
 		getContentPane().setBackground(Color.BLACK);
-		setSize(700, 500);
+		setSize(700, 510);
 		setResizable(false);
 		getContentPane().setLayout(null);
 
@@ -88,7 +88,7 @@ public class MainWindow extends JFrame {
 
 			model.addRow(fila);
 		}
-		panel.setBounds(10, 61, 674, 399);
+		panel.setBounds(10, 61, 674, 413);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		panel.add(lblIcono);
