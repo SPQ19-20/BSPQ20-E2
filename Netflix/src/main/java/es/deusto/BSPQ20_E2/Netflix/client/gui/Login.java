@@ -11,6 +11,9 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.sql.Connection;
 
 import javax.swing.DefaultListModel;
@@ -50,23 +53,27 @@ import java.awt.Color;
 import javax.swing.UIManager;
 import javax.swing.SwingConstants;
 import javax.swing.JComboBox;
+
 /**
  * Window for the login process
+ * 
  * @author Jorge El Busto
  *
  */
 public class Login extends JFrame {
-	String[] Idiomas = {"es","en"};
+	String[] Idiomas = { "es", "en" };
 	private final static Logger LOGGER = Logger.getLogger(Login.class.getName());
-
+	private ResourceBundle resourceBundle;
 	private static final long serialVersionUID = 1L;
 	private Client client;
 	private JTextField tfUser;
 	private JTextField tfPasswd;
 	private Font f;
+
 	public Login() {
 		try {
-			f = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream(new File("src/main/resources/Bebas-Regular.ttf"))).deriveFont(Font.PLAIN, 50);
+			f = Font.createFont(Font.TRUETYPE_FONT,
+					new FileInputStream(new File("src/main/resources/Bebas-Regular.ttf"))).deriveFont(Font.PLAIN, 50);
 		} catch (FontFormatException | IOException e1) {
 			// TODO Auto-generated catch block
 			LOGGER.log(Level.WARNING, e1.getMessage());
@@ -79,9 +86,15 @@ public class Login extends JFrame {
 		setTitle("Netflix - Login");
 		setResizable(false);
 		getContentPane().setLayout(null);
-		
-		ResourceBundle resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault());
-		resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"));
+		try {
+			File file = new File("src/main/resources/");
+			URL[] urls = { file.toURI().toURL() };
+			URLClassLoader loader = new URLClassLoader(urls);
+			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
+			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"));
+		} catch (Exception o) {
+			LOGGER.log(Level.WARNING, o.getMessage());
+		}
 
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
@@ -135,11 +148,11 @@ public class Login extends JFrame {
 		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnRegister.setBounds(357, 178, 106, 30);
 		panel.add(btnRegister);
-		
+
 		JComboBox comboBox = new JComboBox(Idiomas);
 		comboBox.setBounds(415, 6, 52, 27);
 		panel.add(comboBox);
-		
+
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				RegWindow w = new RegWindow();
@@ -154,9 +167,10 @@ public class Login extends JFrame {
 					User u = DB.logged(tfUser.getText(), tfPasswd.getText());
 					if (u.getSalary() > 0) {
 						LOGGER.log(Level.INFO, "Logged in with " + u.toString());
-						MainWindow mw = new MainWindow(u); 
+						MainWindow mw = new MainWindow(u);
 						dispose();
-					} else JOptionPane.showMessageDialog(null, "Wrong password or username.");
+					} else
+						JOptionPane.showMessageDialog(null, "Wrong password or username.");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
