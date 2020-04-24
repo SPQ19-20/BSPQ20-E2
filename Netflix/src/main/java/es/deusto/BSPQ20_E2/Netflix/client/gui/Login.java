@@ -92,12 +92,9 @@ public class Login extends JFrame {
 			URLClassLoader loader = new URLClassLoader(urls);
 			//ResourceBundle resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
 			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
-			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"), loader);
 		} catch (Exception o) {
 			LOGGER.log(Level.WARNING, o.getMessage());
 		}
-		
-		
 
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
