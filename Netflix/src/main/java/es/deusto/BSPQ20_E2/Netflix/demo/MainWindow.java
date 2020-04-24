@@ -2,12 +2,15 @@ package es.deusto.BSPQ20_E2.Netflix.demo;
 
 import javax.swing.JFrame;
 
+import es.deusto.BSPQ20_E2.Netflix.client.Internationalization;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
@@ -26,6 +29,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JTextField;
+import javax.swing.JComboBox;
 /**
  * Main window with
  * @author Jorge
@@ -192,6 +196,23 @@ public class MainWindow extends JFrame {
 		btnReset.setBackground(Color.BLACK);
 		btnReset.setBounds(585, 260, 89, 23);
 		panel.add(btnReset);
+		
+		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				lblHello.setText(Internationalization.resourceBundle.getString("lblHello"));
+				lblYourCurrentSalary.setText(Internationalization.resourceBundle.getString("lblYourCurrentSalary"));
+				lblPrice.setText(Internationalization.resourceBundle.getString("lblPrice"));
+				btnBuy.setText(Internationalization.resourceBundle.getString("btnBuy"));
+				btnSearch.setText(Internationalization.resourceBundle.getString("btnSearch"));
+				lblSelectedFilm.setText(Internationalization.resourceBundle.getString("lblSelectedFilm"));
+				btnReset.setText(Internationalization.resourceBundle.getString("btnReset"));
+				revalidate();
+			}
+		});
+		comboBox.setBounds(10, 12, 52, 27);
+		getContentPane().add(comboBox);
 		setVisible(true);
 	}
 }

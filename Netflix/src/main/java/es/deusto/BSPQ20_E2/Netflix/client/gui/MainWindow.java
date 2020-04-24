@@ -7,12 +7,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -27,6 +30,7 @@ import javax.swing.table.DefaultTableModel;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
+import es.deusto.BSPQ20_E2.Netflix.client.*;
 
 /**
  * Main window of the project, with the catalog of films and selection
@@ -44,7 +48,7 @@ public class MainWindow extends JFrame {
 	private Film selected;
 	private JLabel lblName = new JLabel("");
 	private JLabel lblPrice1 = new JLabel("");
-	private JButton btnBuy = new JButton("Buy");
+	private JButton btnBuy = new JButton("");
 	private JTextField tfSearch;
 	private DefaultTableModel mdlSearch;
 
@@ -54,7 +58,8 @@ public class MainWindow extends JFrame {
 		setResizable(false);
 		getContentPane().setLayout(null);
 
-		JLabel lblHello = new JLabel("Welcome, " + u.getName());
+		btnBuy.setText(Internationalization.resourceBundle.getString("btnBuy"));
+		JLabel lblHello = new JLabel(Internationalization.resourceBundle.getString("lblHello")+ " " + u.getName());
 		lblHello.setForeground(Color.RED);
 		lblHello.setHorizontalAlignment(SwingConstants.CENTER);
 		lblHello.setFont(new Font("Tahoma", Font.BOLD, 23));
@@ -62,7 +67,7 @@ public class MainWindow extends JFrame {
 		getContentPane().add(lblHello);
 		JLabel lblIcono = new JLabel("");
 		lblIcono.setBounds(501, 145, 101, 140);
-		JLabel lblYourCurrentSalary = new JLabel("Your current salary is " + u.getSalary() + "$");
+		JLabel lblYourCurrentSalary = new JLabel(Internationalization.resourceBundle.getString("lblYourCurrentSalary")+ " "  + u.getSalary() + "$");
 		lblYourCurrentSalary.setForeground(Color.RED);
 		lblYourCurrentSalary.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblYourCurrentSalary.setBounds(480, 36, 204, 14);
@@ -92,7 +97,7 @@ public class MainWindow extends JFrame {
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		panel.add(lblIcono);
-		JButton btnSearch = new JButton("Search");
+		JButton btnSearch = new JButton(Internationalization.resourceBundle.getString("btnSearch"));
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				table.clearSelection();
@@ -175,13 +180,13 @@ public class MainWindow extends JFrame {
 		panel.add(lblName);
 		lblName.setForeground(Color.WHITE);
 
-		JLabel lblSelectedFilm = new JLabel("Selected Film: ");
+		JLabel lblSelectedFilm = new JLabel(Internationalization.resourceBundle.getString("lblSelectedFilm"));
 		lblSelectedFilm.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblSelectedFilm.setBounds(423, 59, 94, 27);
 		panel.add(lblSelectedFilm);
 		lblSelectedFilm.setForeground(Color.RED);
 
-		JLabel lblPrice = new JLabel("Price: ");
+		JLabel lblPrice = new JLabel(Internationalization.resourceBundle.getString("lblPrice"));
 		lblPrice.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblPrice.setForeground(Color.RED);
 		lblPrice.setBounds(471, 104, 46, 14);
@@ -206,7 +211,7 @@ public class MainWindow extends JFrame {
 
 		
 
-		JButton btnReset = new JButton("Reset query");
+		JButton btnReset = new JButton(Internationalization.resourceBundle.getString("btnReset"));
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				table.clearSelection();
@@ -220,7 +225,25 @@ public class MainWindow extends JFrame {
 		btnReset.setBackground(Color.BLACK);
 		btnReset.setBounds(585, 323, 89, 23);
 		panel.add(btnReset);
+		
+		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				lblHello.setText(Internationalization.resourceBundle.getString("lblHello")+ " " + u.getName());
+				lblYourCurrentSalary.setText(Internationalization.resourceBundle.getString("lblYourCurrentSalary")+ " "  + u.getSalary() + "$");
+				lblPrice.setText(Internationalization.resourceBundle.getString("lblPrice"));
+				btnBuy.setText(Internationalization.resourceBundle.getString("btnBuy"));
+				btnSearch.setText(Internationalization.resourceBundle.getString("btnSearch"));
+				lblSelectedFilm.setText(Internationalization.resourceBundle.getString("lblSelectedFilm"));
+				btnReset.setText(Internationalization.resourceBundle.getString("btnReset"));
+				revalidate();
+			}
+		});
+		comboBox.setBounds(10, 12, 52, 27);
+		getContentPane().add(comboBox);
 
 		setVisible(true);
 	}
+
 }
