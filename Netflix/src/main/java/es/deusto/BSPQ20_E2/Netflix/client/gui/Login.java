@@ -35,6 +35,8 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
 import java.util.List;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -46,12 +48,15 @@ import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 import java.awt.Color;
 import javax.swing.UIManager;
+import javax.swing.SwingConstants;
+import javax.swing.JComboBox;
 /**
  * Window for the login process
  * @author Jorge El Busto
  *
  */
 public class Login extends JFrame {
+	String[] Idiomas = {"es","en"};
 	private final static Logger LOGGER = Logger.getLogger(Login.class.getName());
 
 	private static final long serialVersionUID = 1L;
@@ -74,6 +79,9 @@ public class Login extends JFrame {
 		setTitle("Netflix - Login");
 		setResizable(false);
 		getContentPane().setLayout(null);
+		
+		ResourceBundle resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault());
+		resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"));
 
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
@@ -82,6 +90,7 @@ public class Login extends JFrame {
 		panel.setLayout(null);
 
 		JLabel lblNetflix = new JLabel("Netflix");
+		lblNetflix.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNetflix.setFont(f);
 		lblNetflix.setForeground(Color.RED);
 		lblNetflix.setBounds(145, 36, 188, 68);
@@ -94,7 +103,7 @@ public class Login extends JFrame {
 		panel.add(tfUser);
 		tfUser.setColumns(10);
 
-		JLabel lblPasswd = new JLabel("Password:");
+		JLabel lblPasswd = new JLabel(resourceBundle.getString("lblPasswd"));
 		lblPasswd.setForeground(Color.RED);
 		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblPasswd.setBounds(37, 178, 88, 25);
@@ -107,25 +116,30 @@ public class Login extends JFrame {
 		panel.add(tfPasswd);
 		tfPasswd.setColumns(10);
 
-		JLabel lblUser = new JLabel("User:");
+		JLabel lblUser = new JLabel(resourceBundle.getString("lblUser"));
 		lblUser.setForeground(Color.RED);
 		lblUser.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblUser.setBounds(68, 131, 57, 36);
 		panel.add(lblUser);
 
-		JButton btnLogin = new JButton("Login");
+		JButton btnLogin = new JButton(resourceBundle.getString("btnLogin"));
 		btnLogin.setForeground(Color.RED);
 		btnLogin.setBackground(Color.BLACK);
 		btnLogin.setBounds(259, 178, 88, 30);
 		panel.add(btnLogin);
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 14));
 
-		JButton btnRegister = new JButton("Register");
+		JButton btnRegister = new JButton(resourceBundle.getString("btnregister"));
 		btnRegister.setBackground(Color.BLACK);
 		btnRegister.setForeground(Color.RED);
 		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnRegister.setBounds(357, 178, 106, 30);
 		panel.add(btnRegister);
+		
+		JComboBox comboBox = new JComboBox(Idiomas);
+		comboBox.setBounds(415, 6, 52, 27);
+		panel.add(comboBox);
+		
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				RegWindow w = new RegWindow();
