@@ -45,6 +45,7 @@ import java.util.logging.Logger;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
+import es.deusto.BSPQ20_E2.Netflix.client.*;
 
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -61,15 +62,14 @@ import javax.swing.JComboBox;
  *
  */
 public class Login extends JFrame {
-	String[] Idiomas = { "en", "es" };
 	private final static Logger LOGGER = Logger.getLogger(Login.class.getName());
-	private ResourceBundle resourceBundle;
 	private static final long serialVersionUID = 1L;
 	private Client client;
 	private JTextField tfUser;
 	private JTextField tfPasswd;
 	private Font f;
 	private URLClassLoader loader;
+	
 
 	public Login() {
 		try {
@@ -92,8 +92,8 @@ public class Login extends JFrame {
 			URL[] urls = { file.toURI().toURL() };
 			loader = new URLClassLoader(urls);
 			Locale.setDefault(Locale.forLanguageTag("en"));
-			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
-			LOGGER.log(Level.INFO, "Language: " + resourceBundle.getLocale().toString());
+			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
+			LOGGER.log(Level.INFO, "Language: " + Internationalization.resourceBundle.getLocale().toString());
 		} catch (Exception o) {
 			LOGGER.log(Level.WARNING, o.getMessage());
 		}
@@ -117,7 +117,7 @@ public class Login extends JFrame {
 		panel.add(tfUser);
 		tfUser.setColumns(10);
 
-		JLabel lblPasswd = new JLabel(resourceBundle.getString("lblPasswd"));
+		JLabel lblPasswd = new JLabel(Internationalization.resourceBundle.getString("lblPasswd"));
 		lblPasswd.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblPasswd.setForeground(Color.RED);
 		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -131,49 +131,36 @@ public class Login extends JFrame {
 		panel.add(tfPasswd);
 		tfPasswd.setColumns(10);
 
-		JLabel lblUser = new JLabel(resourceBundle.getString("lblUser"));
+		JLabel lblUser = new JLabel(Internationalization.resourceBundle.getString("lblUser"));
 		lblUser.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblUser.setForeground(Color.RED);
 		lblUser.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblUser.setBounds(28, 131, 88, 36);
 		panel.add(lblUser);
 
-		JButton btnLogin = new JButton(resourceBundle.getString("btnLogin"));
+		JButton btnLogin = new JButton(Internationalization.resourceBundle.getString("btnLogin"));
 		btnLogin.setForeground(Color.RED);
 		btnLogin.setBackground(Color.BLACK);
 		btnLogin.setBounds(259, 178, 88, 30);
 		panel.add(btnLogin);
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 11));
 
-		JButton btnRegister = new JButton(resourceBundle.getString("btnRegister"));
+		JButton btnRegister = new JButton(Internationalization.resourceBundle.getString("btnRegister"));
 		btnRegister.setBackground(Color.BLACK);
 		btnRegister.setForeground(Color.RED);
 		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnRegister.setBounds(357, 178, 106, 30);
 		panel.add(btnRegister);
 
-		JComboBox comboBox = new JComboBox(Idiomas);
+		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (comboBox.getSelectedItem().toString().equals("es")) {
-					resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"), loader);
-					LOGGER.log(Level.INFO, "Language set to: " + resourceBundle.getLocale().toString());
-					lblUser.setText(resourceBundle.getString("lblUser"));
-					lblPasswd.setText(resourceBundle.getString("lblPasswd"));
-					btnRegister.setText(resourceBundle.getString("btnRegister"));
-					btnLogin.setText(resourceBundle.getString("btnLogin"));
-					revalidate();
-				}
-				if (comboBox.getSelectedItem().toString().equals("en")) {
-					resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("en"), loader);
-					LOGGER.log(Level.INFO, "Language set to: " + resourceBundle.getLocale().toString());
-					lblUser.setText(resourceBundle.getString("lblUser"));
-					lblPasswd.setText(resourceBundle.getString("lblPasswd"));
-					btnRegister.setText(resourceBundle.getString("btnRegister"));
-					btnLogin.setText(resourceBundle.getString("btnLogin"));
-					revalidate();
-				}
-
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), loader);
+				lblUser.setText(Internationalization.resourceBundle.getString("lblUser"));
+				lblPasswd.setText(Internationalization.resourceBundle.getString("lblPasswd"));
+				btnRegister.setText(Internationalization.resourceBundle.getString("btnRegister"));
+				btnLogin.setText(Internationalization.resourceBundle.getString("btnLogin"));
+				revalidate();
 			}
 		});
 		comboBox.setBounds(415, 6, 52, 27);
