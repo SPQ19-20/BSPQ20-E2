@@ -90,11 +90,14 @@ public class Login extends JFrame {
 			File file = new File("src/main/resources/");
 			URL[] urls = { file.toURI().toURL() };
 			URLClassLoader loader = new URLClassLoader(urls);
+			//ResourceBundle resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
 			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
-			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"));
+			resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag("es"), loader);
 		} catch (Exception o) {
 			LOGGER.log(Level.WARNING, o.getMessage());
 		}
+		
+		
 
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
@@ -142,7 +145,7 @@ public class Login extends JFrame {
 		panel.add(btnLogin);
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 14));
 
-		JButton btnRegister = new JButton(resourceBundle.getString("btnregister"));
+		JButton btnRegister = new JButton(resourceBundle.getString("btnRegister"));
 		btnRegister.setBackground(Color.BLACK);
 		btnRegister.setForeground(Color.RED);
 		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
