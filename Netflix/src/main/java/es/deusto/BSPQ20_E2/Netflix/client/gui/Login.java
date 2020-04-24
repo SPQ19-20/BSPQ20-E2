@@ -68,7 +68,7 @@ public class Login extends JFrame {
 	private JTextField tfUser;
 	private JTextField tfPasswd;
 	private Font f;
-	private URLClassLoader loader;
+
 	
 
 	public Login() {
@@ -90,9 +90,9 @@ public class Login extends JFrame {
 		try {
 			File file = new File("src/main/resources/");
 			URL[] urls = { file.toURI().toURL() };
-			loader = new URLClassLoader(urls);
+			Internationalization.loader = new URLClassLoader(urls);
 			Locale.setDefault(Locale.forLanguageTag("en"));
-			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), loader);
+			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), Internationalization.loader);
 			LOGGER.log(Level.INFO, "Language: " + Internationalization.resourceBundle.getLocale().toString());
 		} catch (Exception o) {
 			LOGGER.log(Level.WARNING, o.getMessage());
@@ -155,7 +155,7 @@ public class Login extends JFrame {
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), loader);
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
 				lblUser.setText(Internationalization.resourceBundle.getString("lblUser"));
 				lblPasswd.setText(Internationalization.resourceBundle.getString("lblPasswd"));
 				btnRegister.setText(Internationalization.resourceBundle.getString("btnRegister"));

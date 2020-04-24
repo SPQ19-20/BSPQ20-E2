@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -14,6 +15,7 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -223,6 +225,23 @@ public class MainWindow extends JFrame {
 		btnReset.setBackground(Color.BLACK);
 		btnReset.setBounds(585, 323, 89, 23);
 		panel.add(btnReset);
+		
+		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				lblHello.setText(Internationalization.resourceBundle.getString("lblHello")+ " " + u.getName());
+				lblYourCurrentSalary.setText(Internationalization.resourceBundle.getString("lblYourCurrentSalary")+ " "  + u.getSalary() + "$");
+				lblPrice.setText(Internationalization.resourceBundle.getString("lblPrice"));
+				btnBuy.setText(Internationalization.resourceBundle.getString("btnBuy"));
+				btnSearch.setText(Internationalization.resourceBundle.getString("btnSearch"));
+				lblSelectedFilm.setText(Internationalization.resourceBundle.getString("lblSelectedFilm"));
+				btnReset.setText(Internationalization.resourceBundle.getString("btnReset"));
+				revalidate();
+			}
+		});
+		comboBox.setBounds(10, 12, 52, 27);
+		getContentPane().add(comboBox);
 
 		setVisible(true);
 	}
