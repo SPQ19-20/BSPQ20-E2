@@ -13,19 +13,32 @@ import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
  * @author Diego Rojo
  *
  */
-
-
 public class ClientTest{
 	
+	/**
+	 * @param u user created to check the methods
+	 * @param f film created to check the methods
+	 *
+	 */
 	private static User u;
 	private static Film f;
 	
+	
+	/**
+	 * Method that set up the values of the user and film
+	 *
+	 */
 	@BeforeClass
-	 public static void setUpClass() throws Exception{
+	 public static void setUpValues() throws Exception{
 	 u = new User("U-01", "Diego", "Rojo", "1234", 25);
 	 f = new Film("F-01", "Thor", "Action", "Taika Waititi", 2011, 4, "www.thorfilm.com");
 	 }
 	 
+	
+	/**
+	 * Method that checks that the price of the film is well discounted of the salary
+	 *
+	 */
 	@Test
 	 public void checkSetSalary() {
 		 DB.buyFilm(f, u);
