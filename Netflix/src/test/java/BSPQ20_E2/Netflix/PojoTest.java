@@ -19,8 +19,8 @@ public class PojoTest {
 	 * @param f film created to check the methods
 	 *
 	 */
-	private User u;
-	private Film f;
+	private static User u;
+	private static Film f;
 	
 	
 	/**
@@ -28,7 +28,7 @@ public class PojoTest {
 	 *
 	 */
 	@BeforeClass
-	 public void setUp() {
+	 public static void setUp() {
 	 u= new User(null, null, null, null, 0);
 	 f = new Film(null, null, null, null, 1960, 0, null);
 	 }
