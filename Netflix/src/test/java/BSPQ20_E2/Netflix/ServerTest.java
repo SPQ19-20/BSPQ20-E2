@@ -4,7 +4,10 @@ import static org.junit.Assert.assertTrue;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.junit.Test;
 
@@ -98,7 +101,25 @@ public class ServerTest {
 		}
 	}
 	
-	//TODO put test to check registration
+	/**
+	 * Method that tests the register method
+	 */
+	@Test
+	public void checkRegistration() {
+		final Logger LOGGER = Logger.getLogger(DB.class.getName());
+		String code="Diego30";
+		DB.register(code, "Diego", "Rojo", "1234", 25);
+		String sql = "SELECT FROM USER WHERE CODE = '" + code + "'";
+		try {
+			Connection con = DB.connect();
+			Statement stmt = con.createStatement();
+			stmt.executeUpdate(sql);
+			con.close();
+			LOGGER.log(Level.INFO, "New user registered: " + code);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
 	
 
 }
