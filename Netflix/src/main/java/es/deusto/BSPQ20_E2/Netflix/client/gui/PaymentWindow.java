@@ -1,4 +1,5 @@
 package es.deusto.BSPQ20_E2.Netflix.client.gui;
+
 /**
  * Window used for the last step of the transaction of buying a film
  * @author Jorge El Busto
@@ -78,8 +79,12 @@ public class PaymentWindow extends JFrame {
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DB.buyFilm(f, u);
-				u.setSalary(u.getSalary()-f.getPrice());
+				u.setSalary(u.getSalary() - f.getPrice());
 				JOptionPane.showMessageDialog(null, "Film " + f.getTitle() + " has been bought successfully");
+				if (DB.getBoughtFilmsCount(u) > 0 && DB.getBoughtFilmsCount(u) % 3 == 0) {
+					JOptionPane.showMessageDialog(null, "Congratulations, you've bought " + DB.getBoughtFilmsCount(u)
+							+ " films! You will get " + DB.freeFilm(u).getTitle() + " for free.");
+				}
 				dispose();
 				MainWindow updated = new MainWindow(u);
 			}
@@ -89,22 +94,22 @@ public class PaymentWindow extends JFrame {
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnLogin.setBounds(224, 174, 110, 20);
 		panel.add(btnLogin);
-		
+
 		JLabel lblPal = new JLabel("Pal");
 		lblPal.setForeground(new Color(30, 144, 255));
 		lblPal.setFont(new Font("Tahoma", Font.BOLD, 43));
 		lblPal.setBounds(179, 45, 96, 42);
 		panel.add(lblPal);
-		
+
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
+						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
 				lblUser.setText(Internationalization.resourceBundle.getString("lblUser"));
 				lblPasswd.setText(Internationalization.resourceBundle.getString("lblPasswd"));
 				btnLogin.setText(Internationalization.resourceBundle.getString("btnLogin"));
 				revalidate();
-				
 			}
 		});
 		comboBox.setBounds(282, 6, 52, 27);

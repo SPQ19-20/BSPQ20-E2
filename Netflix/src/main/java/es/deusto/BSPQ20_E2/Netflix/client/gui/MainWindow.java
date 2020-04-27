@@ -18,6 +18,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -59,7 +60,7 @@ public class MainWindow extends JFrame {
 		getContentPane().setLayout(null);
 
 		btnBuy.setText(Internationalization.resourceBundle.getString("btnBuy"));
-		JLabel lblHello = new JLabel(Internationalization.resourceBundle.getString("lblHello")+ " " + u.getName());
+		JLabel lblHello = new JLabel(Internationalization.resourceBundle.getString("lblHello") + " " + u.getName());
 		lblHello.setForeground(Color.RED);
 		lblHello.setHorizontalAlignment(SwingConstants.CENTER);
 		lblHello.setFont(new Font("Tahoma", Font.BOLD, 23));
@@ -67,7 +68,8 @@ public class MainWindow extends JFrame {
 		getContentPane().add(lblHello);
 		JLabel lblIcono = new JLabel("");
 		lblIcono.setBounds(501, 145, 101, 140);
-		JLabel lblYourCurrentSalary = new JLabel(Internationalization.resourceBundle.getString("lblYourCurrentSalary")+ " "  + u.getSalary() + "$");
+		JLabel lblYourCurrentSalary = new JLabel(
+				Internationalization.resourceBundle.getString("lblYourCurrentSalary") + " " + u.getSalary() + "$");
 		lblYourCurrentSalary.setForeground(Color.RED);
 		lblYourCurrentSalary.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblYourCurrentSalary.setBounds(480, 36, 204, 14);
@@ -153,17 +155,17 @@ public class MainWindow extends JFrame {
 						ImageIcon icRsz = new ImageIcon(newimg);
 						lblIcono.setIcon(icRsz);
 					} catch (Exception eee) {
-						LOGGER.warn( eee.getMessage());
+						LOGGER.warn(eee.getMessage());
 					}
 				}
-				
+
 			}
 		});
 		btnBuy.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
+
 				PaymentWindow dp;
 				if (table.getModel() == model)
 					dp = new PaymentWindow(u, films.get(table.getSelectedRow()));
@@ -180,15 +182,17 @@ public class MainWindow extends JFrame {
 		lblName.setForeground(Color.WHITE);
 
 		JLabel lblSelectedFilm = new JLabel(Internationalization.resourceBundle.getString("lblSelectedFilm"));
+		lblSelectedFilm.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblSelectedFilm.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblSelectedFilm.setBounds(423, 59, 94, 27);
 		panel.add(lblSelectedFilm);
 		lblSelectedFilm.setForeground(Color.RED);
 
 		JLabel lblPrice = new JLabel(Internationalization.resourceBundle.getString("lblPrice"));
+		lblPrice.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblPrice.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblPrice.setForeground(Color.RED);
-		lblPrice.setBounds(471, 104, 46, 14);
+		lblPrice.setBounds(423, 104, 94, 14);
 		panel.add(lblPrice);
 
 		lblPrice1.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -208,8 +212,6 @@ public class MainWindow extends JFrame {
 		panel.add(tfSearch);
 		tfSearch.setColumns(10);
 
-		
-
 		JButton btnReset = new JButton(Internationalization.resourceBundle.getString("btnReset"));
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -224,13 +226,15 @@ public class MainWindow extends JFrame {
 		btnReset.setBackground(Color.BLACK);
 		btnReset.setBounds(585, 323, 89, 23);
 		panel.add(btnReset);
-		
+
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
-				lblHello.setText(Internationalization.resourceBundle.getString("lblHello")+ " " + u.getName());
-				lblYourCurrentSalary.setText(Internationalization.resourceBundle.getString("lblYourCurrentSalary")+ " "  + u.getSalary() + "$");
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
+						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				lblHello.setText(Internationalization.resourceBundle.getString("lblHello") + " " + u.getName());
+				lblYourCurrentSalary.setText(Internationalization.resourceBundle.getString("lblYourCurrentSalary") + " "
+						+ u.getSalary() + "$");
 				lblPrice.setText(Internationalization.resourceBundle.getString("lblPrice"));
 				btnBuy.setText(Internationalization.resourceBundle.getString("btnBuy"));
 				btnSearch.setText(Internationalization.resourceBundle.getString("btnSearch"));
@@ -242,7 +246,33 @@ public class MainWindow extends JFrame {
 		comboBox.setBounds(10, 12, 52, 27);
 		getContentPane().add(comboBox);
 
+		JButton btnCheckFilms = new JButton(Internationalization.resourceBundle.getString("btnCheckFilms"));
+		btnCheckFilms.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ArrayList<Film> myFilms = null;
+				try {
+					myFilms = DB.myFilms(u);
+
+				} catch (Exception f) {
+					f.printStackTrace();
+				}
+				if (myFilms.size() > 0) {
+					String message = "List of " + u.getName() + "'s films:";
+					for (int i = 0; i<myFilms.size();i++) {
+						message += "\n" + (i+1) + "- " + myFilms.get(i).toString();
+					}
+					LOGGER.info(message);
+					JOptionPane.showMessageDialog(null, message);
+				} else JOptionPane.showMessageDialog(null, "No films bought yet.");
+
+			}
+		});
+		btnCheckFilms.setForeground(Color.RED);
+		btnCheckFilms.setFont(new Font("Tahoma", Font.BOLD, 9));
+		btnCheckFilms.setBackground(Color.BLACK);
+		btnCheckFilms.setBounds(564, 12, 120, 13);
+		getContentPane().add(btnCheckFilms);
+
 		setVisible(true);
 	}
-
 }

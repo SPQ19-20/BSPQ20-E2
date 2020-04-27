@@ -5,7 +5,11 @@ import javax.swing.JFrame;
 import es.deusto.BSPQ20_E2.Netflix.client.Internationalization;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
+import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
+
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.sql.Connection;
 import java.util.ArrayList;
@@ -65,7 +69,9 @@ public class MainWindow extends JFrame {
 		lblYourCurrentSalary.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblYourCurrentSalary.setBounds(480, 36, 204, 14);
 		getContentPane().add(lblYourCurrentSalary);
-
+		if(DB.getBoughtFilmsCount(u)>2) {
+			JOptionPane.showMessageDialog(this, "Congratulations, you've bought 5 films! You will get one for free.");
+		}
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
 		String[] colNames = { "Title", "Genre", "Director", "Year", "Price" };

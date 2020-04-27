@@ -85,4 +85,5 @@ public class ClientTest {
 			assertEquals(2010, queryResult.get(i).getYear());
 	}
 
+
 }

@@ -7574,3 +7574,820 @@ Caused by: java.net.ConnectException: Connection refused: connect
 08:59:29,980 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "/Users/Orue/Documents/GitHub/BSPQ20-E2/Netflix/target/classes/es/deusto/BSPQ20_E2/Netflix/pojo/User.class" con definicion enhanced
 08:59:29,981 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
 08:59:29,982 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=145 ms, enhance=57 ms, total=202 ms. Compruebe el LOG para los detalles
+19:08:33,154 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:08:33,603 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:08:33,603 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:08:33,611 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:08:33,612 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:08:33,621 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:08:33,621 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:08:33,625 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=378 ms, enhance=75 ms, total=453 ms. Compruebe el LOG para los detalles
+19:08:34,080 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19:08:34,083 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19:08:34,085 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+19:08:35,524 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:08:35,753 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19:08:35,755 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19:08:35,758 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+19:08:35,763 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+19:08:35,770 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+19:08:35,773 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+19:08:35,776 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19:08:35,778 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19:08:35,782 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19:08:35,784 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19:08:35,786 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19:08:35,788 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19:08:35,793 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19:08:35,795 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+19:08:35,799 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+19:08:35,806 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+19:08:35,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+19:08:35,818 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+19:08:35,825 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+19:08:35,831 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+19:08:35,837 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+19:08:35,843 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+19:08:35,850 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+19:08:35,855 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+19:08:35,861 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+19:08:35,868 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+19:08:35,873 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+19:08:35,880 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+19:08:35,886 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+19:08:35,892 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+19:08:35,898 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+19:08:35,904 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+19:08:35,908 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+19:08:35,914 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+19:08:35,918 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+19:08:35,924 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+19:08:35,930 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+19:08:35,935 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+19:08:35,941 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+19:08:35,948 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+19:08:35,954 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+19:08:35,962 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+19:08:35,970 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+19:08:35,975 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+19:08:35,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+19:08:35,986 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+19:08:35,991 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+19:08:35,996 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+19:08:36,001 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+19:08:36,006 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+19:08:36,012 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+19:08:36,017 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+19:08:36,024 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+19:08:36,028 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+19:08:36,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+19:08:36,040 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+19:08:36,045 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+19:08:36,051 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+19:08:36,056 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+19:08:36,062 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+19:08:36,500 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,500 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,500 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,500 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,500 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,542 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,543 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,543 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,543 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:08:36,812 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:26:32,966 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:26:33,397 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:26:33,398 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:26:33,407 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:26:33,408 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:26:33,416 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:26:33,416 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:26:33,419 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=337 ms, enhance=102 ms, total=439 ms. Compruebe el LOG para los detalles
+19:27:54,840 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:27:55,191 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:27:55,192 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:27:55,200 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:27:55,201 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:27:55,209 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:27:55,209 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:27:55,213 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=289 ms, enhance=70 ms, total=359 ms. Compruebe el LOG para los detalles
+19:29:29,743 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:29:30,161 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:29:30,162 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:29:30,170 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:29:30,170 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:29:30,180 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:29:30,181 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:29:30,183 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=357 ms, enhance=69 ms, total=426 ms. Compruebe el LOG para los detalles
+19:30:36,749 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:30:37,105 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:30:37,106 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:30:37,114 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:30:37,115 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:30:37,123 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:30:37,123 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:30:37,127 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=297 ms, enhance=68 ms, total=365 ms. Compruebe el LOG para los detalles
+19:31:47,742 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:31:48,188 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:31:48,189 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:31:48,197 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:31:48,197 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:31:48,206 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:31:48,207 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:31:48,210 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=386 ms, enhance=67 ms, total=453 ms. Compruebe el LOG para los detalles
+19:32:26,039 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:32:26,455 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:32:26,456 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:32:26,464 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:32:26,465 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:32:26,473 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:32:26,474 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:32:26,477 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=353 ms, enhance=67 ms, total=420 ms. Compruebe el LOG para los detalles
+19:34:41,347 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:34:41,747 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:34:41,748 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:34:41,756 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:34:41,757 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:34:41,764 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:34:41,765 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:34:41,769 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=329 ms, enhance=77 ms, total=406 ms. Compruebe el LOG para los detalles
+19:50:06,023 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:50:06,452 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:50:06,452 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:50:06,460 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:50:06,460 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:50:06,470 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:50:06,471 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:50:06,474 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=358 ms, enhance=70 ms, total=428 ms. Compruebe el LOG para los detalles
+19:50:06,864 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19:50:06,866 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19:50:06,868 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+19:50:07,987 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:50:08,196 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19:50:08,198 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19:50:08,200 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+19:50:08,203 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+19:50:08,211 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+19:50:08,214 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+19:50:08,219 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19:50:08,220 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19:50:08,223 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19:50:08,225 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19:50:08,228 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19:50:08,230 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19:50:08,237 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19:50:08,239 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+19:50:08,243 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+19:50:08,250 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+19:50:08,258 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+19:50:08,266 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+19:50:08,273 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+19:50:08,279 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+19:50:08,286 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+19:50:08,293 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+19:50:08,300 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+19:50:08,307 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+19:50:08,313 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+19:50:08,320 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+19:50:08,326 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+19:50:08,333 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+19:50:08,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+19:50:08,352 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+19:50:08,359 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+19:50:08,365 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+19:50:08,372 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+19:50:08,377 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+19:50:08,383 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+19:50:08,389 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+19:50:08,395 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+19:50:08,404 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+19:50:08,413 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+19:50:08,424 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+19:50:08,432 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+19:50:08,440 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+19:50:08,447 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+19:50:08,452 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+19:50:08,458 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+19:50:08,463 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+19:50:08,467 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+19:50:08,473 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+19:50:08,478 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+19:50:08,483 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+19:50:08,488 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+19:50:08,495 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+19:50:08,501 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+19:50:08,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+19:50:08,513 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+19:50:08,521 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+19:50:08,527 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+19:50:08,532 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+19:50:08,539 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+19:50:08,546 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+19:50:08,966 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:08,967 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:08,967 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:08,967 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:08,967 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:09,053 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:09,053 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:09,053 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:09,053 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+19:50:09,249 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:50:47,853 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:50:48,254 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:50:48,254 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:50:48,263 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:50:48,264 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:50:48,273 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:50:48,274 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:50:48,278 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=330 ms, enhance=80 ms, total=410 ms. Compruebe el LOG para los detalles
+19:50:48,692 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19:50:48,695 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19:50:48,697 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+19:50:49,807 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:50:49,994 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19:50:49,997 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19:50:49,999 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+19:50:50,001 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+19:50:50,008 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+19:50:50,010 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+19:50:50,012 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19:50:50,014 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19:50:50,017 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19:50:50,019 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19:50:50,021 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19:50:50,024 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19:50:50,027 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19:50:50,028 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+19:50:50,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+19:50:50,039 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+19:50:50,045 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+19:50:50,052 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+19:50:50,056 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+19:50:50,062 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+19:50:50,068 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+19:50:50,074 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+19:50:50,080 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+19:50:50,085 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+19:50:50,092 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+19:50:50,098 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+19:50:50,105 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+19:50:50,111 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+19:50:50,117 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+19:50:50,122 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+19:50:50,128 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+19:50:50,134 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+19:50:50,138 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+19:50:50,143 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+19:50:50,148 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+19:50:50,154 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+19:50:50,160 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+19:50:50,165 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+19:50:50,171 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+19:50:50,176 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+19:50:50,182 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+19:50:50,188 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+19:50:50,193 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+19:50:50,199 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+19:50:50,205 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+19:50:50,209 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+19:50:50,214 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+19:50:50,219 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+19:50:50,224 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+19:50:50,229 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+19:50:50,236 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+19:50:50,242 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+19:50:50,246 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+19:50:50,252 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+19:50:50,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+19:50:50,267 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+19:50:50,274 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+19:50:50,281 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+19:50:50,288 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+19:50:50,294 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+19:50:50,909 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:51:45,428 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:51:45,787 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:51:45,788 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:51:45,797 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:51:45,798 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:51:45,804 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:51:45,805 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:51:45,810 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=295 ms, enhance=72 ms, total=367 ms. Compruebe el LOG para los detalles
+19:51:46,229 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19:51:46,232 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19:51:46,234 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+19:51:47,475 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:51:47,679 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19:51:47,681 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19:51:47,684 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+19:51:47,687 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+19:51:47,694 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+19:51:47,696 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+19:51:47,698 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19:51:47,700 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19:51:47,702 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19:51:47,705 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19:51:47,708 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19:51:47,710 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19:51:47,713 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19:51:47,714 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+19:51:47,720 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+19:51:47,726 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+19:51:47,732 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+19:51:47,737 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+19:51:47,742 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+19:51:47,748 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+19:51:47,753 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+19:51:47,759 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+19:51:47,764 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+19:51:47,769 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+19:51:47,776 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+19:51:47,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+19:51:47,787 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+19:51:47,793 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+19:51:47,798 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+19:51:47,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+19:51:47,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+19:51:47,815 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+19:51:47,820 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+19:51:47,824 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+19:51:47,829 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+19:51:47,833 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+19:51:47,838 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+19:51:47,843 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+19:51:47,849 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+19:51:47,855 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+19:51:47,859 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+19:51:47,865 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+19:51:47,870 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+19:51:47,875 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+19:51:47,880 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+19:51:47,885 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+19:51:47,889 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+19:51:47,894 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+19:51:47,899 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+19:51:47,904 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+19:51:47,908 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+19:51:47,913 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+19:51:47,917 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+19:51:47,922 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+19:51:47,926 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+19:51:47,933 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+19:51:47,939 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+19:51:47,943 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+19:51:47,949 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+19:51:47,953 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+19:51:48,407 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:53:28,274 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:53:28,630 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:53:28,631 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:53:28,639 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:53:28,640 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:53:28,649 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:53:28,650 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:53:28,654 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=295 ms, enhance=71 ms, total=366 ms. Compruebe el LOG para los detalles
+19:53:29,100 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19:53:29,103 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19:53:29,105 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+19:53:30,162 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:53:30,352 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19:53:30,355 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19:53:30,357 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+19:53:30,360 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+19:53:30,368 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+19:53:30,369 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+19:53:30,372 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19:53:30,374 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19:53:30,376 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19:53:30,378 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19:53:30,381 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19:53:30,383 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19:53:30,387 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19:53:30,388 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+19:53:30,394 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+19:53:30,400 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+19:53:30,405 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+19:53:30,411 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+19:53:30,416 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+19:53:30,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+19:53:30,429 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+19:53:30,435 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+19:53:30,441 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+19:53:30,447 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+19:53:30,453 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+19:53:30,459 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+19:53:30,465 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+19:53:30,471 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+19:53:30,477 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+19:53:30,483 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+19:53:30,488 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+19:53:30,493 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+19:53:30,498 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+19:53:30,503 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+19:53:30,508 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+19:53:30,513 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+19:53:30,519 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+19:53:30,524 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+19:53:30,530 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+19:53:30,536 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+19:53:30,541 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+19:53:30,547 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+19:53:30,552 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+19:53:30,558 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+19:53:30,564 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+19:53:30,568 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+19:53:30,574 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+19:53:30,578 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+19:53:30,584 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+19:53:30,588 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+19:53:30,594 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+19:53:30,598 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+19:53:30,603 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+19:53:30,608 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+19:53:30,613 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+19:53:30,618 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+19:53:30,623 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+19:53:30,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+19:53:30,634 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+19:53:30,639 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+19:53:31,098 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:54:34,640 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:54:35,040 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+19:54:35,041 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+19:54:35,049 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+19:54:35,050 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+19:54:35,058 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+19:54:35,058 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+19:54:35,062 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=327 ms, enhance=80 ms, total=407 ms. Compruebe el LOG para los detalles
+19:54:35,453 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19:54:35,455 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19:54:35,457 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+19:54:36,535 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:54:36,732 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+19:54:36,734 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+19:54:36,736 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+19:54:36,739 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+19:54:36,746 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+19:54:36,748 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+19:54:36,751 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+19:54:36,753 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+19:54:36,755 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+19:54:36,757 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+19:54:36,760 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+19:54:36,762 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+19:54:36,765 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19:54:36,766 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+19:54:36,772 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+19:54:36,778 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+19:54:36,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+19:54:36,789 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+19:54:36,793 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+19:54:36,800 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+19:54:36,806 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+19:54:36,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+19:54:36,817 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+19:54:36,823 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+19:54:36,828 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+19:54:36,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+19:54:36,842 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+19:54:36,847 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+19:54:36,853 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+19:54:36,859 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+19:54:36,865 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+19:54:36,870 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+19:54:36,874 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+19:54:36,880 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+19:54:36,884 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+19:54:36,889 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+19:54:36,895 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+19:54:36,900 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+19:54:36,906 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+19:54:36,911 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+19:54:36,917 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+19:54:36,923 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+19:54:36,928 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+19:54:36,934 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+19:54:36,939 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+19:54:36,944 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+19:54:36,949 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+19:54:36,954 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+19:54:36,959 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+19:54:36,965 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+19:54:36,970 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+19:54:36,974 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+19:54:36,980 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+19:54:36,984 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+19:54:36,989 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+19:54:36,995 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+19:54:36,999 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+19:54:37,005 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+19:54:37,010 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+19:54:37,015 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+19:54:37,455 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+20:26:25,801 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+20:26:25,804 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+20:26:25,806 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+20:26:27,177 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:26:27,375 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+20:26:27,378 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+20:26:27,380 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+20:26:27,383 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+20:26:27,391 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+20:26:27,394 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+20:26:27,396 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+20:26:27,397 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+20:26:27,400 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+20:26:27,404 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+20:26:27,406 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+20:26:27,409 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+20:26:27,413 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+20:26:27,416 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+20:26:27,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+20:26:27,430 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+20:26:27,436 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+20:26:27,443 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+20:26:27,449 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+20:26:27,455 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+20:26:27,463 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+20:26:27,470 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+20:26:27,477 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+20:26:27,489 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+20:26:27,495 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+20:26:27,501 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+20:26:27,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+20:26:27,514 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+20:26:27,519 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+20:26:27,525 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+20:26:27,531 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+20:26:27,535 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+20:26:27,540 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+20:26:27,546 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+20:26:27,550 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+20:26:27,555 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+20:26:27,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+20:26:27,566 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+20:26:27,572 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+20:26:27,579 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+20:26:27,584 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+20:26:27,589 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+20:26:27,594 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+20:26:27,600 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+20:26:27,605 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+20:26:27,610 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+20:26:27,614 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+20:26:27,619 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+20:26:27,624 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+20:26:27,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+20:26:27,633 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+20:26:27,638 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+20:26:27,643 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+20:26:27,648 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+20:26:27,653 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+20:26:27,658 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+20:26:27,663 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+20:26:27,667 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+20:26:27,672 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+20:26:27,677 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+20:26:28,033 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,033 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,033 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,033 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,033 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,078 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,079 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,079 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,079 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:26:28,256 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+20:32:51,069 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+20:32:51,462 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+20:32:51,462 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+20:32:51,471 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+20:32:51,471 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+20:32:51,480 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+20:32:51,480 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+20:32:51,484 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=326 ms, enhance=73 ms, total=399 ms. Compruebe el LOG para los detalles
+20:32:51,901 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+20:32:51,904 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+20:32:51,906 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+20:32:53,050 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:32:53,271 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+20:32:53,274 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+20:32:53,275 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+20:32:53,278 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+20:32:53,285 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+20:32:53,287 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+20:32:53,290 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+20:32:53,293 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+20:32:53,295 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+20:32:53,298 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+20:32:53,301 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+20:32:53,303 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+20:32:53,307 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+20:32:53,311 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+20:32:53,315 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+20:32:53,322 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+20:32:53,327 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+20:32:53,333 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+20:32:53,339 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+20:32:53,346 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+20:32:53,352 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+20:32:53,359 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+20:32:53,366 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+20:32:53,373 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$6.class
+20:32:53,380 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+20:32:53,387 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+20:32:53,393 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+20:32:53,400 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+20:32:53,407 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+20:32:53,414 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+20:32:53,419 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+20:32:53,425 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+20:32:53,432 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+20:32:53,437 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+20:32:53,442 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+20:32:53,447 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+20:32:53,452 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+20:32:53,458 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+20:32:53,463 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+20:32:53,469 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+20:32:53,474 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+20:32:53,480 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+20:32:53,485 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+20:32:53,491 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+20:32:53,497 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+20:32:53,502 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+20:32:53,508 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+20:32:53,513 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+20:32:53,518 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+20:32:53,524 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+20:32:53,530 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+20:32:53,538 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+20:32:53,544 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+20:32:53,549 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+20:32:53,554 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+20:32:53,559 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+20:32:53,565 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+20:32:53,571 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+20:32:53,575 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+20:32:53,581 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+20:32:53,585 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+20:32:54,098 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+20:35:55,006 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+20:35:55,403 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+20:35:55,403 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+20:35:55,412 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+20:35:55,413 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+20:35:55,420 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+20:35:55,421 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+20:35:55,425 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=334 ms, enhance=70 ms, total=404 ms. Compruebe el LOG para los detalles
+20:35:55,824 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+20:35:55,827 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+20:35:55,828 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+20:35:56,952 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:35:57,193 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+20:35:57,195 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+20:35:57,198 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+20:35:57,201 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+20:35:57,211 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+20:35:57,215 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+20:35:57,217 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+20:35:57,219 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+20:35:57,223 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+20:35:57,226 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+20:35:57,229 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+20:35:57,233 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+20:35:57,237 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+20:35:57,239 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+20:35:57,246 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+20:35:57,254 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+20:35:57,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+20:35:57,268 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+20:35:57,275 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+20:35:57,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+20:35:57,292 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+20:35:57,300 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+20:35:57,307 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+20:35:57,315 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$6.class
+20:35:57,323 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+20:35:57,331 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+20:35:57,340 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+20:35:57,348 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+20:35:57,357 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+20:35:57,366 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+20:35:57,374 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+20:35:57,382 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+20:35:57,389 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+20:35:57,395 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+20:35:57,401 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+20:35:57,408 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+20:35:57,415 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+20:35:57,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+20:35:57,431 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+20:35:57,438 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+20:35:57,446 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+20:35:57,453 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+20:35:57,461 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+20:35:57,468 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+20:35:57,474 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+20:35:57,483 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+20:35:57,490 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+20:35:57,495 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+20:35:57,501 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+20:35:57,508 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+20:35:57,514 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+20:35:57,520 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+20:35:57,525 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+20:35:57,532 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+20:35:57,538 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+20:35:57,544 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+20:35:57,551 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+20:35:57,556 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+20:35:57,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+20:35:57,568 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+20:35:57,574 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+20:35:58,047 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+20:37:32,827 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+20:37:33,187 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+20:37:33,188 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+20:37:33,196 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+20:37:33,196 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+20:37:33,204 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+20:37:33,204 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+20:37:33,207 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=302 ms, enhance=63 ms, total=365 ms. Compruebe el LOG para los detalles
+20:38:22,825 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+20:38:22,828 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+20:38:22,830 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar
+20:38:24,054 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:38:24,253 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+20:38:24,256 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+20:38:24,258 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.cj.jdbc.Driver
+20:38:24,261 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+20:38:24,269 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=spq
+20:38:24,271 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+20:38:24,274 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+20:38:24,276 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+20:38:24,278 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+20:38:24,280 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+20:38:24,283 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+20:38:24,286 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+20:38:24,288 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+20:38:24,291 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Client.class
+20:38:24,296 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$1.class
+20:38:24,302 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$2.class
+20:38:24,308 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login$3.class
+20:38:24,314 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\Login.class
+20:38:24,320 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$1.class
+20:38:24,325 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$2.class
+20:38:24,331 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$3.class
+20:38:24,336 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$4.class
+20:38:24,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$5.class
+20:38:24,355 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow$6.class
+20:38:24,361 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\MainWindow.class
+20:38:24,367 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$1.class
+20:38:24,372 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow$2.class
+20:38:24,379 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\PaymentWindow.class
+20:38:24,385 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow$1.class
+20:38:24,391 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\gui\RegWindow.class
+20:38:24,397 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\client\Internationalization.class
+20:38:24,403 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\Demo.class
+20:38:24,407 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\DemoDB.class
+20:38:24,412 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$1.class
+20:38:24,416 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin$2.class
+20:38:24,421 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dLogin.class
+20:38:24,425 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow$1.class
+20:38:24,431 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\dPaymentWindow.class
+20:38:24,437 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$1.class
+20:38:24,443 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$2.class
+20:38:24,448 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$3.class
+20:38:24,453 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$4.class
+20:38:24,460 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow$5.class
+20:38:24,468 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\MainWindow.class
+20:38:24,473 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1$1.class
+20:38:24,479 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$1.class
+20:38:24,486 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$2.class
+20:38:24,492 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$3.class
+20:38:24,499 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow$4.class
+20:38:24,504 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\demo\RegWindow.class
+20:38:24,510 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class
+20:38:24,516 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class
+20:38:24,523 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class
+20:38:24,529 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\db\DB.class
+20:38:24,535 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Main.class
+20:38:24,542 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\MyResource.class
+20:38:24,548 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Psystem.class
+20:38:24,553 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$1.class
+20:38:24,558 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test$2.class
+20:38:24,566 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Test.class
+20:38:24,572 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\server\Users.class
+20:38:24,978 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:24,978 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:24,979 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:24,979 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:24,979 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:25,026 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:25,026 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:25,026 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:25,027 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:38:25,232 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
