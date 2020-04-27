@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
@@ -26,7 +26,7 @@ public class DB {
 		try {
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Netflix?verifyServerCertificate=false&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "root");
 		} catch (SQLException e) {
-			System.out.println(e.getMessage());
+			LOGGER.error(e.getMessage());
 		}
 		return con;
 	}
@@ -57,11 +57,11 @@ public class DB {
 				
 				return u;
 			} catch (SQLException e) {
-				System.out.println(e.getMessage());
+				LOGGER.error(e.getMessage());
 				return null;
 			}
 		} catch (Exception e2) {
-			System.out.println(e2.getMessage());
+			LOGGER.error(e2.getMessage());
 			return null;
 
 		}
@@ -83,12 +83,12 @@ public class DB {
 							String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
 							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL")));
 					films.add(film);
-					LOGGER.log(Level.INFO, "Film retrieved: " + film.toString());
+					LOGGER.info( "Film retrieved: " + film.toString());
 				}
 				con.close();
 				return films;
 			} catch (SQLException e) {
-				System.out.println(e.getMessage());
+				LOGGER.error(e.getMessage());
 				return null;
 			}
 		} catch (Exception e) {
@@ -110,11 +110,11 @@ public class DB {
 			try {
 				int cond = Integer.parseInt(condition);
 				sql = "SELECT * FROM FILM WHERE YEAR=" + cond + " OR PRICE=" + cond + ";";
-				System.out.println(sql);
+				LOGGER.error(sql);
 			} catch (Exception e) {
 				sql = "SELECT * FROM FILM WHERE TITLE LIKE '%" + condition
 						+ "%' OR GENRE LIKE '%" + condition + "%' OR DIRECTOR LIKE '%" + condition + "%';";
-				System.out.println(sql);
+				LOGGER.error(sql);
 
 			}
 			ArrayList<Film> films = new ArrayList<>();
@@ -127,7 +127,7 @@ public class DB {
 				con.close();
 				return films;
 			} catch (SQLException e) {
-				System.out.println(e.getMessage());
+				LOGGER.error(e.getMessage());
 				return null;
 			}
 		} catch (Exception e) {
@@ -150,7 +150,7 @@ public class DB {
 			stmt.executeUpdate(sql);
 			con.close();
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			LOGGER.error(e.getMessage());
 		}
 	}
 	/**
@@ -168,9 +168,9 @@ public class DB {
 			Statement stmt = con.createStatement();
 			stmt.executeUpdate(sql);
 			con.close();
-			LOGGER.log(Level.INFO, "New user registered: " + code);
+			LOGGER.info( "New user registered: " + code);
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			LOGGER.error(e.getMessage());
 		}
 	}
 

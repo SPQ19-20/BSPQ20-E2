@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -40,7 +40,7 @@ public class RegWindow extends JFrame {
 					new FileInputStream(new File("src/main/resources/Bebas-Regular.ttf"))).deriveFont(Font.PLAIN, 50);
 		} catch (FontFormatException | IOException e1) {
 			// TODO Auto-generated catch block
-			LOGGER.log(Level.WARNING, e1.getMessage());
+			LOGGER.warn( e1.getMessage());
 		}
 		JLabel lblNewLabel = new JLabel("NETFLIX");
 		lblNewLabel.setForeground(Color.RED);

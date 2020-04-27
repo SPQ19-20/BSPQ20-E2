@@ -41,7 +41,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
@@ -77,7 +77,7 @@ public class Login extends JFrame {
 					new FileInputStream(new File("src/main/resources/Bebas-Regular.ttf"))).deriveFont(Font.PLAIN, 50);
 		} catch (FontFormatException | IOException e1) {
 			// TODO Auto-generated catch block
-			LOGGER.log(Level.WARNING, e1.getMessage());
+			LOGGER.warn( e1.getMessage());
 		}
 		client = ClientBuilder.newClient();
 
@@ -93,9 +93,9 @@ public class Login extends JFrame {
 			Internationalization.loader = new URLClassLoader(urls);
 			Locale.setDefault(Locale.forLanguageTag("en"));
 			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), Internationalization.loader);
-			LOGGER.log(Level.INFO, "Language: " + Internationalization.resourceBundle.getLocale().toString());
+			LOGGER.warn("Language: " + Internationalization.resourceBundle.getLocale().toString());
 		} catch (Exception o) {
-			LOGGER.log(Level.WARNING, o.getMessage());
+			LOGGER.warn( o.getMessage());
 		}
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
@@ -179,7 +179,7 @@ public class Login extends JFrame {
 				try {
 					User u = DB.logged(tfUser.getText(), tfPasswd.getText());
 					if (u.getSalary() > 0) {
-						LOGGER.log(Level.INFO, "Logged in with " + u.toString());
+						LOGGER.info( "Logged in with " + u.toString());
 						MainWindow mw = new MainWindow(u);
 						dispose();
 					} else

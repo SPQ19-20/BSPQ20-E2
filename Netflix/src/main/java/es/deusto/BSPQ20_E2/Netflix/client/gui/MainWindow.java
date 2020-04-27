@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -104,7 +104,6 @@ public class MainWindow extends JFrame {
 				try {
 					queryResults = DB.searchFilms(tfSearch.getText());
 					mdlSearch = new DefaultTableModel(colNames, 0);
-					System.out.println(queryResults.size());
 
 					for (int i = 0; i < queryResults.size(); i++) {
 						if (queryResults.get(i) != null) {
@@ -154,7 +153,7 @@ public class MainWindow extends JFrame {
 						ImageIcon icRsz = new ImageIcon(newimg);
 						lblIcono.setIcon(icRsz);
 					} catch (Exception eee) {
-						LOGGER.log(Level.WARNING, eee.getMessage());
+						LOGGER.warn( eee.getMessage());
 					}
 				}
 				

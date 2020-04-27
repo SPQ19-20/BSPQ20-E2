@@ -1,4 +1,5 @@
 package es.deusto.BSPQ20_E2.Netflix.client;
+import org.apache.log4j.Logger;
 /**
  * @author Annette
  */
@@ -15,7 +16,7 @@ import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
 
 		private String ip;
 		private String port;
-
+		private final static Logger LOGGER = Logger.getLogger(Client.class.getName());
 		public Client (String ip, String port) {
 			super();
 			this.ip = ip;
@@ -33,9 +34,9 @@ import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
 				str = (String) in.readObject();
 				
 			} catch (Exception e) {
-				System.err.println("Oops: " + e.getMessage());
+				LOGGER.error("Oops: " + e.getMessage());
 			}
-			System.out.println("Client says hi -- " + str);
+			LOGGER.info("Client says hi -- " + str);
 		}
 		
 		

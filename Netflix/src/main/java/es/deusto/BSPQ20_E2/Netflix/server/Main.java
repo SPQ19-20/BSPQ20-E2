@@ -9,7 +9,7 @@ import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
 import java.io.IOException;
 import java.net.URI;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 /**
  * Main class.
@@ -19,7 +19,7 @@ public class Main {
     // Base URI the Grizzly HTTP server will listen on
     @SuppressWarnings("unchecked")
     public static final String BASE_URI = "http://localhost:10072/myapp/";
-	private static final Logger LOGGER = Logger.getLogger("Main");
+	private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
     /**
      * Starts Grizzly HTTP server exposing JAX-RS resources defined in this application.
@@ -44,7 +44,7 @@ public class Main {
         final HttpServer server = startServer();
         Login l = new Login();
   		l.setVisible(true);
-        LOGGER.log(Level.INFO, String.format("Jersey app started with WADL available at "
+        LOGGER.info( String.format("Jersey app started with WADL available at "
                 + "%sapplication.wadl\nHit enter to stop it...", BASE_URI));
         System.in.read();
         
