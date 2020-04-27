@@ -7568,3 +7568,9 @@ Caused by: java.net.ConnectException: Connection refused: connect
 08:50:05,650 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "/Users/Orue/Documents/GitHub/BSPQ20-E2/Netflix/target/classes/es/deusto/BSPQ20_E2/Netflix/pojo/User.class" con definicion enhanced
 08:50:05,650 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
 08:50:05,651 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=132 ms, enhance=47 ms, total=179 ms. Compruebe el LOG para los detalles
+08:59:29,777 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+08:59:29,974 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "/Users/Orue/Documents/GitHub/BSPQ20-E2/Netflix/target/classes/es/deusto/BSPQ20_E2/Netflix/pojo/Film.class" con definicion enhanced
+08:59:29,975 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+08:59:29,980 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "/Users/Orue/Documents/GitHub/BSPQ20-E2/Netflix/target/classes/es/deusto/BSPQ20_E2/Netflix/pojo/User.class" con definicion enhanced
+08:59:29,981 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+08:59:29,982 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=145 ms, enhance=57 ms, total=202 ms. Compruebe el LOG para los detalles
