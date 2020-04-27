@@ -240,6 +240,7 @@ public class MainWindow extends JFrame {
 				btnSearch.setText(Internationalization.resourceBundle.getString("btnSearch"));
 				lblSelectedFilm.setText(Internationalization.resourceBundle.getString("lblSelectedFilm"));
 				btnReset.setText(Internationalization.resourceBundle.getString("btnReset"));
+				btnCheckFilms.setText(Internationalization.resourceBundle.getString("btnCheckFilms"));
 				revalidate();
 			}
 		});

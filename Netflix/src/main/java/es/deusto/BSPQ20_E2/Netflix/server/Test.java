@@ -1,7 +1,7 @@
 package es.deusto.BSPQ20_E2.Netflix.server;
 
 import java.io.IOException;
-
+import org.apache.log4j.Logger;
 import es.deusto.BSPQ20_E2.Netflix.client.Client;
 /**
  * 
@@ -9,7 +9,7 @@ import es.deusto.BSPQ20_E2.Netflix.client.Client;
  *
  */
 public class Test {
-	
+	private static final Logger LOGGER = Logger.getLogger(Test.class.getName());
 	public static void main(String[] args) {
 		
 		Thread thr1 = new Thread(new Runnable() {
