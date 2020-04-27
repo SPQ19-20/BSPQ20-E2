@@ -186,7 +186,7 @@ public class Login extends JFrame {
 						JOptionPane.showMessageDialog(null, "Wrong password or username.");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					LOGGER.info(e.getMessage());
 				}
 
 			}

@@ -83,7 +83,7 @@ public class MainWindow extends JFrame {
 			films = DB.retrieveFilms();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		for (int i = 0; i < films.size(); i++) {
 			Object[] fila = new Object[5];
@@ -122,7 +122,7 @@ public class MainWindow extends JFrame {
 
 					table.setModel(mdlSearch);
 				} catch (Exception e1) {
-					e1.printStackTrace();
+					LOGGER.info(e1.getMessage());
 				}
 			}
 		});
@@ -254,7 +254,7 @@ public class MainWindow extends JFrame {
 					myFilms = DB.myFilms(u);
 
 				} catch (Exception f) {
-					f.printStackTrace();
+					LOGGER.info(f.getMessage());
 				}
 				if (myFilms.size() > 0) {
 					String message = "List of " + u.getName() + "'s films:";

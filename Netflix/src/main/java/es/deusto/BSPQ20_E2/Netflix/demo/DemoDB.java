@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
-
+import org.apache.log4j.Logger;
 /**
  * Class with the DB methods define for the demo to work with SQLITE3
  * 
@@ -23,6 +23,7 @@ public class DemoDB {
 	 * @return connection to the database
 	 * @throws Exception
 	 */
+	private static final Logger LOGGER = Logger.getLogger(DemoDB.class.getName());
 	public static Connection connect() throws Exception {
 		// SQLite connection string
 		Class.forName("org.sqlite.JDBC");
@@ -121,7 +122,7 @@ public class DemoDB {
 				return null;
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 			return null;
 		}
 

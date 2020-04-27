@@ -22,6 +22,9 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
+
+import org.apache.log4j.Logger;
+
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
@@ -45,6 +48,7 @@ public class MainWindow extends JFrame {
 	private Connection con;
 	private ArrayList<Film> films;
 	private ArrayList<Film> queryResults;
+	private static final Logger LOGGER = Logger.getLogger(DemoDB.class.getName());
 
 	private JLabel lblName = new JLabel("");
 	private JLabel lblPrice1 = new JLabel("");
@@ -81,7 +85,7 @@ public class MainWindow extends JFrame {
 			films = DemoDB.retrieveFilms(con);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		for (int i = 0; i < films.size(); i++) {
 			Object[] fila = new Object[5];
@@ -180,7 +184,7 @@ public class MainWindow extends JFrame {
 
 					table.setModel(mdlSearch);
 				} catch (Exception e1) {
-					e1.printStackTrace();
+					LOGGER.info(e1.getMessage());
 				}
 			}
 		});

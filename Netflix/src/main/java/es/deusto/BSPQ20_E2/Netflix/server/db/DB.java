@@ -98,7 +98,7 @@ public class DB {
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		return null;
 	}
@@ -139,7 +139,7 @@ public class DB {
 				return null;
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 			return null;
 		}
 
@@ -316,7 +316,7 @@ public class DB {
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 		return null;
 	}

@@ -31,6 +31,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
+import org.apache.log4j.Logger;
+
 import java.util.List;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
@@ -47,6 +49,7 @@ public class dLogin extends JFrame {
 	private Client client;
 	private JTextField tfUser;
 	private JTextField tfPasswd;
+	private static final Logger LOGGER = Logger.getLogger(DemoDB.class.getName());
 
 	public dLogin() {
 
@@ -130,7 +133,7 @@ public class dLogin extends JFrame {
 					}
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					LOGGER.info(e.getMessage());
 				}
 
 			}

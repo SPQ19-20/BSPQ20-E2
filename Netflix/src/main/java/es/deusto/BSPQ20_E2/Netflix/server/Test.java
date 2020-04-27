@@ -21,7 +21,7 @@ public class Test {
 					Main.main(p);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					LOGGER.info(e.getMessage());
 				}
 			}
 		});
@@ -40,12 +40,12 @@ public class Test {
 		try {
 			thr1.join();
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		try {
 			thr2.join();
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		
 		
