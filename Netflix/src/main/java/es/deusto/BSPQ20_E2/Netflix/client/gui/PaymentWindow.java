@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import es.deusto.BSPQ20_E2.Netflix.client.Internationalization;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
@@ -20,7 +21,10 @@ import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionListener;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.awt.event.ActionEvent;
+import javax.swing.JComboBox;
 
 public class PaymentWindow extends JFrame {
 	private JTextField tfUser;
@@ -44,7 +48,7 @@ public class PaymentWindow extends JFrame {
 		lblNetflix.setBounds(100, 31, 86, 70);
 		panel.add(lblNetflix);
 
-		JLabel lblUser = new JLabel("User:");
+		JLabel lblUser = new JLabel(Internationalization.resourceBundle.getString("lblUser"));
 		lblUser.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblUser.setForeground(new Color(0, 0, 255));
 		lblUser.setBounds(43, 132, 64, 36);
@@ -57,7 +61,7 @@ public class PaymentWindow extends JFrame {
 		panel.add(tfUser);
 		tfUser.setColumns(10);
 
-		JLabel lblPasswd = new JLabel("Password:");
+		JLabel lblPasswd = new JLabel(Internationalization.resourceBundle.getString("lblPasswd"));
 		lblPasswd.setForeground(new Color(0, 0, 255));
 		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblPasswd.setBounds(10, 168, 77, 30);
@@ -70,7 +74,7 @@ public class PaymentWindow extends JFrame {
 		panel.add(tfPasswd);
 		tfPasswd.setColumns(10);
 
-		JButton btnLogin = new JButton("Login");
+		JButton btnLogin = new JButton(Internationalization.resourceBundle.getString("btnLogin"));
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DB.buyFilm(f, u);
@@ -91,6 +95,20 @@ public class PaymentWindow extends JFrame {
 		lblPal.setFont(new Font("Tahoma", Font.BOLD, 43));
 		lblPal.setBounds(179, 45, 96, 42);
 		panel.add(lblPal);
+		
+		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				lblUser.setText(Internationalization.resourceBundle.getString("lblUser"));
+				lblPasswd.setText(Internationalization.resourceBundle.getString("lblPasswd"));
+				btnLogin.setText(Internationalization.resourceBundle.getString("btnLogin"));
+				revalidate();
+				
+			}
+		});
+		comboBox.setBounds(282, 6, 52, 27);
+		panel.add(comboBox);
 		setVisible(true);
 	}
 }
