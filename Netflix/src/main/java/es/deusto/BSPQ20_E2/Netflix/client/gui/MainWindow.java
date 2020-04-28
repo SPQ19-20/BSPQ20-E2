@@ -226,7 +226,7 @@ public class MainWindow extends JFrame {
 		btnReset.setBackground(Color.BLACK);
 		btnReset.setBounds(585, 323, 89, 23);
 		panel.add(btnReset);
-
+		JButton btnCheckFilms = new JButton(Internationalization.resourceBundle.getString("btnCheckFilms"));
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -247,7 +247,7 @@ public class MainWindow extends JFrame {
 		comboBox.setBounds(10, 12, 52, 27);
 		getContentPane().add(comboBox);
 
-		JButton btnCheckFilms = new JButton(Internationalization.resourceBundle.getString("btnCheckFilms"));
+
 		btnCheckFilms.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ArrayList<Film> myFilms = null;
