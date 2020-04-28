@@ -121,7 +121,7 @@ public class Login extends JFrame {
 		lblPasswd.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblPasswd.setForeground(Color.RED);
 		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblPasswd.setBounds(28, 178, 88, 25);
+		lblPasswd.setBounds(16, 178, 100, 25);
 		panel.add(lblPasswd);
 
 		tfPasswd = new JPasswordField();
@@ -135,13 +135,13 @@ public class Login extends JFrame {
 		lblUser.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblUser.setForeground(Color.RED);
 		lblUser.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblUser.setBounds(28, 131, 88, 36);
+		lblUser.setBounds(6, 131, 110, 36);
 		panel.add(lblUser);
 
 		JButton btnLogin = new JButton(Internationalization.resourceBundle.getString("btnLogin"));
 		btnLogin.setForeground(Color.RED);
 		btnLogin.setBackground(Color.BLACK);
-		btnLogin.setBounds(259, 178, 88, 30);
+		btnLogin.setBounds(259, 178, 100, 30);
 		panel.add(btnLogin);
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 11));
 
