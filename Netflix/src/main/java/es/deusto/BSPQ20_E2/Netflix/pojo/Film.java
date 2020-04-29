@@ -21,7 +21,9 @@ public class Film {
 	protected int year = 0;
 	protected float price = 0;
 	protected String url = null;
+	protected String trailer = null;
 
+	
 	protected Film() {
 	}
 
@@ -82,7 +84,15 @@ public class Film {
 		this.id = id;
 	}
 
-	public Film(String id, String title, String genre, String director, int year, float price, String url) {
+	public String getTrailer() {
+		return trailer;
+	}
+
+	public void setTrailer(String trailer) {
+		this.trailer = trailer;
+	}
+
+	public Film(String id, String title, String genre, String director, int year, float price, String url, String trailer) { //REAL CONSTRUCTOR WE ARE GONNA USE
 		this.id = id;
 		this.title = title;
 		this.genre = genre;
@@ -90,6 +100,7 @@ public class Film {
 		this.year = year;
 		this.price = price;
 		this.url = url;
+		this.trailer = trailer;
 	}
 
 	public Film(String id, String title, String genre, String director, int year, float price) { //VALID FOR DEMO ONLY
@@ -99,6 +110,16 @@ public class Film {
 		this.director = director;
 		this.year = year;
 		this.price = price;
+	}
+	
+	public Film(String id, String title, String genre, String director, int year, float price, String url) { //VALID FOR TESTS
+		this.id = id;
+		this.title = title;
+		this.genre = genre;
+		this.director = director;
+		this.year = year;
+		this.price = price;
+		this.url = url;
 	}
 
 	public String toString() {

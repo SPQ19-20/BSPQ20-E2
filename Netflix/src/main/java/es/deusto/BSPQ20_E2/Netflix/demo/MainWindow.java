@@ -5,7 +5,11 @@ import javax.swing.JFrame;
 import es.deusto.BSPQ20_E2.Netflix.client.Internationalization;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
+import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
+
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.sql.Connection;
 import java.util.ArrayList;
@@ -18,6 +22,9 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
+
+import org.apache.log4j.Logger;
+
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
@@ -41,6 +48,7 @@ public class MainWindow extends JFrame {
 	private Connection con;
 	private ArrayList<Film> films;
 	private ArrayList<Film> queryResults;
+	private static final Logger LOGGER = Logger.getLogger(DemoDB.class.getName());
 
 	private JLabel lblName = new JLabel("");
 	private JLabel lblPrice1 = new JLabel("");
@@ -65,7 +73,9 @@ public class MainWindow extends JFrame {
 		lblYourCurrentSalary.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblYourCurrentSalary.setBounds(480, 36, 204, 14);
 		getContentPane().add(lblYourCurrentSalary);
-
+		if(DB.getBoughtFilmsCount(u)>2) {
+			JOptionPane.showMessageDialog(this, "Congratulations, you've bought 5 films! You will get one for free.");
+		}
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
 		String[] colNames = { "Title", "Genre", "Director", "Year", "Price" };
@@ -75,7 +85,7 @@ public class MainWindow extends JFrame {
 			films = DemoDB.retrieveFilms(con);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		for (int i = 0; i < films.size(); i++) {
 			Object[] fila = new Object[5];
@@ -174,7 +184,7 @@ public class MainWindow extends JFrame {
 
 					table.setModel(mdlSearch);
 				} catch (Exception e1) {
-					e1.printStackTrace();
+					LOGGER.info(e1.getMessage());
 				}
 			}
 		});

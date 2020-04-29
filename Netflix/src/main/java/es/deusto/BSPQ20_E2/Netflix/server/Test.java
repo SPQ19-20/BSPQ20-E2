@@ -1,7 +1,7 @@
 package es.deusto.BSPQ20_E2.Netflix.server;
 
 import java.io.IOException;
-
+import org.apache.log4j.Logger;
 import es.deusto.BSPQ20_E2.Netflix.client.Client;
 /**
  * 
@@ -9,7 +9,7 @@ import es.deusto.BSPQ20_E2.Netflix.client.Client;
  *
  */
 public class Test {
-	
+	private static final Logger LOGGER = Logger.getLogger(Test.class.getName());
 	public static void main(String[] args) {
 		
 		Thread thr1 = new Thread(new Runnable() {
@@ -21,7 +21,7 @@ public class Test {
 					Main.main(p);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					LOGGER.info(e.getMessage());
 				}
 			}
 		});
@@ -40,12 +40,12 @@ public class Test {
 		try {
 			thr1.join();
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		try {
 			thr2.join();
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		}
 		
 		

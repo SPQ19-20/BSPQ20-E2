@@ -14,6 +14,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
+import org.apache.log4j.Logger;
+
+import es.deusto.BSPQ20_E2.Netflix.client.Client;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 /**
  * 
@@ -22,6 +25,7 @@ import es.deusto.BSPQ20_E2.Netflix.pojo.User;
  */
 @Path("/users")
 public class Users {
+	private final static Logger LOGGER = Logger.getLogger(Users.class.getName());
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -34,14 +38,14 @@ public class Users {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public void addUser(User user) {
-        System.out.println("Received new user: " + user);
+    	LOGGER.info("Received new user: " + user);
     }
 
     @DELETE
     @Path("/{code}")
     public Response deleteUser(@PathParam("code") int code) {
         if (code == 10) {
-            System.out.println("Deleting user...");
+           LOGGER.info("Deleting user...");
             return Response.status(Response.Status.OK).build();
         } else {
             return Response.status(Response.Status.NOT_FOUND).build();

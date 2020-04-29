@@ -1,6 +1,7 @@
 package es.deusto.BSPQ20_E2.Netflix.client.gui;
 
 import java.awt.GridLayout;
+import java.awt.Image;
 
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 
@@ -16,6 +17,7 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.sql.Connection;
 
+import javax.imageio.ImageIO;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -41,7 +43,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
@@ -54,6 +56,7 @@ import java.awt.Color;
 import javax.swing.UIManager;
 import javax.swing.SwingConstants;
 import javax.swing.JComboBox;
+import javax.swing.ImageIcon;
 
 /**
  * Window for the login process
@@ -69,22 +72,20 @@ public class Login extends JFrame {
 	private JTextField tfPasswd;
 	private Font f;
 
-	
-
 	public Login() {
 		try {
 			f = Font.createFont(Font.TRUETYPE_FONT,
 					new FileInputStream(new File("src/main/resources/Bebas-Regular.ttf"))).deriveFont(Font.PLAIN, 50);
 		} catch (FontFormatException | IOException e1) {
 			// TODO Auto-generated catch block
-			LOGGER.log(Level.WARNING, e1.getMessage());
+			LOGGER.warn(e1.getMessage());
 		}
 		client = ClientBuilder.newClient();
 
 		final WebTarget appTarget = client.target("http://localhost:8080/myapp");
 		final WebTarget usersTarget = appTarget.path("users");
-		setSize(479, 264);
-		setTitle("Netflix - Login");
+		setSize(533, 332);
+		setTitle("Choose&Chill - Login");
 		setResizable(false);
 		getContentPane().setLayout(null);
 		try {
@@ -92,28 +93,37 @@ public class Login extends JFrame {
 			URL[] urls = { file.toURI().toURL() };
 			Internationalization.loader = new URLClassLoader(urls);
 			Locale.setDefault(Locale.forLanguageTag("en"));
-			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), Internationalization.loader);
-			LOGGER.log(Level.INFO, "Language: " + Internationalization.resourceBundle.getLocale().toString());
+			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(),
+					Internationalization.loader);
+			LOGGER.warn("Language: " + Internationalization.resourceBundle.getLocale().toString());
 		} catch (Exception o) {
-			LOGGER.log(Level.WARNING, o.getMessage());
+			LOGGER.warn(o.getMessage());
 		}
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
-		panel.setBounds(0, 0, 473, 235);
+		panel.setBounds(0, 0, 527, 305);
 		getContentPane().add(panel);
 		panel.setLayout(null);
-
-		JLabel lblNetflix = new JLabel("Netflix");
+		String path = "src/main/resources/logo2.png";
+		File file = new File(path);
+		JLabel lblNetflix = new JLabel("");
+		try {
+			Image image = ImageIO.read(file);
+			ImageIcon ic = new ImageIcon(image);
+			lblNetflix.setIcon(ic);
+		} catch (IOException e1) {
+			LOGGER.error(e1.getMessage());
+		}
 		lblNetflix.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNetflix.setFont(f);
 		lblNetflix.setForeground(Color.RED);
-		lblNetflix.setBounds(145, 36, 188, 68);
+		lblNetflix.setBounds(123, 22, 225, 83);
 		panel.add(lblNetflix);
 
 		tfUser = new JTextField();
 		tfUser.setForeground(new Color(255, 255, 255));
 		tfUser.setBackground(Color.DARK_GRAY);
-		tfUser.setBounds(121, 139, 123, 20);
+		tfUser.setBounds(168, 141, 159, 21);
 		panel.add(tfUser);
 		tfUser.setColumns(10);
 
@@ -121,13 +131,13 @@ public class Login extends JFrame {
 		lblPasswd.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblPasswd.setForeground(Color.RED);
 		lblPasswd.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblPasswd.setBounds(28, 178, 88, 25);
+		lblPasswd.setBounds(33, 178, 100, 25);
 		panel.add(lblPasswd);
 
 		tfPasswd = new JPasswordField();
 		tfPasswd.setForeground(new Color(255, 255, 255));
 		tfPasswd.setBackground(Color.DARK_GRAY);
-		tfPasswd.setBounds(121, 183, 123, 20);
+		tfPasswd.setBounds(168, 182, 159, 21);
 		panel.add(tfPasswd);
 		tfPasswd.setColumns(10);
 
@@ -135,27 +145,29 @@ public class Login extends JFrame {
 		lblUser.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblUser.setForeground(Color.RED);
 		lblUser.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblUser.setBounds(28, 131, 88, 36);
+		lblUser.setBounds(23, 131, 110, 36);
 		panel.add(lblUser);
 
 		JButton btnLogin = new JButton(Internationalization.resourceBundle.getString("btnLogin"));
 		btnLogin.setForeground(Color.RED);
-		btnLogin.setBackground(Color.BLACK);
-		btnLogin.setBounds(259, 178, 88, 30);
+		btnLogin.setBackground(Color.DARK_GRAY);
+		btnLogin.setBounds(275, 252, 100, 30);
 		panel.add(btnLogin);
 		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 11));
 
 		JButton btnRegister = new JButton(Internationalization.resourceBundle.getString("btnRegister"));
-		btnRegister.setBackground(Color.BLACK);
+		btnRegister.setBackground(Color.DARK_GRAY);
 		btnRegister.setForeground(Color.RED);
 		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnRegister.setBounds(357, 178, 106, 30);
+		btnRegister.setBounds(398, 252, 106, 30);
 		panel.add(btnRegister);
 
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
+		comboBox.setBackground(Color.DARK_GRAY);
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
+						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
 				lblUser.setText(Internationalization.resourceBundle.getString("lblUser"));
 				lblPasswd.setText(Internationalization.resourceBundle.getString("lblPasswd"));
 				btnRegister.setText(Internationalization.resourceBundle.getString("btnRegister"));
@@ -163,7 +175,7 @@ public class Login extends JFrame {
 				revalidate();
 			}
 		});
-		comboBox.setBounds(415, 6, 52, 27);
+		comboBox.setBounds(437, 22, 67, 25);
 		panel.add(comboBox);
 
 		btnRegister.addActionListener(new ActionListener() {
@@ -179,14 +191,14 @@ public class Login extends JFrame {
 				try {
 					User u = DB.logged(tfUser.getText(), tfPasswd.getText());
 					if (u.getSalary() > 0) {
-						LOGGER.log(Level.INFO, "Logged in with " + u.toString());
+						LOGGER.info("Logged in with " + u.toString());
 						MainWindow mw = new MainWindow(u);
 						dispose();
 					} else
 						JOptionPane.showMessageDialog(null, "Wrong password or username.");
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					LOGGER.info(e.getMessage());
 				}
 
 			}
