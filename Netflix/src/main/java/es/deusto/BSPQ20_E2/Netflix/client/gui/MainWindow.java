@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Locale;
@@ -36,7 +37,7 @@ import es.deusto.BSPQ20_E2.Netflix.client.*;
 /**
  * Main window of the project, with the catalog of films and selection
  * 
- * @author Jorge
+ * @author Jorge El Busto
  *
  */
 public class MainWindow extends JFrame {
@@ -226,6 +227,23 @@ public class MainWindow extends JFrame {
 		btnReset.setBackground(Color.BLACK);
 		btnReset.setBounds(585, 323, 89, 23);
 		panel.add(btnReset);
+
+		JButton btnTrailer = new JButton(Internationalization.resourceBundle.getString("btnTrailer"));
+		btnTrailer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Film f = films.get(table.getSelectedRow());
+				try {
+					DB.openTrailer(f);
+				} catch (IOException e1) {
+					LOGGER.error(e1);
+				}
+			}
+		});
+		btnTrailer.setForeground(Color.RED);
+		btnTrailer.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnTrailer.setBackground(Color.BLACK);
+		btnTrailer.setBounds(423, 379, 150, 23);
+		panel.add(btnTrailer);
 		JButton btnCheckFilms = new JButton(Internationalization.resourceBundle.getString("btnCheckFilms"));
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
@@ -247,7 +265,6 @@ public class MainWindow extends JFrame {
 		comboBox.setBounds(10, 12, 52, 27);
 		getContentPane().add(comboBox);
 
-
 		btnCheckFilms.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ArrayList<Film> myFilms = null;
@@ -259,12 +276,13 @@ public class MainWindow extends JFrame {
 				}
 				if (myFilms.size() > 0) {
 					String message = "List of " + u.getName() + "'s films:";
-					for (int i = 0; i<myFilms.size();i++) {
-						message += "\n" + (i+1) + "- " + myFilms.get(i).toString();
+					for (int i = 0; i < myFilms.size(); i++) {
+						message += "\n" + (i + 1) + "- " + myFilms.get(i).toString();
 					}
 					LOGGER.info(message);
 					JOptionPane.showMessageDialog(null, message);
-				} else JOptionPane.showMessageDialog(null, "No films bought yet.");
+				} else
+					JOptionPane.showMessageDialog(null, "No films bought yet.");
 
 			}
 		});

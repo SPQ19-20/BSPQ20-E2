@@ -1,6 +1,7 @@
 package es.deusto.BSPQ20_E2.Netflix.client.gui;
 
 import java.awt.GridLayout;
+import java.awt.Image;
 
 import static javax.swing.JOptionPane.ERROR_MESSAGE;
 
@@ -16,6 +17,7 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.sql.Connection;
 
+import javax.imageio.ImageIO;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -70,22 +72,20 @@ public class Login extends JFrame {
 	private JTextField tfPasswd;
 	private Font f;
 
-	
-
 	public Login() {
 		try {
 			f = Font.createFont(Font.TRUETYPE_FONT,
 					new FileInputStream(new File("src/main/resources/Bebas-Regular.ttf"))).deriveFont(Font.PLAIN, 50);
 		} catch (FontFormatException | IOException e1) {
 			// TODO Auto-generated catch block
-			LOGGER.warn( e1.getMessage());
+			LOGGER.warn(e1.getMessage());
 		}
 		client = ClientBuilder.newClient();
 
 		final WebTarget appTarget = client.target("http://localhost:8080/myapp");
 		final WebTarget usersTarget = appTarget.path("users");
 		setSize(533, 332);
-		setTitle("Netflix - Login");
+		setTitle("Choose&Chill - Login");
 		setResizable(false);
 		getContentPane().setLayout(null);
 		try {
@@ -93,19 +93,27 @@ public class Login extends JFrame {
 			URL[] urls = { file.toURI().toURL() };
 			Internationalization.loader = new URLClassLoader(urls);
 			Locale.setDefault(Locale.forLanguageTag("en"));
-			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(), Internationalization.loader);
+			Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.getDefault(),
+					Internationalization.loader);
 			LOGGER.warn("Language: " + Internationalization.resourceBundle.getLocale().toString());
 		} catch (Exception o) {
-			LOGGER.warn( o.getMessage());
+			LOGGER.warn(o.getMessage());
 		}
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLACK);
 		panel.setBounds(0, 0, 527, 305);
 		getContentPane().add(panel);
 		panel.setLayout(null);
-
+		String path = "src/main/resources/logo2.png";
+		File file = new File(path);
 		JLabel lblNetflix = new JLabel("");
-		lblNetflix.setIcon(new ImageIcon("Logo.png"));
+		try {
+			Image image = ImageIO.read(file);
+			ImageIcon ic = new ImageIcon(image);
+			lblNetflix.setIcon(ic);
+		} catch (IOException e1) {
+			LOGGER.error(e1.getMessage());
+		}
 		lblNetflix.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNetflix.setFont(f);
 		lblNetflix.setForeground(Color.RED);
@@ -158,7 +166,8 @@ public class Login extends JFrame {
 		comboBox.setBackground(Color.DARK_GRAY);
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages", Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
+				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
+						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
 				lblUser.setText(Internationalization.resourceBundle.getString("lblUser"));
 				lblPasswd.setText(Internationalization.resourceBundle.getString("lblPasswd"));
 				btnRegister.setText(Internationalization.resourceBundle.getString("btnRegister"));
@@ -182,7 +191,7 @@ public class Login extends JFrame {
 				try {
 					User u = DB.logged(tfUser.getText(), tfPasswd.getText());
 					if (u.getSalary() > 0) {
-						LOGGER.info( "Logged in with " + u.toString());
+						LOGGER.info("Logged in with " + u.toString());
 						MainWindow mw = new MainWindow(u);
 						dispose();
 					} else

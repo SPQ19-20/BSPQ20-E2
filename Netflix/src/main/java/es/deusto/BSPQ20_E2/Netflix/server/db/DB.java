@@ -1,5 +1,12 @@
 package es.deusto.BSPQ20_E2.Netflix.server.db;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -86,7 +93,8 @@ public class DB {
 				while (rs.next()) {
 					Film film = new Film(String.valueOf(rs.getInt("FILM_ID")), String.valueOf(rs.getString("TITLE")),
 							String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
-							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL")));
+							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL")),
+							String.valueOf(rs.getString("TRAILER")));
 					films.add(film);
 					LOGGER.info("Film retrieved: " + film.toString());
 				}
@@ -130,7 +138,8 @@ public class DB {
 				while (rs.next()) {
 					films.add(new Film(String.valueOf(rs.getString("ID")), String.valueOf(rs.getString("TITLE")),
 							String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
-							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL"))));
+							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL")),
+							String.valueOf(rs.getString("TRAILER"))));
 				}
 				con.close();
 				return films;
@@ -171,8 +180,7 @@ public class DB {
 			LOGGER.error(e.getMessage());
 		}
 	}
-	
-	
+
 	/**
 	 * Method to process the information in the DB so that the price of the bought
 	 * film is taken away from the credit of the user who buys it.
@@ -185,12 +193,12 @@ public class DB {
 		ArrayList<Film> films = DB.retrieveFilms();
 		int low = 1;
 		int high = films.size();
-		int index = r.nextInt(high-low) + low;
+		int index = r.nextInt(high - low) + low;
 		Film f = films.get(index);
 		String ins = "INSERT INTO TRANSACTION (F_FILM_ID_OID,U_USER_ID_OID) VALUES (" + f.getId() + "," + getId(u)
 				+ ");";
 		try {
-			
+
 			Connection con2 = connect();
 			Statement stmt2 = con2.createStatement();
 			stmt2.executeUpdate(ins);
@@ -289,6 +297,7 @@ public class DB {
 			LOGGER.error(e.getMessage());
 		}
 	}
+
 	/**
 	 * Method to retrieve the films a certain user owns
 	 * 
@@ -298,13 +307,15 @@ public class DB {
 	public static ArrayList<Film> myFilms(User u) {
 		try {
 			Connection con = connect();
-			String sql = "SELECT * FROM FILM WHERE FILM_ID IN (SELECT F_FILM_ID_OID FROM TRANSACTION WHERE U_USER_ID_OID=" + getId(u) +")";
+			String sql = "SELECT * FROM FILM WHERE FILM_ID IN (SELECT F_FILM_ID_OID FROM TRANSACTION WHERE U_USER_ID_OID="
+					+ getId(u) + ")";
 			ArrayList<Film> films = new ArrayList<>();
 			try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
 				while (rs.next()) {
 					Film film = new Film(String.valueOf(rs.getInt("FILM_ID")), String.valueOf(rs.getString("TITLE")),
 							String.valueOf(rs.getString("GENRE")), String.valueOf(rs.getString("DIRECTOR")),
-							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL")));
+							rs.getInt("YEAR"), rs.getFloat("PRICE"), String.valueOf(rs.getString("URL")),
+							String.valueOf(rs.getString("TRAILER")));
 					films.add(film);
 					LOGGER.info("Film retrieved: " + film.toString());
 				}
@@ -321,5 +332,37 @@ public class DB {
 		return null;
 	}
 
-
+	/**
+	 * Method to open in browser the trailer of a film
+	 * 
+	 * @param Film which is going to be opened
+	 * @throws IOException
+	 */
+	public static void openTrailer(Film f) throws IOException {
+		String trailer = "";
+		try {
+			Connection con = connect();
+			String sql = "SELECT * FROM FILM WHERE FILM_ID=" + f.getId() + ";";
+			try (Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
+				while (rs.next()) {
+					trailer = String.valueOf(rs.getString("TRAILER"));
+					LOGGER.info("URL opened: " + trailer);
+				}
+				con.close();
+			} catch (SQLException e) {
+				LOGGER.error(e.getMessage());
+			}
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage());
+		}
+		if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+			try {
+				Desktop.getDesktop().browse(new URI(trailer));
+			} catch (IOException e) {
+				LOGGER.error(e.getMessage());
+			} catch (URISyntaxException e) {
+				LOGGER.error(e.getMessage());
+			}
+		}
+	}
 }
