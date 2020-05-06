@@ -1,6 +1,9 @@
 package BSPQ20_E2.Netflix;
 
 import static org.junit.Assert.assertEquals;
+
+import org.databene.contiperf.PerfTest;
+import org.databene.contiperf.junit.ContiPerfRule;
 import org.junit.*;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
@@ -13,6 +16,9 @@ import es.deusto.BSPQ20_E2.Netflix.pojo.User;
  *
  */
 public class PojoTest {
+	
+	@Rule
+	public ContiPerfRule i = new ContiPerfRule();
 	
 	/**
 	 * @param u user created to check the methods
@@ -39,6 +45,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkUserCode() {
 		 u.setCode("U-01"); 
 		 assertEquals("U-01", u.getCode()); 
@@ -48,6 +55,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkUserName() {
 		u.setName("Diego");
 		assertEquals("Diego", u.getName());
@@ -57,6 +65,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkUserSurname() {
 		u.setSurname("Rojo");
 		assertEquals("Rojo", u.getSurname());
@@ -66,6 +75,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkUserPassword() {
 		u.setPassword("123456");
 		assertEquals("123456", u.getPassword());
@@ -75,6 +85,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkUserSalary() {
 		 u.setSalary(25);
 		 assertEquals(25, u.getSalary(),0.01);
@@ -85,6 +96,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkFilmId() {
 		f.setId("F-01");
 		assertEquals("F-01", f.getId());
@@ -94,6 +106,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkFilmTitle() {
 		f.setTitle("Thor");
 		assertEquals("Thor", f.getTitle());
@@ -103,6 +116,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkFilmGenre() {
 		f.setGenre("Action");
 		assertEquals("Action", f.getGenre());
@@ -112,6 +126,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkFilmDirector() {
 		f.setDirector("Kenneth Branagh");
 		assertEquals("Kenneth Branagh", f.getDirector());
@@ -121,6 +136,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkFilmYear() {
 		 f.setYear(2011); 
 		 assertEquals(2011, f.getYear());
@@ -130,6 +146,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkFilmPrice() {
 		 f.setPrice(4.5f); 
 		 assertEquals(4.5, f.getPrice(),0.01);
@@ -139,6 +156,7 @@ public class PojoTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	 public void checkFilmURL() {
 		 f.setUrl("www.thorfilm.com");  
 		 assertEquals("www.thorfilm.com", f.getUrl());

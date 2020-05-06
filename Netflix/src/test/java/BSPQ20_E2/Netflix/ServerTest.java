@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.databene.contiperf.PerfTest;
+import org.databene.contiperf.junit.ContiPerfRule;
+import org.junit.Rule;
 import org.junit.Test;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
@@ -23,6 +26,9 @@ import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
  */
 public class ServerTest {
 
+	@Rule
+	public ContiPerfRule i = new ContiPerfRule();
+	
 	/**
 	 * Method that tests the logged method to check if credentials are valid
 	 * 
@@ -30,6 +36,7 @@ public class ServerTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void checkCredentials() {
 			try {
 				User u = DB.logged("jorge", "pass");
@@ -50,6 +57,7 @@ public class ServerTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void checkConnection() throws Exception {
 		
 		Connection con = null;
@@ -74,6 +82,7 @@ public class ServerTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void checkFilmRetriever(){
 		ArrayList<Film> filmsDatabase= DB.retrieveFilms();
 		if(filmsDatabase!=null) {
@@ -91,6 +100,7 @@ public class ServerTest {
 	 *
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void checkFilmSearch() {
 		ArrayList<Film> filmsSearched=DB.searchFilms("2010");
 		if(filmsSearched!=null) {
@@ -105,6 +115,7 @@ public class ServerTest {
 	 * Method that tests the register method
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void checkRegistration() {
 		final Logger LOGGER = Logger.getLogger(DB.class.getName());
 		String code="Diego30";

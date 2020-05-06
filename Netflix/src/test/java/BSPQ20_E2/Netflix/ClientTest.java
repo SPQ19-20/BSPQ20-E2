@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import org.junit.*;
+import org.databene.contiperf.PerfTest;
+import org.databene.contiperf.junit.ContiPerfRule;
 
 import es.deusto.BSPQ20_E2.Netflix.client.Internationalization;
 import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
@@ -21,6 +23,9 @@ import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
  *
  */
 public class ClientTest {
+	
+	@Rule
+	public ContiPerfRule i = new ContiPerfRule();
 
 	/**
 	 * @param u user created to check the methods
@@ -42,20 +47,10 @@ public class ClientTest {
 	}
 
 	/**
-	 * Method that checks that the price of the film is well discounted of the
-	 * salary
-	 */
-	@Test
-	public void checkSetSalary() {
-		DB.buyFilm(f, u);
-		u.setSalary(u.getSalary() - f.getPrice());
-		assertEquals(21, u.getSalary(), 0.01);
-	}
-
-	/**
 	 * Method that makes sure that the default language of the app is English
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void defLang() {
 		l.setLocale(l.getLocale().getDefault());
 		assertEquals("Register", Internationalization.resourceBundle.getString("btnRegister"));
@@ -65,6 +60,7 @@ public class ClientTest {
 	 * Method that checks that all the films have a price set and there is no price missing
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void doFilmsHavePrice() {
 		ArrayList<Film> films = DB.retrieveFilms();
 		for (int i = 0; i<films.size(); i++)
@@ -76,6 +72,7 @@ public class ClientTest {
 	 * and all the films searched by different conditions are properly retrieved
 	 */
 	@Test
+	@PerfTest(invocations = 10)
 	public void searchFilmsWOAttibutes() {
 		ArrayList<Film> queryResult = DB.searchFilms("Stanley Kubrick");
 		for (int i = 0; i<queryResult.size(); i++)
