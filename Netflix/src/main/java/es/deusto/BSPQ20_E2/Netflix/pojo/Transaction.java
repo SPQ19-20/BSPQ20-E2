@@ -17,7 +17,7 @@ public class Transaction {
 	protected User u;
 	
 
-	protected Transaction(Film f, User u) {
+	public Transaction(Film f, User u) {
 		this.f = f;
 		this.u = u;
 	

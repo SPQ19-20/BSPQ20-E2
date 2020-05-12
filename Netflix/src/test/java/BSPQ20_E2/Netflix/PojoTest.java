@@ -1,12 +1,17 @@
 package BSPQ20_E2.Netflix;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.databene.contiperf.PerfTest;
 import org.databene.contiperf.junit.ContiPerfRule;
+import org.datanucleus.api.jdo.exceptions.TransactionActiveException;
 import org.junit.*;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
+import es.deusto.BSPQ20_E2.Netflix.pojo.Transaction;
+
+import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
 
 /**
  * Class containing the tests of the classes of Film and User
@@ -27,6 +32,7 @@ public class PojoTest {
 	private static User u;
 	private static User u2;
 	private static Film f;
+	private static Film f2;
 
 	/**
 	 * Method to put the values of the film and user to null
@@ -37,6 +43,8 @@ public class PojoTest {
 		u = new User(null, null, null, null, 0);
 		u2 = new User("busto2", "Jorge", "El Busto", "pass", 400);
 		f = new Film(null, null, null, null, 1960, 0, null, null);
+		f2 = new Film("F2", "Riot", "Action", "John Lyde", 2015, 3, "www.youtube.com", "www.youtube.com");
+
 	}
 
 	/**
@@ -189,6 +197,30 @@ public class PojoTest {
 	@PerfTest(invocations = 10)
 	public void toStringTest() {
 		assertEquals("User busto2: [Jorge El Busto, Salary: 400.0$ ]", u2.toString());
+	}
+
+	/**
+	 * Method to check that transactions constructor works well
+	 */
+	@Test
+	@PerfTest(invocations = 10)
+	public void transactions() {
+		Transaction t = new Transaction(f2, u2);
+		assertEquals(f2, t.getF());
+		assertEquals(u2, t.getU());
+	}
+
+	/**
+	 * Method to check that setters work well in transactions
+	 */
+	@Test
+	@PerfTest(invocations = 10)
+	public void settersTrans() {
+		Transaction t2 = new Transaction(null, null);
+		t2.setF(f2);
+		t2.setU(u2);
+		assertEquals(f2, t2.getF());
+		assertEquals(u2, t2.getU());
 	}
 
 }

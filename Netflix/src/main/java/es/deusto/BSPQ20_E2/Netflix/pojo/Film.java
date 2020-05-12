@@ -92,7 +92,7 @@ public class Film {
 		this.trailer = trailer;
 	}
 
-	public Film(String id, String title, String genre, String director, int year, float price, String url, String trailer) { //REAL CONSTRUCTOR WE ARE GONNA USE
+	public Film(String id, String title, String genre, String director, int year, float price, String url, String trailer) { 
 		this.id = id;
 		this.title = title;
 		this.genre = genre;

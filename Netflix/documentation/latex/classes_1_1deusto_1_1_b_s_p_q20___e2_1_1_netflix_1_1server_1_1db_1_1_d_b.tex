@@ -1,0 +1,214 @@
+\hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{}\doxysection{es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+DB Class Reference}
+\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Connection \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a47a0acbf45429b4f5ea3b428c5c7b3d4}{connect}} ()  throws Exception 
+\item 
+static \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}} \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_ace02b3a60d9d9da17d4f1977a2a0c2f7}{logged}} (String user, String pass)
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}} $>$ \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a21d801afaabc0dcd98996efdaa70ce27}{retrieve\+Films}} ()
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}} $>$ \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a0cd10544d610577ecb83422f5670d878}{search\+Films}} (String condition)
+\item 
+static void \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_aa116301eb05b8cb8a653a8c66e05a6ee}{buy\+Film}} (\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}} f, \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}} u)
+\item 
+static \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}} \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a3a7c435f508a57a985777cb6e51053d8}{free\+Film}} (\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}} u)
+\item 
+static String \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_af1604cccd823fa9d754ab86656a4889f}{get\+Id}} (\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}} u)
+\item 
+static int \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_af926002d7061d3d8cfe26d9f57777e41}{get\+Bought\+Films\+Count}} (\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}} u)
+\item 
+static void \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a64b9e899d0efe9e9025aa64188f44b7d}{register}} (String code, String name, String surname, String password, double salary)
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}} $>$ \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a544ae9b9a01d843cb2cfa67231ce3485}{my\+Films}} (\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}} u)
+\item 
+static void \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a87d85f797b2e530e9c14fd422f37006a}{open\+Trailer}} (\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}} f)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Java integration with My\+S\+QL
+
+\begin{DoxyAuthor}{Author}
+Jorge El Busto 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_aa116301eb05b8cb8a653a8c66e05a6ee}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_aa116301eb05b8cb8a653a8c66e05a6ee}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!buyFilm@{buyFilm}}
+\index{buyFilm@{buyFilm}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{buyFilm()}{buyFilm()}}
+{\footnotesize\ttfamily static void es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+buy\+Film (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}}}]{f,  }\item[{\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to process the information in the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}} so that the price of the bought film is taken away from the credit of the user who buys it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Film whose price is going to be taken \\
+\hline
+{\em u} & User who is interested in buying the film \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a47a0acbf45429b4f5ea3b428c5c7b3d4}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a47a0acbf45429b4f5ea3b428c5c7b3d4}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!connect@{connect}}
+\index{connect@{connect}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily static Connection es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a3a7c435f508a57a985777cb6e51053d8}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a3a7c435f508a57a985777cb6e51053d8}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!freeFilm@{freeFilm}}
+\index{freeFilm@{freeFilm}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{freeFilm()}{freeFilm()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}} es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+free\+Film (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to process the information in the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}} so that the price of the bought film is taken away from the credit of the user who buys it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Film which is going to be given \\
+\hline
+{\em u} & User who will get the present \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_af926002d7061d3d8cfe26d9f57777e41}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_af926002d7061d3d8cfe26d9f57777e41}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!getBoughtFilmsCount@{getBoughtFilmsCount}}
+\index{getBoughtFilmsCount@{getBoughtFilmsCount}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{getBoughtFilmsCount()}{getBoughtFilmsCount()}}
+{\footnotesize\ttfamily static int es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+get\+Bought\+Films\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to get the count of films bought by a certain user
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & User from which we want to get the name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_af1604cccd823fa9d754ab86656a4889f}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_af1604cccd823fa9d754ab86656a4889f}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!getId@{getId}}
+\index{getId@{getId}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily static String es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+get\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to get the id of the user in My\+S\+QL to execute the transaction
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & User from which we want to get the name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_ace02b3a60d9d9da17d4f1977a2a0c2f7}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_ace02b3a60d9d9da17d4f1977a2a0c2f7}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!logged@{logged}}
+\index{logged@{logged}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{logged()}{logged()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}} es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+logged (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to check in the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}} if the user credentials are valid
+
+
+\begin{DoxyParams}{Parameters}
+{\em con} & Connection with the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}} \\
+\hline
+{\em user} & String with the username passed by the Text\+Field \\
+\hline
+{\em pass} & String with the password passed by the J\+Password\+Field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new user which will be running the program 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a544ae9b9a01d843cb2cfa67231ce3485}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a544ae9b9a01d843cb2cfa67231ce3485}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!myFilms@{myFilms}}
+\index{myFilms@{myFilms}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{myFilms()}{myFilms()}}
+{\footnotesize\ttfamily static Array\+List$<$\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}}$>$ es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+my\+Films (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user}{User}}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to retrieve the films a certain user owns
+
+
+\begin{DoxyParams}{Parameters}
+{\em con} & Connection to the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array with the films a certain user owns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a87d85f797b2e530e9c14fd422f37006a}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a87d85f797b2e530e9c14fd422f37006a}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!openTrailer@{openTrailer}}
+\index{openTrailer@{openTrailer}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{openTrailer()}{openTrailer()}}
+{\footnotesize\ttfamily static void es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+open\+Trailer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}}}]{f }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to open in browser the trailer of a film
+
+
+\begin{DoxyParams}{Parameters}
+{\em Film} & which is going to be opened \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a64b9e899d0efe9e9025aa64188f44b7d}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a64b9e899d0efe9e9025aa64188f44b7d}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!register@{register}}
+\index{register@{register}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily static void es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+register (\begin{DoxyParamCaption}\item[{String}]{code,  }\item[{String}]{name,  }\item[{String}]{surname,  }\item[{String}]{password,  }\item[{double}]{salary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to register users into the S\+QL Database
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & Username \\
+\hline
+{\em name} & Name of the user \\
+\hline
+{\em surname} & Surname of the user \\
+\hline
+{\em password} & Password of the account \\
+\hline
+{\em salary} & Salary of the account \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a21d801afaabc0dcd98996efdaa70ce27}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a21d801afaabc0dcd98996efdaa70ce27}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!retrieveFilms@{retrieveFilms}}
+\index{retrieveFilms@{retrieveFilms}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{retrieveFilms()}{retrieveFilms()}}
+{\footnotesize\ttfamily static Array\+List$<$\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}}$>$ es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+retrieve\+Films (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to retrieve every single film in the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em con} & Connection to the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array with every film in the F\+I\+LM table 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a0cd10544d610577ecb83422f5670d878}\label{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b_a0cd10544d610577ecb83422f5670d878}} 
+\index{es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}!searchFilms@{searchFilms}}
+\index{searchFilms@{searchFilms}!es.deusto.BSPQ20\_E2.Netflix.server.db.DB@{es.deusto.BSPQ20\_E2.Netflix.server.db.DB}}
+\doxysubsubsection{\texorpdfstring{searchFilms()}{searchFilms()}}
+{\footnotesize\ttfamily static Array\+List$<$\mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film}{Film}}$>$ es.\+deusto.\+B\+S\+P\+Q20\+\_\+\+E2.\+Netflix.\+server.\+db.\+D\+B.\+search\+Films (\begin{DoxyParamCaption}\item[{String}]{condition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to search films
+
+
+\begin{DoxyParams}{Parameters}
+{\em con} & Connection to the \mbox{\hyperlink{classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b}{DB}} \\
+\hline
+{\em condition} & String to be searched retrieved from the main window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Every film whose director, name, genre, year, title, or price contains the indicated string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/deusto/\+B\+S\+P\+Q20\+\_\+\+E2/\+Netflix/server/db/\mbox{\hyperlink{_d_b_8java}{D\+B.\+java}}\end{DoxyCompactItemize}
