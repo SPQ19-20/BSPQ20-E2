@@ -9272,3 +9272,331 @@ Caused by: java.net.ConnectException: Connection refused: connect
 14:38:25,256 (main) INFO  [DataNucleus.Enhancer] - La clase "es.deusto.BSPQ20_E2.Netflix.pojo.User" esta enhanced.
 14:38:25,256 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
 14:38:25,261 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=241 ms, enhance=34 ms, total=275 ms. Compruebe el LOG para los detalles
+14:41:08,970 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:41:09,354 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:41:09,356 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:41:09,363 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:41:09,364 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:41:09,372 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:41:09,373 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:41:09,376 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=327 ms, enhance=67 ms, total=394 ms. Compruebe el LOG para los detalles
+14:41:20,651 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:41:21,024 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:41:21,026 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:41:21,035 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:41:21,036 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:41:21,044 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:41:21,045 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:41:21,048 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=315 ms, enhance=70 ms, total=385 ms. Compruebe el LOG para los detalles
+14:42:04,143 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:42:04,558 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:42:04,560 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:42:04,567 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:42:04,568 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:42:04,576 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:42:04,577 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:42:04,580 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=353 ms, enhance=69 ms, total=422 ms. Compruebe el LOG para los detalles
+14:43:43,039 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:43:43,465 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:43:43,466 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:43:43,474 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:43:43,475 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:43:43,484 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:43:43,485 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:43:43,488 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=357 ms, enhance=74 ms, total=431 ms. Compruebe el LOG para los detalles
+14:43:59,721 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:44:00,223 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:44:00,224 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:44:00,233 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:44:00,235 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:44:00,244 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:44:00,245 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:44:00,249 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=429 ms, enhance=83 ms, total=512 ms. Compruebe el LOG para los detalles
+14:45:32,127 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:45:32,493 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:45:32,495 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:45:32,501 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:45:32,503 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:45:32,510 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:45:32,511 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:45:32,514 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=311 ms, enhance=65 ms, total=376 ms. Compruebe el LOG para los detalles
+14:45:34,546 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:45:34,916 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:45:34,918 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:45:34,929 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:45:34,930 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:45:34,941 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:45:34,942 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:45:34,946 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=277 ms, enhance=85 ms, total=362 ms. Compruebe el LOG para los detalles
+14:47:15,201 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:47:15,739 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:47:15,741 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:47:15,750 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:47:15,752 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:47:15,762 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:47:15,764 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:47:15,768 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=463 ms, enhance=88 ms, total=551 ms. Compruebe el LOG para los detalles
+14:47:17,843 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:47:18,175 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:47:18,177 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:47:18,184 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:47:18,185 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:47:18,193 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:47:18,195 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:47:18,198 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=273 ms, enhance=67 ms, total=340 ms. Compruebe el LOG para los detalles
+14:51:16,798 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:51:17,761 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:51:17,762 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:51:17,773 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:51:17,774 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:51:17,785 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:51:17,786 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:51:17,791 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=827 ms, enhance=107 ms, total=934 ms. Compruebe el LOG para los detalles
+14:51:21,236 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:51:21,849 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:51:21,858 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:51:21,869 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:51:21,870 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:51:21,881 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:51:21,882 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:51:21,886 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=505 ms, enhance=111 ms, total=616 ms. Compruebe el LOG para los detalles
+14:57:43,533 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:57:43,945 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:57:43,946 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:57:43,957 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:57:43,958 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:57:43,967 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:57:43,968 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:57:43,971 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=337 ms, enhance=89 ms, total=426 ms. Compruebe el LOG para los detalles
+14:57:46,194 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:57:46,542 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:57:46,543 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:57:46,550 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:57:46,551 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:57:46,559 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:57:46,560 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:57:46,564 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=281 ms, enhance=72 ms, total=353 ms. Compruebe el LOG para los detalles
+14:58:34,701 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:58:35,109 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:58:35,111 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:58:35,122 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:58:35,123 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:58:35,133 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:58:35,134 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:58:35,138 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=340 ms, enhance=83 ms, total=423 ms. Compruebe el LOG para los detalles
+14:58:37,105 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:58:37,452 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:58:37,453 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:58:37,460 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:58:37,461 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:58:37,475 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:58:37,476 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:58:37,478 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=289 ms, enhance=71 ms, total=360 ms. Compruebe el LOG para los detalles
+14:58:46,979 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+14:58:47,293 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+14:58:47,295 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+14:58:47,302 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+14:58:47,303 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+14:58:47,310 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+14:58:47,310 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+14:58:47,313 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=262 ms, enhance=61 ms, total=323 ms. Compruebe el LOG para los detalles
+15:01:28,925 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+15:01:29,357 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+15:01:29,358 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+15:01:29,368 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+15:01:29,369 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+15:01:29,377 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+15:01:29,378 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+15:01:29,382 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=354 ms, enhance=85 ms, total=439 ms. Compruebe el LOG para los detalles
+15:01:31,511 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+15:01:31,871 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+15:01:31,872 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+15:01:31,879 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+15:01:31,880 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+15:01:31,887 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+15:01:31,888 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+15:01:31,891 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=300 ms, enhance=66 ms, total=366 ms. Compruebe el LOG para los detalles
+15:04:08,829 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+15:04:09,303 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+15:04:09,304 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+15:04:09,312 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+15:04:09,313 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+15:04:09,320 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+15:04:09,321 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+15:04:09,325 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=412 ms, enhance=66 ms, total=478 ms. Compruebe el LOG para los detalles
+15:04:52,838 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+15:04:53,250 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+15:04:53,251 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+15:04:53,260 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+15:04:53,261 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+15:04:53,268 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+15:04:53,269 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+15:04:53,272 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=350 ms, enhance=68 ms, total=418 ms. Compruebe el LOG para los detalles
+15:05:33,399 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+15:05:33,916 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+15:05:33,917 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+15:05:33,928 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+15:05:33,929 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+15:05:33,941 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+15:05:33,942 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+15:05:33,947 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=431 ms, enhance=96 ms, total=527 ms. Compruebe el LOG para los detalles
+15:07:46,546 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+15:07:46,905 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+15:07:46,906 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+15:07:46,913 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+15:07:46,914 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+15:07:46,922 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+15:07:46,922 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+15:07:46,926 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=301 ms, enhance=65 ms, total=366 ms. Compruebe el LOG para los detalles
+16:05:05,462 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:05:05,717 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:05:05,718 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:05:05,726 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:05:05,727 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:05:05,735 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:05:05,736 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:05:05,739 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=195 ms, enhance=67 ms, total=262 ms. Compruebe el LOG para los detalles
+16:05:20,415 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:05:20,684 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:05:20,685 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:05:20,695 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:05:20,696 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:05:20,706 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:05:20,707 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:05:20,711 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=191 ms, enhance=92 ms, total=283 ms. Compruebe el LOG para los detalles
+16:13:04,009 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:13:04,266 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:13:04,267 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:13:04,274 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:13:04,275 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:13:04,283 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:13:04,284 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:13:04,288 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=196 ms, enhance=69 ms, total=265 ms. Compruebe el LOG para los detalles
+16:13:06,280 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:13:06,557 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:13:06,558 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:13:06,564 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:13:06,565 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:13:06,574 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:13:06,575 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:13:06,579 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=220 ms, enhance=66 ms, total=286 ms. Compruebe el LOG para los detalles
+16:28:45,419 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:28:45,699 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:28:45,700 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:28:45,708 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:28:45,710 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:28:45,717 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:28:45,718 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:28:45,723 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=195 ms, enhance=94 ms, total=289 ms. Compruebe el LOG para los detalles
+16:28:47,329 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:28:47,570 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:28:47,571 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:28:47,580 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:28:47,581 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:28:47,590 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:28:47,591 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:28:47,594 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=182 ms, enhance=72 ms, total=254 ms. Compruebe el LOG para los detalles
+16:32:52,808 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:32:53,138 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:32:53,139 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:32:53,148 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:32:53,150 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:32:53,158 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:32:53,159 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:32:53,163 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=239 ms, enhance=78 ms, total=317 ms. Compruebe el LOG para los detalles
+16:32:55,569 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:32:55,821 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:32:55,822 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:32:55,829 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:32:55,830 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:32:55,840 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:32:55,841 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:32:55,844 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=192 ms, enhance=71 ms, total=263 ms. Compruebe el LOG para los detalles
+16:40:21,663 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:40:21,949 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:40:21,950 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:40:21,959 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:40:21,960 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:40:21,976 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:40:21,977 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:40:21,983 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=216 ms, enhance=79 ms, total=295 ms. Compruebe el LOG para los detalles
+16:40:24,114 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:40:24,343 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:40:24,344 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:40:24,353 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:40:24,354 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:40:24,363 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:40:24,363 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:40:24,368 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=168 ms, enhance=67 ms, total=235 ms. Compruebe el LOG para los detalles
+16:41:09,118 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:41:09,368 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:41:09,369 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:41:09,382 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:41:09,384 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:41:09,396 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:41:09,398 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:41:09,403 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=180 ms, enhance=79 ms, total=259 ms. Compruebe el LOG para los detalles
+16:41:11,708 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:41:11,919 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:41:11,920 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:41:11,930 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:41:11,930 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:41:11,939 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:41:11,940 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:41:11,945 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=151 ms, enhance=68 ms, total=219 ms. Compruebe el LOG para los detalles
+16:42:59,811 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:43:00,087 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:43:00,088 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:43:00,098 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:43:00,099 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:43:00,110 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:43:00,111 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:43:00,117 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=201 ms, enhance=79 ms, total=280 ms. Compruebe el LOG para los detalles
+16:43:43,034 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:43:43,276 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:43:43,277 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:43:43,287 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:43:43,288 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:43:43,298 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:43:43,299 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:43:43,305 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=175 ms, enhance=72 ms, total=247 ms. Compruebe el LOG para los detalles
+16:43:45,353 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:43:45,604 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:43:45,605 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:43:45,616 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:43:45,618 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:43:45,631 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:43:45,633 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:43:45,639 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=175 ms, enhance=87 ms, total=262 ms. Compruebe el LOG para los detalles
+16:44:12,798 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:44:13,049 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:44:13,050 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:44:13,059 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:44:13,060 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:44:13,071 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:44:13,072 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:44:13,077 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=186 ms, enhance=71 ms, total=257 ms. Compruebe el LOG para los detalles
+16:44:15,028 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:44:15,239 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:44:15,240 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:44:15,249 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:44:15,249 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:44:15,260 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:44:15,262 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:44:15,266 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=152 ms, enhance=67 ms, total=219 ms. Compruebe el LOG para los detalles
+16:46:01,971 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:46:02,282 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:46:02,283 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:46:02,295 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:46:02,297 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:46:02,308 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:46:02,309 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:46:02,315 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=232 ms, enhance=85 ms, total=317 ms. Compruebe el LOG para los detalles
+16:46:04,698 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+16:46:04,931 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Film.class" con definicion enhanced
+16:46:04,932 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Film
+16:46:04,941 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\Transaction.class" con definicion enhanced
+16:46:04,942 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.Transaction
+16:46:04,953 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\Jorge\Documents\GitHub\BSPQ20-E2\Netflix\target\classes\es\deusto\BSPQ20_E2\Netflix\pojo\User.class" con definicion enhanced
+16:46:04,954 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.BSPQ20_E2.Netflix.pojo.User
+16:46:04,959 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=171 ms, enhance=71 ms, total=242 ms. Compruebe el LOG para los detalles

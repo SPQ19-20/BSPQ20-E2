@@ -5,6 +5,7 @@ import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import es.deusto.BSPQ20_E2.Netflix.client.gui.Login;
+import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 
 import java.io.IOException;
 import java.net.URI;
@@ -41,17 +42,16 @@ public class Main {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        final HttpServer server = startServer();
-        Login l = new Login();
-  		l.setVisible(true);
-        LOGGER.info( String.format("Jersey app started with WADL available at "
-                + "%sapplication.wadl\nHit enter to stop it...", BASE_URI));
-        System.in.read();
-        
-        
-        
-        server.stop();
-        
+		final HttpServer server = startServer();
+		Login l = new Login();
+		l.setVisible(true);
+		LOGGER.info(String.format(
+				"Jersey app started with WADL available at " + "%sapplication.wadl\nHit enter to stop it...",
+				BASE_URI));
+		System.in.read();
+
+		server.stop();
+
   
     }
 }

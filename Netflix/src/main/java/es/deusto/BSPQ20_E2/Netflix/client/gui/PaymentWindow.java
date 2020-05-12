@@ -79,7 +79,6 @@ public class PaymentWindow extends JFrame {
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DB.buyFilm(f, u);
-				u.setSalary(u.getSalary() - f.getPrice());
 				JOptionPane.showMessageDialog(null, "Film " + f.getTitle() + " has been bought successfully");
 				if (DB.getBoughtFilmsCount(u) > 0 && DB.getBoughtFilmsCount(u) % 3 == 0) {
 					JOptionPane.showMessageDialog(null, "Congratulations, you've bought " + DB.getBoughtFilmsCount(u)

@@ -28,12 +28,8 @@ public class ClientTest {
 	public ContiPerfRule i = new ContiPerfRule();
 
 	/**
-	 * @param u user created to check the methods
-	 * @param f film created to check the methods
 	 * @param l login window
 	 */
-	private static User u;
-	private static Film f;
 	private static Login l;
 
 	/**
@@ -41,8 +37,6 @@ public class ClientTest {
 	 */
 	@BeforeClass
 	public static void setUpValues() throws Exception {
-		u = new User("U-01", "Diego", "Rojo", "1234", 25);
-		f = new Film("F-01", "Thor", "Action", "Taika Waititi", 2011, 4, "www.thorfilm.com");
 		l = new Login();
 	}
 
@@ -54,32 +48,6 @@ public class ClientTest {
 	public void defLang() {
 		l.setLocale(l.getLocale().getDefault());
 		assertEquals("Register", Internationalization.resourceBundle.getString("btnRegister"));
-	}
-
-	/**
-	 * Method that checks that all the films have a price set and there is no price missing
-	 */
-	@Test
-	@PerfTest(invocations = 10)
-	public void doFilmsHavePrice() {
-		ArrayList<Film> films = DB.retrieveFilms();
-		for (int i = 0; i<films.size(); i++)
-			assertTrue(films.get(i).getPrice()>0);
-	}
-	
-	/**
-	 * Method that proofs that the searching bar works and searches films regardless the attributes
-	 * and all the films searched by different conditions are properly retrieved
-	 */
-	@Test
-	@PerfTest(invocations = 10)
-	public void searchFilmsWOAttibutes() {
-		ArrayList<Film> queryResult = DB.searchFilms("Stanley Kubrick");
-		for (int i = 0; i<queryResult.size(); i++)
-			assertEquals("Stanley Kubrick", queryResult.get(i).getDirector());
-		queryResult = DB.searchFilms("2010");
-		for (int i = 0; i<queryResult.size(); i++)
-			assertEquals(2010, queryResult.get(i).getYear());
 	}
 
 

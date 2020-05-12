@@ -103,25 +103,6 @@ public class Film {
 		this.trailer = trailer;
 	}
 
-	public Film(String id, String title, String genre, String director, int year, float price) { //VALID FOR DEMO ONLY
-		this.id = id;
-		this.title = title;
-		this.genre = genre;
-		this.director = director;
-		this.year = year;
-		this.price = price;
-	}
-	
-	public Film(String id, String title, String genre, String director, int year, float price, String url) { //VALID FOR TESTS
-		this.id = id;
-		this.title = title;
-		this.genre = genre;
-		this.director = director;
-		this.year = year;
-		this.price = price;
-		this.url = url;
-	}
-
 	public String toString() {
 		return "Film : " + title + " [ Genre:" + genre + " Director: " + director + " Year: " + year + " Price: " + price
 				+ "]";

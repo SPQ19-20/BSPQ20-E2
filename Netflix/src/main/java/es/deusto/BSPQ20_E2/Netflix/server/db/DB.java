@@ -15,6 +15,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Level;
+
+import javax.swing.JOptionPane;
+
 import org.apache.log4j.Logger;
 
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
@@ -174,8 +177,9 @@ public class DB {
 			Connection con2 = connect();
 			Statement stmt2 = con2.createStatement();
 			stmt2.executeUpdate(ins);
-
+			u.setSalary(u.getSalary() - f.getPrice());
 			con2.close();
+			
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 		}
@@ -337,6 +341,7 @@ public class DB {
 	 * 
 	 * @param Film which is going to be opened
 	 * @throws IOException
+	 * 
 	 */
 	public static void openTrailer(Film f) throws IOException {
 		String trailer = "";
