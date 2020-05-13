@@ -102,7 +102,7 @@ public class Film {
 	 * @param id       of the film registered in the DB
 	 * @param title    of the film
 	 * @param genre    of the film
-	 * @param director
+	 * @param director of the film
 	 * @param year     the film was released
 	 * @param price    of the film
 	 * @param url      of the film cover to be displayed on the GUI

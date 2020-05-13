@@ -1,8 +1,26 @@
 var searchData=
 [
-  ['base_5furi_2',['BASE_URI',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1_main.html#a127da9065d6df568e40f35bd561f0571',1,'es::deusto::BSPQ20_E2::Netflix::server::Main']]],
-  ['bspq20_5fe2_3',['BSPQ20_E2',['../namespace_b_s_p_q20___e2.html',1,'']]],
-  ['buyfilm_4',['buyFilm',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html#aa116301eb05b8cb8a653a8c66e05a6ee',1,'es::deusto::BSPQ20_E2::Netflix::server::db::DB']]],
-  ['buyfilmtest_5',['buyFilmTest',['../class_b_s_p_q20___e2_1_1_netflix_1_1_server_test.html#a4bcf8d051e94a1501f500f7d62dba0cb',1,'BSPQ20_E2::Netflix::ServerTest']]],
-  ['netflix_6',['Netflix',['../namespace_b_s_p_q20___e2_1_1_netflix.html',1,'BSPQ20_E2']]]
+  ['checkconnection_9',['checkConnection',['../class_b_s_p_q20___e2_1_1_netflix_1_1_d_b_test.html#a7ef177fd5537d2449b24eba207922d17',1,'BSPQ20_E2::Netflix::DBTest']]],
+  ['checkcredentials_10',['checkCredentials',['../class_b_s_p_q20___e2_1_1_netflix_1_1_d_b_test.html#aee39ec93d4eb68705e0916eef17b610e',1,'BSPQ20_E2::Netflix::DBTest']]],
+  ['checkfilmdirector_11',['checkFilmDirector',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#aa2e17072c2f93a7bfc07ad114d9c62fb',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkfilmgenre_12',['checkFilmGenre',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#acca7001408df8be5fbd375b197c137f2',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkfilmid_13',['checkFilmId',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#a5189686fa5c7a43b160a8b03ea37efc6',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkfilmprice_14',['checkFilmPrice',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#a645679a3578cc00f1817b4f2c862e91c',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkfilmretriever_15',['checkFilmRetriever',['../class_b_s_p_q20___e2_1_1_netflix_1_1_d_b_test.html#a2885c557294f9b25b37cc7feeeefc933',1,'BSPQ20_E2::Netflix::DBTest']]],
+  ['checkfilmsearch_16',['checkFilmSearch',['../class_b_s_p_q20___e2_1_1_netflix_1_1_d_b_test.html#af3bde72917f05f9228c22404d660422a',1,'BSPQ20_E2::Netflix::DBTest']]],
+  ['checkfilmtitle_17',['checkFilmTitle',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#afa994de001e2da2198b1cd2765cf4254',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkfilmurl_18',['checkFilmURL',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#afabb8a26219b00b1d7b5b176716a575e',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkfilmyear_19',['checkFilmYear',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#a791f8cddf6c1400630b23a43ae17c96b',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkregistration_20',['checkRegistration',['../class_b_s_p_q20___e2_1_1_netflix_1_1_d_b_test.html#aecbd22c6c0081441be95509caaa4f150',1,'BSPQ20_E2::Netflix::DBTest']]],
+  ['checktrailer_21',['checkTrailer',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#a8a3f1c05814355287b02386859d917cf',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkusercode_22',['checkUserCode',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#ab8cb2cc8399e47cec53b4a6de2b79980',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkusername_23',['checkUserName',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#a3b2353983a5f8231513f1accc0d50327',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkuserpassword_24',['checkUserPassword',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#ab8a20215e8bbbe32f50d6a550f73d0d1',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkusersalary_25',['checkUserSalary',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#a21a9e216a31d717f964cf3f607730e41',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['checkusersurname_26',['checkUserSurname',['../class_b_s_p_q20___e2_1_1_netflix_1_1_pojo_test.html#a449f09965b31048ad5a3bf710df3da1b',1,'BSPQ20_E2::Netflix::PojoTest']]],
+  ['clienttest_27',['ClientTest',['../class_b_s_p_q20___e2_1_1_netflix_1_1_client_test.html',1,'BSPQ20_E2::Netflix']]],
+  ['clienttest_2ejava_28',['ClientTest.java',['../_client_test_8java.html',1,'']]],
+  ['code_29',['code',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user.html#afab7f4c74fd5a0c7e1a2e60c3c078058',1,'es::deusto::BSPQ20_E2::Netflix::pojo::User']]],
+  ['connect_30',['connect',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html#a47a0acbf45429b4f5ea3b428c5c7b3d4',1,'es::deusto::BSPQ20_E2::Netflix::server::db::DB']]],
+  ['createdb_31',['createDB',['../class_b_s_p_q20___e2_1_1_netflix_1_1_d_b_test.html#afbde6d5ffbae7a8eac80617341660f0e',1,'BSPQ20_E2::Netflix::DBTest']]]
 ];

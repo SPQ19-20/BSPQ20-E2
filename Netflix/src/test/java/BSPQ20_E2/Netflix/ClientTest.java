@@ -19,7 +19,8 @@ import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
 /**
  * Class containing the tests of the client
  * 
- * @author Diego Rojo, Jorge El Busto
+ * @author Diego Rojo
+ * @author Jorge El Busto
  *
  */
 public class ClientTest {

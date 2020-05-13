@@ -104,6 +104,8 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Java integration with MySQL</p>
 <dl class="section author"><dt>Author</dt><dd>Jorge El Busto </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00032">32</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa116301eb05b8cb8a653a8c66e05a6ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa116301eb05b8cb8a653a8c66e05a6ee">&#9670;&nbsp;</a></span>buyFilm()</h2>
@@ -139,6 +141,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Method to process the information in the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a> so that the price of the bought film is taken away from the credit of the user who buys it.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>Film whose price is going to be taken </td></tr>
@@ -146,6 +154,8 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00172">172</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -171,6 +181,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00035">35</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -198,6 +210,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Method to process the information in the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a> so that the price of the bought film is taken away from the credit of the user who buys it.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>Film which is going to be given </td></tr>
@@ -205,6 +223,8 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00201">201</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -231,13 +251,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to get the count of films bought by a certain user</p>
+<p>Method to get the count of films bought by a certain user. It works along with the getID method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">u</td><td>User from which we want to get the name </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00265">265</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -264,13 +286,21 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to get the id of the user in MySQL to execute the transaction</p>
+<p>Method to get the id of the user in MySQL to execute the transaction of buying a film and storing it in the user's particular bought films cart</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">u</td><td>User from which we want to get the name </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00231">231</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -308,6 +338,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Method to check in the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a> if the user credentials are valid</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">con</td><td>Connection with the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a> </td></tr>
@@ -317,6 +353,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>new user which will be running the program </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00057">57</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -343,7 +381,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to retrieve the films a certain user owns</p>
+<p>Method to retrieve the films a certain user already owns.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">con</td><td>Connection to the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a> </td></tr>
@@ -351,6 +389,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an array with the films a certain user owns </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00320">320</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -377,7 +417,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to open in browser the trailer of a film</p>
+<p>Method to open the trailer of a film in the browser. It retrieves all the attributes of the film from the database, and working with the trailer getter, the URI is opened in a new browser if the platform in which the app is being executed supports browsing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Film</td><td>which is going to be opened </td></tr>
@@ -386,10 +426,12 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IOException</td><td></td></tr>
+    <tr><td class="paramname">IOException,URISyntaxException,SQLException</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00358">358</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -444,7 +486,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to register users into the SQL Database</p>
+<p>Method to register users into the SQL Database.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>Username </td></tr>
@@ -455,6 +497,8 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00300">300</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -481,6 +525,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Method to retrieve every single film in the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a></p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">con</td><td>Connection to the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a> </td></tr>
@@ -488,6 +538,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an array with every film in the FILM table </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00092">92</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
 
 </div>
 </div>
@@ -514,7 +566,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method to search films</p>
+<p>Method to search films regardless the attribute. It accepts the year, the director, the title... any of them</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SQLException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">con</td><td>Connection to the <a class="el" href="classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html">DB</a> </td></tr>
@@ -524,10 +582,12 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Every film whose director, name, genre, year, title, or price contains the indicated string </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_d_b_8java_source.html#l00129">129</a> of file <a class="el" href="_d_b_8java_source.html">DB.java</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/java/es/deusto/BSPQ20_E2/Netflix/server/db/<a class="el" href="_d_b_8java.html">DB.java</a></li>
+<li>C:/Users/Jorge/Documents/GitHub/BSPQ20-E2/Netflix/src/main/java/es/deusto/BSPQ20_E2/Netflix/server/db/<a class="el" href="_d_b_8java_source.html">DB.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

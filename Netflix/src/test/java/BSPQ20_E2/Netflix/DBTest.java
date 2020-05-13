@@ -19,10 +19,12 @@ import org.junit.Test;
 import es.deusto.BSPQ20_E2.Netflix.pojo.Film;
 import es.deusto.BSPQ20_E2.Netflix.pojo.User;
 import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
+
 /**
  * Class containing the tests of the server
  * 
- * @author Diego Rojo - Jorge El Busto
+ * @author Diego Rojo
+ * @author Jorge El Busto
  *
  */
 public class DBTest {
@@ -119,7 +121,8 @@ public class DBTest {
 	}
 
 	/**
-	 * Method that tests the searchFilms method
+	 * Method that tests the searchFilms method. The array shouldn't be null and it
+	 * should contain films.
 	 * 
 	 * @param filmsSearched arrayList of films created to check if the method works
 	 *
@@ -137,7 +140,7 @@ public class DBTest {
 	}
 
 	/**
-	 * Method that tests the register method
+	 * Method that tests that the registration method works
 	 */
 	@Test
 	@PerfTest(invocations = 10)
@@ -152,6 +155,7 @@ public class DBTest {
 			stmt.executeUpdate(sql);
 			con.close();
 			LOGGER.info("New user registered: " + code);
+			assertTrue(true);
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 		}
@@ -169,7 +173,7 @@ public class DBTest {
 	}
 
 	/**
-	 * Method to check that films are correctly retrieved We're trying it with the
+	 * Method to check that films are correctly retrieved. We're trying it with the
 	 * first film, Fast and Furious
 	 */
 	@Test
@@ -181,7 +185,7 @@ public class DBTest {
 	}
 
 	/**
-	 * Method to check that DB is successfully created
+	 * Method to check that DB is successfully created.
 	 */
 	@Test
 	@PerfTest(invocations = 10)
@@ -192,6 +196,7 @@ public class DBTest {
 
 	/**
 	 * Method to check that the number of bought films by a user gets incremented
+	 * after having bought one of them.
 	 */
 	@Test
 	@PerfTest(invocations = 10)
@@ -202,8 +207,8 @@ public class DBTest {
 	}
 
 	/**
-	 * Method to check that, after buying a film, the arraylist of bought films by a
-	 * user is not null and contains at least a film
+	 * Method to check that, after buying a film, the ArrayList of bought films by a
+	 * user is not null and contains at least a film.
 	 */
 	@Test
 	@PerfTest(invocations = 10)
@@ -213,7 +218,7 @@ public class DBTest {
 	}
 
 	/**
-	 * NOTE -- There is no method to proof that opening trailer method works as the
+	 * NOTE -- There is no method to prove that opening trailer method works as the
 	 * browser is opened
 	 */
 	/**

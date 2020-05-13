@@ -1,0 +1,14 @@
+Prerequisites\+: Maven\+: 3.\+6.\+3 Java\+: 13 My\+S\+QL\+: 8.\+0.\+19
+
+Instructions to follow during the execution of the program\+:
+\begin{DoxyEnumerate}
+\item Open My\+S\+QL and execute the create-\/db.\+sql Make sure that the username and password are root and the connection is localhost\+:3306
+\item run mvn clean
+\item run mvn compile
+\item run mvn datanucleus\+:schema-\/create
+\item Execute the add-\/items.\+sql script in My\+S\+QL
+\item run mvn exec\+:java
+\item user\+: jorge pass\+:pass N\+O\+TE\+: For tests, run mvn test
+\end{DoxyEnumerate}
+
+To do the tests and check their functionality\+: mvn test 

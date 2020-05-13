@@ -16,7 +16,8 @@ import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
 /**
  * Class containing the tests of the classes of Film and User
  * 
- * @author Diego Rojo, Jorge El Busto
+ * @author Diego Rojo
+ * @author Jorge El Busto
  *
  */
 public class PojoTest {
@@ -35,7 +36,8 @@ public class PojoTest {
 	private static Film f2;
 
 	/**
-	 * Method to put the values of the film and user to null
+	 * Method to put the values of the film and user to null to test getters and
+	 * setters afterwards
 	 *
 	 */
 	@BeforeClass

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['deflang_197',['defLang',['../class_b_s_p_q20___e2_1_1_netflix_1_1_client_test.html#a93dcc816f8d650a4d01cb359bdb78e89',1,'BSPQ20_E2::Netflix::ClientTest']]],
-  ['doesboughtfilmscountincrement_198',['doesBoughtFilmsCountIncrement',['../class_b_s_p_q20___e2_1_1_netflix_1_1_server_test.html#ad5bb33991b2bbbe1025978e9dd11b467',1,'BSPQ20_E2::Netflix::ServerTest']]],
-  ['doesfreefilmwork_199',['doesFreeFilmWork',['../class_b_s_p_q20___e2_1_1_netflix_1_1_server_test.html#a94cb1fddf58d605b34d7328121ef5f99',1,'BSPQ20_E2::Netflix::ServerTest']]],
-  ['dofilmshaveprice_200',['doFilmsHavePrice',['../class_b_s_p_q20___e2_1_1_netflix_1_1_server_test.html#a4982a5bc8c3a8ddf9e3071dd76b4a2f5',1,'BSPQ20_E2::Netflix::ServerTest']]]
+  ['film_214',['Film',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#a5993ac46973f1a53fefd1c65d1400fb2',1,'es.deusto.BSPQ20_E2.Netflix.pojo.Film.Film()'],['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#af8d0998fce7cddefd24b37118f0b5caf',1,'es.deusto.BSPQ20_E2.Netflix.pojo.Film.Film(String id, String title, String genre, String director, int year, float price, String url, String trailer)']]],
+  ['freefilm_215',['freeFilm',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html#a3a7c435f508a57a985777cb6e51053d8',1,'es::deusto::BSPQ20_E2::Netflix::server::db::DB']]]
 ];
