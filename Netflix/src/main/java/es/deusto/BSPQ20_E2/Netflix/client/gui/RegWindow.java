@@ -11,6 +11,7 @@ import java.util.logging.Level;
 import org.apache.log4j.Logger;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 
 import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
@@ -21,6 +22,16 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JPasswordField;
 
+/**
+ * 
+ * Window to be displayed if a new user wants to be registered. The user itself
+ * will have to introduce several information such as username, password,
+ * salary...
+ * 
+ * @category GUI
+ * @author Jorge El Busto
+ * @see Register Window.
+ */
 public class RegWindow extends JFrame {
 	private final static Logger LOGGER = Logger.getLogger(RegWindow.class.getName());
 	private Font f;
@@ -40,7 +51,7 @@ public class RegWindow extends JFrame {
 					new FileInputStream(new File("src/main/resources/Bebas-Regular.ttf"))).deriveFont(Font.PLAIN, 50);
 		} catch (FontFormatException | IOException e1) {
 			// TODO Auto-generated catch block
-			LOGGER.warn( e1.getMessage());
+			LOGGER.warn(e1.getMessage());
 		}
 		JLabel lblNewLabel = new JLabel("NETFLIX");
 		lblNewLabel.setForeground(Color.RED);
@@ -105,10 +116,17 @@ public class RegWindow extends JFrame {
 		JButton btnNewButton = new JButton("Register");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				DB.register(tfUser.getText(), tfName.getText(), tfSurname.getText(), tfPassword.getText(), Double.parseDouble(tfSalary.getText()));
-				dispose();
-				Login l = new Login();
-				l.setVisible(true);
+				/**
+				 * Action listener to retrieve the data from several text fields and to pass
+				 * them into the DB user registering method.
+				 */
+				if((tfUser.getText()!="")&&(tfName.getText()!="")&&(tfSurname.getText()!="")&&(tfPassword.getText()!="")&&(tfSalary.getText()!="")) {
+					DB.register(tfUser.getText(), tfName.getText(), tfSurname.getText(), tfPassword.getText(),
+							Double.parseDouble(tfSalary.getText()));
+					dispose();
+					Login l = new Login();
+					l.setVisible(true);
+				} else JOptionPane.showMessageDialog(null, "User could not be registered - missing parameters");
 			}
 		});
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -116,7 +134,7 @@ public class RegWindow extends JFrame {
 		btnNewButton.setBackground(Color.LIGHT_GRAY);
 		btnNewButton.setBounds(107, 305, 144, 23);
 		getContentPane().add(btnNewButton);
-		
+
 		tfPassword = new JPasswordField();
 		tfPassword.setBounds(149, 220, 174, 20);
 		getContentPane().add(tfPassword);

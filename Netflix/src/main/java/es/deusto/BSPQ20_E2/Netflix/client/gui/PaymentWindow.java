@@ -1,8 +1,11 @@
 package es.deusto.BSPQ20_E2.Netflix.client.gui;
 
 /**
- * Window used for the last step of the transaction of buying a film
+
+ * Window to be displayed in the last step of buying a film and storing the transaction in the DB.
+ * @category GUI
  * @author Jorge El Busto
+ * @see Payment Window.
  */
 import java.awt.GridLayout;
 
@@ -78,14 +81,25 @@ public class PaymentWindow extends JFrame {
 		JButton btnLogin = new JButton(Internationalization.resourceBundle.getString("btnLogin"));
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				DB.buyFilm(f, u);
-				JOptionPane.showMessageDialog(null, "Film " + f.getTitle() + " has been bought successfully");
-				if (DB.getBoughtFilmsCount(u) > 0 && DB.getBoughtFilmsCount(u) % 3 == 0) {
-					JOptionPane.showMessageDialog(null, "Congratulations, you've bought " + DB.getBoughtFilmsCount(u)
-							+ " films! You will get " + DB.freeFilm(u).getTitle() + " for free.");
-				}
-				dispose();
-				MainWindow updated = new MainWindow(u);
+				/**
+				 * After logging in again due to security issues, film will be bought. Each 5
+				 * films bought, the app will implement a reward system in which the user will
+				 * be gifted with a new film.
+				 */
+				if ((tfUser.getText().equals(u.getCode())) && (tfPasswd.getText().equals(u.getPassword()))) {
+					DB.buyFilm(f, u);
+					JOptionPane.showMessageDialog(null, "Film " + f.getTitle() + " has been bought successfully");
+					if (DB.getBoughtFilmsCount(u) > 0 && DB.getBoughtFilmsCount(u) % 5 == 0) {
+						JOptionPane.showMessageDialog(null,
+								"Congratulations, you've bought " + DB.getBoughtFilmsCount(u) + " films! You will get "
+										+ DB.freeFilm(u).getTitle() + " for free.");
+					}
+					dispose();
+					MainWindow updated = new MainWindow(u);
+				} else
+					JOptionPane.showMessageDialog(null,
+							"Wrong user or password. Buying process could not be completed.");
+
 			}
 		});
 		btnLogin.setBackground(Color.BLACK);
@@ -102,6 +116,9 @@ public class PaymentWindow extends JFrame {
 
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
+			/**
+			 * Combobox is configured for internationalisation like in the other windows.
+			 */
 			public void actionPerformed(ActionEvent e) {
 				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
 						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);

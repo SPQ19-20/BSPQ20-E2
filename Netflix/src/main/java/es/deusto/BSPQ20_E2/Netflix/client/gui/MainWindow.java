@@ -35,12 +35,15 @@ import es.deusto.BSPQ20_E2.Netflix.server.db.DB;
 import es.deusto.BSPQ20_E2.Netflix.client.*;
 
 /**
- * Main window of the project, with the catalog of films and selection
- * 
+ * This is the main window of the project. Almost every single piece of code
+ * related to DB, functionality... has to do with this window.
+ * @category GUI
  * @author Jorge El Busto
- *
+ * @see main window of the program with the table containing the films and the
+ *      features related to them.
  */
 public class MainWindow extends JFrame {
+
 	private final static Logger LOGGER = Logger.getLogger(MainWindow.class.getName());
 	private static final long serialVersionUID = 1L;
 	private int rowCount;
@@ -54,6 +57,14 @@ public class MainWindow extends JFrame {
 	private JTextField tfSearch;
 	private DefaultTableModel mdlSearch;
 
+	/**
+	 * The constructor of the main window needs a user to operate, in order to
+	 * retrieve films from a user or buy films after having logged in as that user
+	 * 
+	 * @param u User which is going to be navigating through the window and whose
+	 *          information will be used at some stages such as checking already
+	 *          owned films or buying another film.
+	 */
 	public MainWindow(User u) {
 		getContentPane().setBackground(Color.BLACK);
 		setSize(700, 510);
@@ -83,7 +94,6 @@ public class MainWindow extends JFrame {
 		try {
 			films = DB.retrieveFilms();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			LOGGER.info(e.getMessage());
 		}
 		for (int i = 0; i < films.size(); i++) {
@@ -102,6 +112,10 @@ public class MainWindow extends JFrame {
 		panel.add(lblIcono);
 		JButton btnSearch = new JButton(Internationalization.resourceBundle.getString("btnSearch"));
 		btnSearch.addActionListener(new ActionListener() {
+			/**
+			 * After clicking the search button, the DB method is put into action, and
+			 * tables are refreshed.
+			 */
 			public void actionPerformed(ActionEvent e) {
 				table.clearSelection();
 				try {
@@ -136,8 +150,16 @@ public class MainWindow extends JFrame {
 		panel.add(scrollPane);
 		table = new JTable();
 		table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+			/**
+			 * After clicking a film, the content such as the film and the price are
+			 * displayed on screen, and the film cover is retrieved from the internet thanks
+			 * to the "url" attribute of the film included in the film Pojo class.
+			 * 
+			 * @see Image with the film cover
+			 */
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
+
 				if (!table.getSelectionModel().isSelectionEmpty()) {
 					int seleccion = table.getSelectedRow();
 					if (table.getModel() == model) {
@@ -148,6 +170,7 @@ public class MainWindow extends JFrame {
 					lblName.setText(String.valueOf(table.getValueAt(seleccion, 0)));
 					lblPrice1.setText(String.valueOf(table.getValueAt(seleccion, 4)));
 					try {
+
 						String imgurl = selected.getUrl();
 						Image image = null;
 						URL url = new URL(imgurl);
@@ -215,6 +238,7 @@ public class MainWindow extends JFrame {
 
 		JButton btnReset = new JButton(Internationalization.resourceBundle.getString("btnReset"));
 		btnReset.addActionListener(new ActionListener() {
+			// This button resets the content of the table to the default display
 			public void actionPerformed(ActionEvent e) {
 				table.clearSelection();
 				tfSearch.setText("");
@@ -247,6 +271,10 @@ public class MainWindow extends JFrame {
 		JButton btnCheckFilms = new JButton(Internationalization.resourceBundle.getString("btnCheckFilms"));
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
+			/**
+			 * Combobox's action listener has the same functionality as the one explained in
+			 * the login window.
+			 */
 			public void actionPerformed(ActionEvent e) {
 				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
 						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
@@ -266,6 +294,10 @@ public class MainWindow extends JFrame {
 		getContentPane().add(comboBox);
 
 		btnCheckFilms.addActionListener(new ActionListener() {
+			/**
+			 * This button displays a message dialog with a string containing the list of
+			 * films bought by the user which is navigating through the window.
+			 */
 			public void actionPerformed(ActionEvent e) {
 				ArrayList<Film> myFilms = null;
 				try {

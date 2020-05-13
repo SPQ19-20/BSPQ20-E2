@@ -16,6 +16,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 import javax.imageio.ImageIO;
 import javax.swing.DefaultListModel;
@@ -59,10 +60,11 @@ import javax.swing.JComboBox;
 import javax.swing.ImageIcon;
 
 /**
- * Window for the login process
- * 
+ * Window for the login process, in which we've can either login, register
+ * users, and choose a new language.
+ * @category GUI
  * @author Jorge El Busto
- *
+ * @see Window to be displayed when executing the program.
  */
 public class Login extends JFrame {
 	private final static Logger LOGGER = Logger.getLogger(Login.class.getName());
@@ -164,7 +166,11 @@ public class Login extends JFrame {
 
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.setBackground(Color.DARK_GRAY);
+
 		comboBox.addActionListener(new ActionListener() {
+			/**
+			 * Combobox is integrated with internationalisation through resource bundles
+			 */
 			public void actionPerformed(ActionEvent e) {
 				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
 						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
@@ -179,6 +185,9 @@ public class Login extends JFrame {
 		panel.add(comboBox);
 
 		btnRegister.addActionListener(new ActionListener() {
+			/**
+			 * When clicking on register, a new registering window gets opened
+			 */
 			public void actionPerformed(ActionEvent arg0) {
 				RegWindow w = new RegWindow();
 				dispose();
@@ -187,6 +196,13 @@ public class Login extends JFrame {
 		});
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				/**
+				 * During the login attempt, textfield with username and passwordfield with
+				 * password are checked and compared with database values to check if
+				 * credentials are valid or not.
+				 * 
+				 * @throws Exception
+				 */
 				Connection con;
 				try {
 					User u = DB.logged(tfUser.getText(), tfPasswd.getText());

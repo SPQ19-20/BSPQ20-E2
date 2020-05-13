@@ -48,6 +48,7 @@ public class DB {
 	/**
 	 * Method to check in the DB if the user credentials are valid
 	 * 
+	 * @throws SQLException
 	 * @param con  Connection with the DB
 	 * @param user String with the username passed by the TextField
 	 * @param pass String with the password passed by the JPasswordField
@@ -84,6 +85,7 @@ public class DB {
 	/**
 	 * Method to retrieve every single film in the DB
 	 * 
+	 * @throws SQLException
 	 * @param con Connection to the DB
 	 * @return an array with every film in the FILM table
 	 */
@@ -115,8 +117,10 @@ public class DB {
 	}
 
 	/**
-	 * Method to search films
+	 * Method to search films regardless the attribute. It accepts the year, the
+	 * director, the title... any of them
 	 * 
+	 * @throws SQLException
 	 * @param con       Connection to the DB
 	 * @param condition String to be searched retrieved from the main window
 	 * @return Every film whose director, name, genre, year, title, or price
@@ -161,6 +165,7 @@ public class DB {
 	 * Method to process the information in the DB so that the price of the bought
 	 * film is taken away from the credit of the user who buys it.
 	 * 
+	 * @throws SQLException
 	 * @param f Film whose price is going to be taken
 	 * @param u User who is interested in buying the film
 	 */
@@ -179,7 +184,7 @@ public class DB {
 			stmt2.executeUpdate(ins);
 			u.setSalary(u.getSalary() - f.getPrice());
 			con2.close();
-			
+
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 		}
@@ -189,6 +194,7 @@ public class DB {
 	 * Method to process the information in the DB so that the price of the bought
 	 * film is taken away from the credit of the user who buys it.
 	 * 
+	 * @throws SQLException
 	 * @param f Film which is going to be given
 	 * @param u User who will get the present
 	 */
@@ -216,8 +222,10 @@ public class DB {
 	}
 
 	/**
-	 * Method to get the id of the user in MySQL to execute the transaction
+	 * Method to get the id of the user in MySQL to execute the transaction of
+	 * buying a film and storing it in the user's particular bought films cart
 	 * 
+	 * @throws SQLException
 	 * @param u User from which we want to get the name
 	 */
 	public static String getId(User u) {
@@ -249,7 +257,8 @@ public class DB {
 	}
 
 	/**
-	 * Method to get the count of films bought by a certain user
+	 * Method to get the count of films bought by a certain user. It works along
+	 * with the getID method.
 	 * 
 	 * @param u User from which we want to get the name
 	 */
@@ -280,7 +289,7 @@ public class DB {
 	}
 
 	/**
-	 * Method to register users into the SQL Database
+	 * Method to register users into the SQL Database.
 	 * 
 	 * @param code     Username
 	 * @param name     Name of the user
@@ -303,7 +312,7 @@ public class DB {
 	}
 
 	/**
-	 * Method to retrieve the films a certain user owns
+	 * Method to retrieve the films a certain user already owns.
 	 * 
 	 * @param con Connection to the DB
 	 * @return an array with the films a certain user owns
@@ -337,10 +346,13 @@ public class DB {
 	}
 
 	/**
-	 * Method to open in browser the trailer of a film
+	 * Method to open the trailer of a film in the browser. It retrieves all the
+	 * attributes of the film from the database, and working with the trailer
+	 * getter, the URI is opened in a new browser if the platform in which the app
+	 * is being executed supports browsing.
 	 * 
 	 * @param Film which is going to be opened
-	 * @throws IOException
+	 * @throws IOException, URISyntaxException, SQLException
 	 * 
 	 */
 	public static void openTrailer(Film f) throws IOException {
