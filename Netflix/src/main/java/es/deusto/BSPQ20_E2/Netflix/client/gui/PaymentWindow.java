@@ -117,7 +117,9 @@ public class PaymentWindow extends JFrame {
 		JComboBox comboBox = new JComboBox(Internationalization.Idiomas);
 		comboBox.addActionListener(new ActionListener() {
 			/**
-			 * Combobox is configured for internationalisation like in the other windows.
+			 * @category Internationalization
+			 * @author Inigo Orue
+			 * Combobox is configured for internationalization like in the other windows.
 			 */
 			public void actionPerformed(ActionEvent e) {
 				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",

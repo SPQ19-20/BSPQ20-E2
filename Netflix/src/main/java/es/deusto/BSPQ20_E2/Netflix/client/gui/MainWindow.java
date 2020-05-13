@@ -276,6 +276,12 @@ public class MainWindow extends JFrame {
 			 * the login window.
 			 */
 			public void actionPerformed(ActionEvent e) {
+				/**
+				 * In case of language change, the values ​​of the textfield are changed with those 
+				 * of the .properties of the selected language.
+				 * @category Internationalization
+				 * @author Inigo Orue
+				 */
 				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
 						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
 				lblHello.setText(Internationalization.resourceBundle.getString("lblHello") + " " + u.getName());

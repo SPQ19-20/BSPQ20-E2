@@ -91,6 +91,11 @@ public class Login extends JFrame {
 		setResizable(false);
 		getContentPane().setLayout(null);
 		try {
+			/**
+			 * The .properties file is charged from the folder defined, in this case English is going to be the default language.
+			 * @category Internationalization
+			 * @author Inigo Orue
+			 */
 			File file = new File("src/main/resources/");
 			URL[] urls = { file.toURI().toURL() };
 			Internationalization.loader = new URLClassLoader(urls);
@@ -172,6 +177,12 @@ public class Login extends JFrame {
 			 * Combobox is integrated with internationalisation through resource bundles
 			 */
 			public void actionPerformed(ActionEvent e) {
+				/**
+				 * In case of language change, the values ​​of the textfield are changed with those 
+				 * of the .properties of the selected language.
+				 * @category Internationalization
+				 * @author Inigo Orue
+				 */
 				Internationalization.resourceBundle = ResourceBundle.getBundle("SystemMessages",
 						Locale.forLanguageTag(comboBox.getSelectedItem().toString()), Internationalization.loader);
 				lblUser.setText(Internationalization.resourceBundle.getString("lblUser"));
