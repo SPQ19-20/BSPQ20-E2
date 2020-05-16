@@ -222,8 +222,6 @@
 						<configuration>
 							<excludes>
 								<exclude>**/client/gui/*</exclude>
-								<exclude>**/jdo/*</exclude>
-								<exclude>**/datanucleus/*</exclude>
 
 							</excludes>
 						</configuration>
@@ -237,8 +235,6 @@
 						<configuration>
 							<excludes>
 								<exclude>**/client/gui/*</exclude>
-								<exclude>**/jdo/*</exclude>
-								<exclude>**/datanucleus/*</exclude>
 
 							</excludes>
 						</configuration>
