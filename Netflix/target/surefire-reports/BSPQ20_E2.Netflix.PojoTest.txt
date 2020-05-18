@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: BSPQ20_E2.Netflix.PojoTest
--------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s - in BSPQ20_E2.Netflix.PojoTest
