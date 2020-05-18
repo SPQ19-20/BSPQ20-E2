@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 import org.databene.contiperf.PerfTest;
+import org.databene.contiperf.Required;
 import org.databene.contiperf.junit.ContiPerfRule;
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -56,13 +57,14 @@ public class DBTest {
 	}
 
 	/**
-	 * Method that tests the logged method to check if credentials are valid
+	 * Method that tests the logged method to check if credentials are valid.
+	 * The logged method is as deep as buying film method, so it takes a lot of time.
 	 * 
 	 * @param u user that correspond that credentials
 	 *
 	 */
 	@Test
-	@PerfTest(invocations = 10)
+	@Required(max = 80)
 	public void checkCredentials() {
 		try {
 			User u = DB.logged("jorge", "pass");
@@ -103,13 +105,13 @@ public class DBTest {
 
 	/**
 	 * Method that tests the retrieveFilms method that gets the films of the
-	 * database
+	 * database.
 	 * 
 	 * @param filmsDatabase Arraylist of films created to check the method
 	 *
 	 */
 	@Test
-	@PerfTest(invocations = 10)
+	@Required(max = 50)
 	public void checkFilmRetriever() {
 		ArrayList<Film> filmsDatabase = DB.retrieveFilms();
 		if (filmsDatabase != null) {
@@ -208,10 +210,11 @@ public class DBTest {
 
 	/**
 	 * Method to check that, after buying a film, the ArrayList of bought films by a
-	 * user is not null and contains at least a film.
+	 * user is not null and contains at least a film. Buying films is the longest
+	 * process here, so it should take around a tenth of a second.
 	 */
 	@Test
-	@PerfTest(invocations = 10)
+	@Required(max = 100)
 	public void myFilmsNotNull() {
 		DB.buyFilm(films.get(2), u);
 		assertTrue(DB.myFilms(u).size() > 0);

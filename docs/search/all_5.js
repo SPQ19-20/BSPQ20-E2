@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['genre_55',['genre',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#afc5c5ec4f413ae3a5e02e0259a10ac7a',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]],
+  ['getboughtfilmscount_56',['getBoughtFilmsCount',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html#af926002d7061d3d8cfe26d9f57777e41',1,'es::deusto::BSPQ20_E2::Netflix::server::db::DB']]],
+  ['getcode_57',['getCode',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user.html#a2a1cef89d6ce964259bff01bdadf9b6f',1,'es::deusto::BSPQ20_E2::Netflix::pojo::User']]],
+  ['getdirector_58',['getDirector',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#afec5e612ab64e1b67501a1f98f39c2ee',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]],
+  ['getf_59',['getF',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_transaction.html#a7f496626ddf34f017f2a0ce53aed4a9e',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Transaction']]],
+  ['getgenre_60',['getGenre',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#ac9f028ba5efcc63255bc9834f17875fe',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]],
+  ['getid_61',['getId',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#ab26fe87a9998e60f3858688e6a41400e',1,'es.deusto.BSPQ20_E2.Netflix.pojo.Film.getId()'],['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1db_1_1_d_b.html#af1604cccd823fa9d754ab86656a4889f',1,'es.deusto.BSPQ20_E2.Netflix.server.db.DB.getId()']]],
+  ['getit_62',['getIt',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1server_1_1_my_resource.html#a22f3d89a822910f9413ccedb4e26654b',1,'es::deusto::BSPQ20_E2::Netflix::server::MyResource']]],
+  ['getname_63',['getName',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user.html#a8b1b8c07c066298ac538388a8952f2ad',1,'es::deusto::BSPQ20_E2::Netflix::pojo::User']]],
+  ['getpassword_64',['getPassword',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user.html#a096cbce6806bb23f357ac28ce365e317',1,'es::deusto::BSPQ20_E2::Netflix::pojo::User']]],
+  ['getprice_65',['getPrice',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#aad10d90724852edaa2532ef7c4b8f388',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]],
+  ['getsalary_66',['getSalary',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user.html#adaee90276baa94f77bc1cc663e4a56c0',1,'es::deusto::BSPQ20_E2::Netflix::pojo::User']]],
+  ['getsurname_67',['getSurname',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_user.html#a2a2911dad3380495b4d403318a823ad8',1,'es::deusto::BSPQ20_E2::Netflix::pojo::User']]],
+  ['gettitle_68',['getTitle',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#a142875b5a575839d4d351f0a7f52b8e7',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]],
+  ['gettrailer_69',['getTrailer',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#a870ef9c86f26adbbc4d498d5a4bad112',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]],
+  ['getu_70',['getU',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_transaction.html#ae4047512b9de4d324ae875b10f4e66b9',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Transaction']]],
+  ['geturl_71',['getUrl',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#aaeebb7622739b875678828753f1b7308',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]],
+  ['getuserid_72',['getUserID',['../class_b_s_p_q20___e2_1_1_netflix_1_1_d_b_test.html#a09cd82c30044fcf51d6788ab1cb8d4c0',1,'BSPQ20_E2::Netflix::DBTest']]],
+  ['getyear_73',['getYear',['../classes_1_1deusto_1_1_b_s_p_q20___e2_1_1_netflix_1_1pojo_1_1_film.html#ad231c823bf35d719782b520372683dc7',1,'es::deusto::BSPQ20_E2::Netflix::pojo::Film']]]
+];

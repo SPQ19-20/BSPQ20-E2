@@ -69,8 +69,10 @@ public class DB {
 				}
 
 				con.close();
-
-				return u;
+				if (u != null)
+					return u;
+				else
+					return null;
 			} catch (SQLException e) {
 				LOGGER.error(e.getMessage());
 				return null;
